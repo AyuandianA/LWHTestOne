@@ -15,5 +15,6 @@ pod 'iVersion'
 pod 'Appirater'
 pod 'SVProgressHUD'
 pod 'FMDB'
+pod 'SWTableViewCell'
 
 end
