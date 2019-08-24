@@ -25,6 +25,7 @@ PODS:
   - Reachability (3.2)
   - SocketRocket (0.5.1)
   - SVProgressHUD (2.2.5)
+  - SWTableViewCell (0.3.7)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - Reachability
   - SocketRocket
   - SVProgressHUD
+  - SWTableViewCell
   - YYKit
 
 SPEC REPOS:
@@ -54,6 +56,7 @@ SPEC REPOS:
     - Reachability
     - SocketRocket
     - SVProgressHUD
+    - SWTableViewCell
     - YYKit
 
 SPEC CHECKSUMS:
@@ -67,8 +70,9 @@ SPEC CHECKSUMS:
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: d25090814498a8827f8899c4bcafa54e6dd6d61d
+PODFILE CHECKSUM: 60508e97eadb3e263a4376ea40a89fb32b7bbffa
 
 COCOAPODS: 1.7.0.rc.1
