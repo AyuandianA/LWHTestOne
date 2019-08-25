@@ -172,6 +172,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		009D61F72312AA2500DC0FEC /* OtherFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OtherFrameworks;
+			sourceTree = "<group>";
+		};
 		043AD17D230CF3F4007BD6CA = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +217,7 @@
 		043AD19F230CF50C007BD6CA /* lwh */ = {
 			isa = PBXGroup;
 			children = (
+				009D61F72312AA2500DC0FEC /* OtherFrameworks */,
 				043AD1A0230CF50C007BD6CA /* MyLearningRoad */,
 				043AD37D230CF50D007BD6CA /* cocopods */,
 				043AD37F230CF50D007BD6CA /* LaunchIntroduction */,
@@ -652,7 +660,7 @@
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/UMSocialUI",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/AliPaySDK",
 				);
-				GCC_PREFIX_HEADER = /Users/mac/Desktop/LWHTestOne/LWHTestOne/lwh/Header/LWHHeader.h;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/lwh/Header/LWHHeader.h";
 				INFOPLIST_FILE = LWHTestOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -685,7 +693,7 @@
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/UMSocialUI",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/AliPaySDK",
 				);
-				GCC_PREFIX_HEADER = /Users/mac/Desktop/LWHTestOne/LWHTestOne/lwh/Header/LWHHeader.h;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/lwh/Header/LWHHeader.h";
 				INFOPLIST_FILE = LWHTestOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

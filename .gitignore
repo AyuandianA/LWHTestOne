@@ -27,3 +27,5 @@ xcuserdata/
 *.dSYM
 #CocoaPods
 Pods/
+#OtherFramaworks
+LWHTestOne/lwh/OtherFrameworks/
