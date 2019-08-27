@@ -6,7 +6,6 @@
 //  Copyright © 2019 BraveShine. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
 

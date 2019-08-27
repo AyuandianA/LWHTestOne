@@ -12,7 +12,7 @@
 #import "LSNavigationController.h"
 #import "CZSocketManager.h"
 #import "UIViewController+PresentAnimation.h"
-
+#import "LWHFirstViewController.h"
 @interface BaseTabbarController ()<UITabBarControllerDelegate,CZSocketManagerDelegate> {
      NSString *_message_id;
 }
@@ -96,7 +96,7 @@
 //    configration.lineWidthEqualFontWidth = YES;
     
     //第三级控制器
-    UIViewController *homeCtrl = [[UIViewController alloc] init];
+    LWHFirstViewController *homeCtrl = [[LWHFirstViewController alloc] init];
     
     UIViewController *messgeCtrl = [[UIViewController alloc] init];
     

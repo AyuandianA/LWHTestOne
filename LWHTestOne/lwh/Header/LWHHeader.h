@@ -24,9 +24,7 @@
 #import "UIButton+ImageTitleSpacing.h"
 #import "EmptyView.h"
 #import "LJCProgressHUD.h"
-//#import "LoginPageShow.h"SurgeryClassTableViewCell
 #import "LJCActionSheet.h"
-//#import "IQKeyboardManager.h"
 #import "UserMaterialModel.h"
 #import "LWHWkPlayerManager.h"
 //李武华新增
