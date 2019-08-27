@@ -231,6 +231,9 @@
 		0435D3462314D9F600802E3A /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D26A2314D9F500802E3A /* MySingleton.m */; };
 		0435D3472314D9F600802E3A /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0435D26B2314D9F500802E3A /* Address.plist */; };
 		0435D3482314D9F600802E3A /* CityModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D26D2314D9F500802E3A /* CityModelData.m */; };
+		0435D3502314E04700802E3A /* UIView+HLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D34C2314E04700802E3A /* UIView+HLExtension.m */; };
+		0435D3512314E04700802E3A /* HLSegementView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D34F2314E04700802E3A /* HLSegementView.m */; };
+		0435D3552314E18A00802E3A /* LWHProjectHeaderButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D3532314E18A00802E3A /* LWHProjectHeaderButtonsView.m */; };
 		043AD18B230CF3F4007BD6CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AD18A230CF3F4007BD6CA /* AppDelegate.m */; };
 		043AD18E230CF3F4007BD6CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AD18D230CF3F4007BD6CA /* ViewController.m */; };
 		043AD191230CF3F4007BD6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043AD18F230CF3F4007BD6CA /* Main.storyboard */; };
@@ -721,6 +724,12 @@
 		0435D26C2314D9F500802E3A /* JHPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPickView.h; sourceTree = "<group>"; };
 		0435D26D2314D9F500802E3A /* CityModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModelData.m; sourceTree = "<group>"; };
 		0435D26E2314D9F500802E3A /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingleton.h; sourceTree = "<group>"; };
+		0435D34C2314E04700802E3A /* UIView+HLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HLExtension.m"; sourceTree = "<group>"; };
+		0435D34D2314E04700802E3A /* HLSegementView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLSegementView.h; sourceTree = "<group>"; };
+		0435D34E2314E04700802E3A /* UIView+HLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HLExtension.h"; sourceTree = "<group>"; };
+		0435D34F2314E04700802E3A /* HLSegementView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLSegementView.m; sourceTree = "<group>"; };
+		0435D3532314E18A00802E3A /* LWHProjectHeaderButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHProjectHeaderButtonsView.m; sourceTree = "<group>"; };
+		0435D3542314E18A00802E3A /* LWHProjectHeaderButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHProjectHeaderButtonsView.h; sourceTree = "<group>"; };
 		043AD186230CF3F4007BD6CA /* LWHTestOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWHTestOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043AD189230CF3F4007BD6CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		043AD18A230CF3F4007BD6CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1720,6 +1729,39 @@
 			path = JHPickView;
 			sourceTree = "<group>";
 		};
+		0435D34A2314E04700802E3A /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				0435D3522314E18A00802E3A /* 九宫格 */,
+				043AD37F230CF50D007BD6CA /* LaunchIntroduction */,
+				0435D08A2314D46600802E3A /* Search */,
+				0435D0792314CEEF00802E3A /* Login */,
+				043AD384230CF50D007BD6CA /* BaseTabbar */,
+				0435D34B2314E04700802E3A /* 简易菜单栏 */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		0435D34B2314E04700802E3A /* 简易菜单栏 */ = {
+			isa = PBXGroup;
+			children = (
+				0435D34C2314E04700802E3A /* UIView+HLExtension.m */,
+				0435D34D2314E04700802E3A /* HLSegementView.h */,
+				0435D34E2314E04700802E3A /* UIView+HLExtension.h */,
+				0435D34F2314E04700802E3A /* HLSegementView.m */,
+			);
+			path = "简易菜单栏";
+			sourceTree = "<group>";
+		};
+		0435D3522314E18A00802E3A /* 九宫格 */ = {
+			isa = PBXGroup;
+			children = (
+				0435D3532314E18A00802E3A /* LWHProjectHeaderButtonsView.m */,
+				0435D3542314E18A00802E3A /* LWHProjectHeaderButtonsView.h */,
+			);
+			path = "九宫格";
+			sourceTree = "<group>";
+		};
 		043AD17D230CF3F4007BD6CA = {
 			isa = PBXGroup;
 			children = (
@@ -1759,13 +1801,10 @@
 		043AD19F230CF50C007BD6CA /* lwh */ = {
 			isa = PBXGroup;
 			children = (
+				0435D34A2314E04700802E3A /* modules */,
 				0435D0942314D9F500802E3A /* OtherFrameworks */,
 				043AD1A0230CF50C007BD6CA /* MyLearningRoad */,
 				043AD37D230CF50D007BD6CA /* cocopods */,
-				043AD37F230CF50D007BD6CA /* LaunchIntroduction */,
-				0435D08A2314D46600802E3A /* Search */,
-				0435D0792314CEEF00802E3A /* Login */,
-				043AD384230CF50D007BD6CA /* BaseTabbar */,
 				043AD38D230CF50D007BD6CA /* Header */,
 				043AD38F230CF50D007BD6CA /* Tool */,
 			);
@@ -2135,6 +2174,7 @@
 				0435D0932314D46700802E3A /* LLSearchViewController.m in Sources */,
 				0435D3332314D9F600802E3A /* WJPopoverViewController.m in Sources */,
 				0435D3302314D9F600802E3A /* UIImage+Metadata.m in Sources */,
+				0435D3502314E04700802E3A /* UIView+HLExtension.m in Sources */,
 				0435D33B2314D9F600802E3A /* YNPageHeaderScrollView.m in Sources */,
 				0435D33F2314D9F600802E3A /* YXMonthView.m in Sources */,
 				0435D2CB2314D9F500802E3A /* IQUIWindow+Hierarchy.m in Sources */,
@@ -2205,6 +2245,7 @@
 				0435D2A42314D9F500802E3A /* TZImageManager.m in Sources */,
 				0435D2E02314D9F600802E3A /* YBVideoBrowseCellData.m in Sources */,
 				0435D2A72314D9F500802E3A /* TZImagePickerController.m in Sources */,
+				0435D3552314E18A00802E3A /* LWHProjectHeaderButtonsView.m in Sources */,
 				043AD4A4230CF50E007BD6CA /* ChatFace.m in Sources */,
 				0435D3282314D9F600802E3A /* SDImageCacheDefine.m in Sources */,
 				0435D3012314D9F600802E3A /* SDImageLoader.m in Sources */,
@@ -2218,6 +2259,7 @@
 				0435D3372314D9F600802E3A /* YNPageViewController.m in Sources */,
 				0435D32E2314D9F600802E3A /* UIView+WebCache.m in Sources */,
 				0435D2E42314D9F600802E3A /* YBImageBrowserSheetView.m in Sources */,
+				0435D3512314E04700802E3A /* HLSegementView.m in Sources */,
 				0435D2D42314D9F500802E3A /* SDCycleScrollView.m in Sources */,
 				043AD4A8230CF50E007BD6CA /* CXCameraManager.m in Sources */,
 				0435D3402314D9F600802E3A /* YXDateHelpObject.m in Sources */,
