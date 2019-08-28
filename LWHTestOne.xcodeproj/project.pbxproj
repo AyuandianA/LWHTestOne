@@ -234,6 +234,15 @@
 		0435D6082315168100802E3A /* MySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D52C2315168100802E3A /* MySingleton.m */; };
 		0435D6092315168100802E3A /* Address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0435D52D2315168100802E3A /* Address.plist */; };
 		0435D60A2315168100802E3A /* CityModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D52F2315168100802E3A /* CityModelData.m */; };
+		04372A27231624D000FFC36F /* IssueDiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A25231624D000FFC36F /* IssueDiaryViewController.m */; };
+		04372A2A2316260100FFC36F /* OrderListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A292316260100FFC36F /* OrderListModel.m */; };
+		04372A2D2316269800FFC36F /* LxGridViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A2B2316269800FFC36F /* LxGridViewFlowLayout.m */; };
+		04372A30231626EF00FFC36F /* IssueDynamicToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A2E231626EE00FFC36F /* IssueDynamicToolBar.m */; };
+		04372A332316271200FFC36F /* TZTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A322316271200FFC36F /* TZTestCell.m */; };
+		04372A36231629DE00FFC36F /* ChatBoxFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A34231629DD00FFC36F /* ChatBoxFaceView.m */; };
+		04372A3923162A3D00FFC36F /* ChatFaceMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A3823162A3D00FFC36F /* ChatFaceMenuView.m */; };
+		04372A3C23162A6200FFC36F /* ChatFaceItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A3A23162A6200FFC36F /* ChatFaceItemView.m */; };
+		04372A402316345200FFC36F /* StartOrStopTimeSelecteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A3F2316345200FFC36F /* StartOrStopTimeSelecteView.m */; };
 		043AD18B230CF3F4007BD6CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AD18A230CF3F4007BD6CA /* AppDelegate.m */; };
 		043AD18E230CF3F4007BD6CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AD18D230CF3F4007BD6CA /* ViewController.m */; };
 		043AD191230CF3F4007BD6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043AD18F230CF3F4007BD6CA /* Main.storyboard */; };
@@ -730,6 +739,24 @@
 		0435D52E2315168100802E3A /* JHPickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPickView.h; sourceTree = "<group>"; };
 		0435D52F2315168100802E3A /* CityModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityModelData.m; sourceTree = "<group>"; };
 		0435D5302315168100802E3A /* MySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySingleton.h; sourceTree = "<group>"; };
+		04372A25231624D000FFC36F /* IssueDiaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueDiaryViewController.m; sourceTree = "<group>"; };
+		04372A26231624D000FFC36F /* IssueDiaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueDiaryViewController.h; sourceTree = "<group>"; };
+		04372A282316260000FFC36F /* OrderListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderListModel.h; sourceTree = "<group>"; };
+		04372A292316260100FFC36F /* OrderListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderListModel.m; sourceTree = "<group>"; };
+		04372A2B2316269800FFC36F /* LxGridViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LxGridViewFlowLayout.m; sourceTree = "<group>"; };
+		04372A2C2316269800FFC36F /* LxGridViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxGridViewFlowLayout.h; sourceTree = "<group>"; };
+		04372A2E231626EE00FFC36F /* IssueDynamicToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueDynamicToolBar.m; sourceTree = "<group>"; };
+		04372A2F231626EE00FFC36F /* IssueDynamicToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueDynamicToolBar.h; sourceTree = "<group>"; };
+		04372A312316271200FFC36F /* TZTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZTestCell.h; sourceTree = "<group>"; };
+		04372A322316271200FFC36F /* TZTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZTestCell.m; sourceTree = "<group>"; };
+		04372A34231629DD00FFC36F /* ChatBoxFaceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBoxFaceView.m; sourceTree = "<group>"; };
+		04372A35231629DE00FFC36F /* ChatBoxFaceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBoxFaceView.h; sourceTree = "<group>"; };
+		04372A3723162A3D00FFC36F /* ChatFaceMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatFaceMenuView.h; sourceTree = "<group>"; };
+		04372A3823162A3D00FFC36F /* ChatFaceMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatFaceMenuView.m; sourceTree = "<group>"; };
+		04372A3A23162A6200FFC36F /* ChatFaceItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatFaceItemView.m; sourceTree = "<group>"; };
+		04372A3B23162A6200FFC36F /* ChatFaceItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatFaceItemView.h; sourceTree = "<group>"; };
+		04372A3E2316345200FFC36F /* StartOrStopTimeSelecteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartOrStopTimeSelecteView.h; sourceTree = "<group>"; };
+		04372A3F2316345200FFC36F /* StartOrStopTimeSelecteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartOrStopTimeSelecteView.m; sourceTree = "<group>"; };
 		043AD186230CF3F4007BD6CA /* LWHTestOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWHTestOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043AD189230CF3F4007BD6CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		043AD18A230CF3F4007BD6CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -874,7 +901,7 @@
 			path = "首页";
 			sourceTree = "<group>";
 		};
-		0435D0792314CEEF00802E3A /* Login */ = {
+		0435D0792314CEEF00802E3A /* 登陆 */ = {
 			isa = PBXGroup;
 			children = (
 				0435D07A2314CEEF00802E3A /* LoginViewController.m */,
@@ -882,10 +909,10 @@
 				0435D0832314CEEF00802E3A /* LoginPageShow.m */,
 				0435D0842314CEEF00802E3A /* LoginViewController.h */,
 			);
-			path = Login;
+			path = "登陆";
 			sourceTree = "<group>";
 		};
-		0435D08A2314D46600802E3A /* Search */ = {
+		0435D08A2314D46600802E3A /* 搜索 */ = {
 			isa = PBXGroup;
 			children = (
 				0435D08B2314D46600802E3A /* LLSearchViewController.h */,
@@ -895,16 +922,18 @@
 				0435D08F2314D46600802E3A /* LLSearchView.h */,
 				0435D0902314D46600802E3A /* LLSearchSuggestionVC.h */,
 			);
-			path = Search;
+			path = "搜索";
 			sourceTree = "<group>";
 		};
 		0435D34A2314E04700802E3A /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				04372A3D2316345200FFC36F /* 时间选择器 */,
+				04372A24231624D000FFC36F /* 图片选择器 */,
 				0435D3522314E18A00802E3A /* 九宫格 */,
-				043AD37F230CF50D007BD6CA /* LaunchIntroduction */,
-				0435D08A2314D46600802E3A /* Search */,
-				0435D0792314CEEF00802E3A /* Login */,
+				043AD37F230CF50D007BD6CA /* 启动页 */,
+				0435D08A2314D46600802E3A /* 搜索 */,
+				0435D0792314CEEF00802E3A /* 登陆 */,
 				043AD384230CF50D007BD6CA /* BaseTabbar */,
 				0435D34B2314E04700802E3A /* 简易菜单栏 */,
 			);
@@ -1762,6 +1791,38 @@
 			path = JHPickView;
 			sourceTree = "<group>";
 		};
+		04372A24231624D000FFC36F /* 图片选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				04372A3B23162A6200FFC36F /* ChatFaceItemView.h */,
+				04372A3A23162A6200FFC36F /* ChatFaceItemView.m */,
+				04372A3723162A3D00FFC36F /* ChatFaceMenuView.h */,
+				04372A3823162A3D00FFC36F /* ChatFaceMenuView.m */,
+				04372A35231629DE00FFC36F /* ChatBoxFaceView.h */,
+				04372A34231629DD00FFC36F /* ChatBoxFaceView.m */,
+				04372A312316271200FFC36F /* TZTestCell.h */,
+				04372A322316271200FFC36F /* TZTestCell.m */,
+				04372A2F231626EE00FFC36F /* IssueDynamicToolBar.h */,
+				04372A2E231626EE00FFC36F /* IssueDynamicToolBar.m */,
+				04372A2C2316269800FFC36F /* LxGridViewFlowLayout.h */,
+				04372A2B2316269800FFC36F /* LxGridViewFlowLayout.m */,
+				04372A282316260000FFC36F /* OrderListModel.h */,
+				04372A292316260100FFC36F /* OrderListModel.m */,
+				04372A25231624D000FFC36F /* IssueDiaryViewController.m */,
+				04372A26231624D000FFC36F /* IssueDiaryViewController.h */,
+			);
+			path = "图片选择器";
+			sourceTree = "<group>";
+		};
+		04372A3D2316345200FFC36F /* 时间选择器 */ = {
+			isa = PBXGroup;
+			children = (
+				04372A3E2316345200FFC36F /* StartOrStopTimeSelecteView.h */,
+				04372A3F2316345200FFC36F /* StartOrStopTimeSelecteView.m */,
+			);
+			path = "时间选择器";
+			sourceTree = "<group>";
+		};
 		043AD17D230CF3F4007BD6CA = {
 			isa = PBXGroup;
 			children = (
@@ -1827,7 +1888,7 @@
 			path = cocopods;
 			sourceTree = "<group>";
 		};
-		043AD37F230CF50D007BD6CA /* LaunchIntroduction */ = {
+		043AD37F230CF50D007BD6CA /* 启动页 */ = {
 			isa = PBXGroup;
 			children = (
 				043AD380230CF50D007BD6CA /* GuideViewController.h */,
@@ -1835,7 +1896,7 @@
 				043AD383230CF50D007BD6CA /* LaunchIntroductionView.h */,
 				043AD381230CF50D007BD6CA /* LaunchIntroductionView.m */,
 			);
-			path = LaunchIntroduction;
+			path = "启动页";
 			sourceTree = "<group>";
 		};
 		043AD384230CF50D007BD6CA /* BaseTabbar */ = {
@@ -2085,6 +2146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0435D5CD2315168100802E3A /* SDWebImageError.m in Sources */,
+				04372A2D2316269800FFC36F /* LxGridViewFlowLayout.m in Sources */,
 				043AD4B6230CF50E007BD6CA /* BDPresentAnimator.m in Sources */,
 				0435D5702315168100802E3A /* SGPageContentCollectionView.m in Sources */,
 				043AD4AB230CF50E007BD6CA /* BDPresentAnimatorAction.m in Sources */,
@@ -2098,6 +2160,7 @@
 				0435D59E2315168100802E3A /* YBImageBrowser.m in Sources */,
 				0435D5E92315168100802E3A /* SDWebImageGIFCoder.m in Sources */,
 				0435D5D72315168100802E3A /* SDWeakProxy.m in Sources */,
+				04372A2A2316260100FFC36F /* OrderListModel.m in Sources */,
 				0435D5AA2315168100802E3A /* YBIBWebImageManager.m in Sources */,
 				043AD18E230CF3F4007BD6CA /* ViewController.m in Sources */,
 				0435D5432315168100802E3A /* UIView+Controller.m in Sources */,
@@ -2113,6 +2176,7 @@
 				0435D5F62315168100802E3A /* UIViewController+YNPageExtend.m in Sources */,
 				0435D5F82315168100802E3A /* UIScrollView+YNPageExtend.m in Sources */,
 				0435D56E2315168100802E3A /* UIView+SGPagingView.m in Sources */,
+				04372A402316345200FFC36F /* StartOrStopTimeSelecteView.m in Sources */,
 				0435D5662315168100802E3A /* TZImageManager.m in Sources */,
 				0435D54C2315168100802E3A /* LSNavigationController.m in Sources */,
 				0435D5FA2315168100802E3A /* YNPageConfigration.m in Sources */,
@@ -2132,6 +2196,7 @@
 				0435D59F2315168100802E3A /* YBVideoBrowseCell.m in Sources */,
 				0435D5DF2315168100802E3A /* SDImageFrame.m in Sources */,
 				0435D59B2315168100802E3A /* TAAnimatedDotView.m in Sources */,
+				04372A3C23162A6200FFC36F /* ChatFaceItemView.m in Sources */,
 				0435D5322315168100802E3A /* UIImage+BBVoiceRecord.m in Sources */,
 				0435D5BC2315168100802E3A /* SDWebImageFrame.m in Sources */,
 				0435D5AB2315168100802E3A /* YBIBFileManager.m in Sources */,
@@ -2147,7 +2212,9 @@
 				043AD4AA230CF50E007BD6CA /* LWHWkPlayerManager.m in Sources */,
 				0435D5942315168100802E3A /* UIBarButtonItem+SXCreate.m in Sources */,
 				043AD4A9230CF50E007BD6CA /* ChatHelper.m in Sources */,
+				04372A332316271200FFC36F /* TZTestCell.m in Sources */,
 				0435D5512315168100802E3A /* WMPlayerModel.m in Sources */,
+				04372A3923162A3D00FFC36F /* ChatFaceMenuView.m in Sources */,
 				0435D5B22315168100802E3A /* YBImageBrowserView.m in Sources */,
 				0435D5D32315168100802E3A /* SDDiskCache.m in Sources */,
 				0435D58E2315168100802E3A /* IQUITextFieldView+Additions.m in Sources */,
@@ -2204,6 +2271,7 @@
 				0435D5DA2315168100802E3A /* NSBezierPath+RoundedCorners.m in Sources */,
 				0435D5DE2315168100802E3A /* SDImageGIFCoder.m in Sources */,
 				043AD4A6230CF50E007BD6CA /* LJCActionSheet.m in Sources */,
+				04372A36231629DE00FFC36F /* ChatBoxFaceView.m in Sources */,
 				0435D0892314CEEF00802E3A /* LoginPageShow.m in Sources */,
 				0435D5B72315168100802E3A /* NSImage+Compatibility.m in Sources */,
 				0435D5972315168100802E3A /* UIView+SDExtension.m in Sources */,
@@ -2265,6 +2333,7 @@
 				0435D6022315168100802E3A /* YXDateHelpObject.m in Sources */,
 				0435D5F92315168100802E3A /* YNPageViewController.m in Sources */,
 				0435D5882315168100802E3A /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				04372A27231624D000FFC36F /* IssueDiaryViewController.m in Sources */,
 				0435D5F72315168100802E3A /* UIView+YNPageExtend.m in Sources */,
 				0435D5BA2315168100802E3A /* SDWebImageManager.m in Sources */,
 				0435D55E2315168100802E3A /* TZAssetCell.m in Sources */,
@@ -2290,6 +2359,7 @@
 				0435D5542315168100802E3A /* WMLightView.m in Sources */,
 				0435D5FF2315168100802E3A /* YNPageScrollMenuView.m in Sources */,
 				0435D5D02315168100802E3A /* SDWebImageCoder.m in Sources */,
+				04372A30231626EF00FFC36F /* IssueDynamicToolBar.m in Sources */,
 				0435D5A52315168100802E3A /* YBImageBrowserTipView.m in Sources */,
 				0435D5C42315168100802E3A /* SDWebImageCacheSerializer.m in Sources */,
 				0435D5EA2315168100802E3A /* SDImageCacheDefine.m in Sources */,
