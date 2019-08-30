@@ -35,8 +35,8 @@
     if (!_leftBtn) {
         _leftBtn = [[UIButton alloc]init];
         _leftBtn.frame = CGRectMake(0, 0, 60, 44);
-        [_leftBtn setImage:BundleTabeImage(@"left_return_white.png") forState:UIControlStateNormal];
-        [_leftBtn setImage:BundleTabeImage(@"left_return_white.png") forState:UIControlStateHighlighted];
+        [_leftBtn setImage:[UIImage imageNamed:@"left_return_white"] forState:UIControlStateNormal];
+        [_leftBtn setImage:[UIImage imageNamed:@"left_return_white"] forState:UIControlStateHighlighted];
         _leftBtn.imageEdgeInsets = UIEdgeInsetsMake(9.5f, 10, 9.5f, 25);
         [_leftBtn addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
     }

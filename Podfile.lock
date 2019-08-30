@@ -16,6 +16,7 @@ PODS:
     - AFNetworking/NSURLSession
   - Appirater (2.3.1)
   - DZNEmptyDataSet (1.8.1)
+  - FDFullscreenPopGesture (1.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
@@ -34,6 +35,7 @@ DEPENDENCIES:
   - AFNetworking
   - Appirater
   - DZNEmptyDataSet
+  - FDFullscreenPopGesture (~> 1.1)
   - FMDB
   - iVersion
   - Masonry
@@ -49,6 +51,7 @@ SPEC REPOS:
     - AFNetworking
     - Appirater
     - DZNEmptyDataSet
+    - FDFullscreenPopGesture
     - FMDB
     - iVersion
     - Masonry
@@ -63,6 +66,7 @@ SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   Appirater: 44a4651f7912a17dc906b655f0c215d5bb768b84
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   iVersion: 3a93a89259eb3b52b0a8ba52c46a0027fa6b4d30
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -73,6 +77,6 @@ SPEC CHECKSUMS:
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 60508e97eadb3e263a4376ea40a89fb32b7bbffa
+PODFILE CHECKSUM: 3aec41b9c430dbc3f59b2cfdb3973c616bdad336
 
 COCOAPODS: 1.7.0.rc.1

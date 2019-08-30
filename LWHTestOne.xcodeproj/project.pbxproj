@@ -243,6 +243,10 @@
 		04372A3923162A3D00FFC36F /* ChatFaceMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A3823162A3D00FFC36F /* ChatFaceMenuView.m */; };
 		04372A3C23162A6200FFC36F /* ChatFaceItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A3A23162A6200FFC36F /* ChatFaceItemView.m */; };
 		04372A402316345200FFC36F /* StartOrStopTimeSelecteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04372A3F2316345200FFC36F /* StartOrStopTimeSelecteView.m */; };
+		0438239A23191FD800A339FD /* LWHWalletViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438239923191FD800A339FD /* LWHWalletViewController.m */; };
+		0438239E2319250300A339FD /* left_return_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0438239B2319250200A339FD /* left_return_white.png */; };
+		0438239F2319250300A339FD /* left_return_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0438239C2319250200A339FD /* left_return_white@2x.png */; };
+		043823A02319250300A339FD /* left_return_white@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0438239D2319250200A339FD /* left_return_white@3x.png */; };
 		043AD18B230CF3F4007BD6CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AD18A230CF3F4007BD6CA /* AppDelegate.m */; };
 		043AD18E230CF3F4007BD6CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 043AD18D230CF3F4007BD6CA /* ViewController.m */; };
 		043AD191230CF3F4007BD6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043AD18F230CF3F4007BD6CA /* Main.storyboard */; };
@@ -757,6 +761,11 @@
 		04372A3B23162A6200FFC36F /* ChatFaceItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatFaceItemView.h; sourceTree = "<group>"; };
 		04372A3E2316345200FFC36F /* StartOrStopTimeSelecteView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartOrStopTimeSelecteView.h; sourceTree = "<group>"; };
 		04372A3F2316345200FFC36F /* StartOrStopTimeSelecteView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartOrStopTimeSelecteView.m; sourceTree = "<group>"; };
+		0438239823191FD800A339FD /* LWHWalletViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHWalletViewController.h; sourceTree = "<group>"; };
+		0438239923191FD800A339FD /* LWHWalletViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHWalletViewController.m; sourceTree = "<group>"; };
+		0438239B2319250200A339FD /* left_return_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_return_white.png; sourceTree = "<group>"; };
+		0438239C2319250200A339FD /* left_return_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_return_white@2x.png"; sourceTree = "<group>"; };
+		0438239D2319250200A339FD /* left_return_white@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_return_white@3x.png"; sourceTree = "<group>"; };
 		043AD186230CF3F4007BD6CA /* LWHTestOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LWHTestOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043AD189230CF3F4007BD6CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		043AD18A230CF3F4007BD6CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -895,8 +904,13 @@
 		0435D04D2314BB2C00802E3A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				0438239B2319250200A339FD /* left_return_white.png */,
+				0438239C2319250200A339FD /* left_return_white@2x.png */,
+				0438239D2319250200A339FD /* left_return_white@3x.png */,
 				0435D04E2314C5A200802E3A /* LWHFirstViewController.h */,
 				0435D04F2314C5A200802E3A /* LWHFirstViewController.m */,
+				0438239823191FD800A339FD /* LWHWalletViewController.h */,
+				0438239923191FD800A339FD /* LWHWalletViewController.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -2077,6 +2091,7 @@
 				0435D57A2315168100802E3A /* UMCommonLog.bundle in Resources */,
 				0435D5362315168100802E3A /* ic_record_ripple@2x.png in Resources */,
 				0435D5532315168100802E3A /* WMPlayer.bundle in Resources */,
+				0438239E2319250300A339FD /* left_return_white.png in Resources */,
 				043AD193230CF3F5007BD6CA /* Assets.xcassets in Resources */,
 				043AD191230CF3F4007BD6CA /* Main.storyboard in Resources */,
 				0435D5572315168100802E3A /* README.txt in Resources */,
@@ -2089,10 +2104,12 @@
 				0435D53C2315168100802E3A /* ic_release_to_cancel@2x.png in Resources */,
 				0435D6062315168100802E3A /* province_data.json in Resources */,
 				0435D5382315168100802E3A /* ic_record_too_short@3x.png in Resources */,
+				043823A02319250300A339FD /* left_return_white@3x.png in Resources */,
 				043AD49A230CF50E007BD6CA /* cocopods.txt in Resources */,
 				0435D5642315168100802E3A /* TZImagePickerController.bundle in Resources */,
 				0435D53A2315168100802E3A /* ic_record@2x.png in Resources */,
 				0435D53B2315168100802E3A /* ic_record@3x.png in Resources */,
+				0438239F2319250300A339FD /* left_return_white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2256,6 +2273,7 @@
 				0435D5862315168100802E3A /* IQTitleBarButtonItem.m in Sources */,
 				0435D5442315168100802E3A /* UIView+XMGExtension.m in Sources */,
 				043AD49F230CF50E007BD6CA /* BaseNaviController.m in Sources */,
+				0438239A23191FD800A339FD /* LWHWalletViewController.m in Sources */,
 				0435D5562315168100802E3A /* WMPlayer.m in Sources */,
 				0435D5312315168100802E3A /* NSString+judgement.m in Sources */,
 				0435D5452315168100802E3A /* UIImage+Category.m in Sources */,

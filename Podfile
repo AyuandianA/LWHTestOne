@@ -16,5 +16,6 @@ pod 'Appirater'
 pod 'SVProgressHUD'
 pod 'FMDB'
 pod 'SWTableViewCell'
+pod 'FDFullscreenPopGesture', '~> 1.1'
 
 end

@@ -1,8 +1,8 @@
 //
-//  LWHFirstViewController.h
+//  LWHWalletViewController.h
 //  LWHTestOne
 //
-//  Created by mac on 2019/8/27.
+//  Created by mac on 2019/8/30.
 //  Copyright © 2019 BraveShine. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LWHFirstViewController : BaseViewController
+@interface LWHWalletViewController : BaseViewController
 
 @end
 

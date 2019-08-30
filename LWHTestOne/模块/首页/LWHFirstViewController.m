@@ -7,7 +7,9 @@
 //
 
 #import "LWHFirstViewController.h"
-
+#import "UIImage+Category.h"
+#import "BaseNaviController.h"
+#import "LWHWalletViewController.h"
 @interface LWHFirstViewController ()
 
 @end
@@ -16,9 +18,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.isHiddenReturnButton = YES;
     self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *Button = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    [Button setTitle:@"Push" forState:(UIControlStateNormal)];
+    [Button setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+    [Button addTarget:self action:@selector(ButtonAction) forControlEvents:(UIControlEventTouchUpInside)];
+    Button.titleLabel.font = [UIFont systemFontOfSize:TextFont];
+    Button.layer.masksToBounds = YES;
+    Button.layer.cornerRadius = 5;
+    Button.backgroundColor = [UIColor redColor];
+    [self.view addSubview:Button];
+    Button.width = 100;
+    Button.height = 40;
+    Button.centerX = self.view.centerX;
+    Button.centerY  = self.view.centerY;
+    
+//    convertViewToImage
 }
-
+-(void)ButtonAction{
+    LWHWalletViewController *VC = [[LWHWalletViewController alloc]init];
+    [self.navigationController pushViewController:VC animated:YES];
+}
 /*
 #pragma mark - Navigation
 
