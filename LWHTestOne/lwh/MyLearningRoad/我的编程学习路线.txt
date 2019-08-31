@@ -1,14 +1,17 @@
 2019.5.1
 今天花了一下午的时间，对极客时间上戴明老师的专栏中有关学习进阶路线的内容做了整理，不惜一切代价按照这些内容进行学习进阶，争取在一年的时间内（即2020年五月一号之前），把这些东西掌握牢固，从而成为进阶为ios高级开发工程师
 优先完成以下学习
- @聊天 @音视频直播  @Swift @H5交互
+  @Swift @H5交互 @&objective-c   @聊天 @音视频直播
 
 1.  ios领域深入学习
 
 常用库和框架深入学习：
 &YYKit     &WMPlayer   &DZNEmptyDataset  &IVersion   &Reachbility  &MJRefresh &Masonry &TZImagePickerController
- &SocketRocket
-&SDWebImage  &AFNetworking    &WeChat
+ &SocketRocket &SDWebImage  &AFNetworking    &WeChat &Appirater &SVProgressHUD &FMDB &SWTableViewCell &JHPickView  &YXCalendar
+&YNPageViewController &WJPopoverViewController &YBImageBrowser
+ &SDCycleScrollView &IQKeyboardManager &AliPaySDK &UMSDK &SGPagingView
+&MapSDK &WeChatSDK &LSNavigationController &CustomCamera &BBVoiceRecord
+&Extension
 
 基础模块：
 开发阶段：&启动流程  &界面布局 &架构设计
@@ -41,8 +44,6 @@ JavaScriptCore
 渲染区别：&原生渲染  &React Native  &Flutter 渲染
 动态方案分析：&WaxPatch  &JSPatch  &OCS  &低风险方案
 
-深入研究ios开发语言：
-  &objective-c  &swift  &《iOS Programming》
 
 Ios学习网站：
  &Awesome     &PayWenderlich  &StackOverflow

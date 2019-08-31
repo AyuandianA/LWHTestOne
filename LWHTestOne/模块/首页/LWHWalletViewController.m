@@ -22,7 +22,7 @@
     [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:(UIBarMetricsDefault)];
     UIImageView *imageView = [[UIImageView alloc]init];
     imageView.contentMode = UIViewContentModeScaleAspectFit;
-    imageView.frame = CGRectMake(0, 0, self.view.width, 400);
+    imageView.frame = CGRectMake(0, 0, self.view.width, 250);
     imageView.image = [UIImage convertViewToImage];
     imageView.layer.masksToBounds = YES;
     imageView.contentMode = UIViewContentModeScaleToFill;
