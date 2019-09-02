@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0420E781231CB7B300E0C44F /* LWHWalletHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0420E780231CB7B300E0C44F /* LWHWalletHeaderView.m */; };
+		0420E784231CEA8F00E0C44F /* LWHWalletHeaderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0420E783231CEA8F00E0C44F /* LWHWalletHeaderModel.m */; };
+		0420E787231CEAA800E0C44F /* LWHWalletHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0420E786231CEAA800E0C44F /* LWHWalletHeaderViewModel.m */; };
 		0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D04F2314C5A200802E3A /* LWHFirstViewController.m */; };
 		0435D0852314CEEF00802E3A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D07A2314CEEF00802E3A /* LoginViewController.m */; };
 		0435D0892314CEEF00802E3A /* LoginPageShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D0832314CEEF00802E3A /* LoginPageShow.m */; };
@@ -301,6 +304,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0420E77F231CB7B300E0C44F /* LWHWalletHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHWalletHeaderView.h; sourceTree = "<group>"; };
+		0420E780231CB7B300E0C44F /* LWHWalletHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHWalletHeaderView.m; sourceTree = "<group>"; };
+		0420E782231CEA8F00E0C44F /* LWHWalletHeaderModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHWalletHeaderModel.h; sourceTree = "<group>"; };
+		0420E783231CEA8F00E0C44F /* LWHWalletHeaderModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHWalletHeaderModel.m; sourceTree = "<group>"; };
+		0420E785231CEAA800E0C44F /* LWHWalletHeaderViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHWalletHeaderViewModel.h; sourceTree = "<group>"; };
+		0420E786231CEAA800E0C44F /* LWHWalletHeaderViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHWalletHeaderViewModel.m; sourceTree = "<group>"; };
 		0435D04E2314C5A200802E3A /* LWHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHFirstViewController.h; sourceTree = "<group>"; };
 		0435D04F2314C5A200802E3A /* LWHFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHFirstViewController.m; sourceTree = "<group>"; };
 		0435D07A2314CEEF00802E3A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -911,6 +920,12 @@
 				0435D04F2314C5A200802E3A /* LWHFirstViewController.m */,
 				0438239823191FD800A339FD /* LWHWalletViewController.h */,
 				0438239923191FD800A339FD /* LWHWalletViewController.m */,
+				0420E77F231CB7B300E0C44F /* LWHWalletHeaderView.h */,
+				0420E780231CB7B300E0C44F /* LWHWalletHeaderView.m */,
+				0420E782231CEA8F00E0C44F /* LWHWalletHeaderModel.h */,
+				0420E783231CEA8F00E0C44F /* LWHWalletHeaderModel.m */,
+				0420E785231CEAA800E0C44F /* LWHWalletHeaderViewModel.h */,
+				0420E786231CEAA800E0C44F /* LWHWalletHeaderViewModel.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -2193,6 +2208,7 @@
 				0435D5F62315168100802E3A /* UIViewController+YNPageExtend.m in Sources */,
 				0435D5F82315168100802E3A /* UIScrollView+YNPageExtend.m in Sources */,
 				0435D56E2315168100802E3A /* UIView+SGPagingView.m in Sources */,
+				0420E784231CEA8F00E0C44F /* LWHWalletHeaderModel.m in Sources */,
 				04372A402316345200FFC36F /* StartOrStopTimeSelecteView.m in Sources */,
 				0435D5662315168100802E3A /* TZImageManager.m in Sources */,
 				0435D54C2315168100802E3A /* LSNavigationController.m in Sources */,
@@ -2289,6 +2305,7 @@
 				0435D5DA2315168100802E3A /* NSBezierPath+RoundedCorners.m in Sources */,
 				0435D5DE2315168100802E3A /* SDImageGIFCoder.m in Sources */,
 				043AD4A6230CF50E007BD6CA /* LJCActionSheet.m in Sources */,
+				0420E787231CEAA800E0C44F /* LWHWalletHeaderViewModel.m in Sources */,
 				04372A36231629DE00FFC36F /* ChatBoxFaceView.m in Sources */,
 				0435D0892314CEEF00802E3A /* LoginPageShow.m in Sources */,
 				0435D5B72315168100802E3A /* NSImage+Compatibility.m in Sources */,
@@ -2314,6 +2331,7 @@
 				0435D55D2315168100802E3A /* TZImageCropManager.m in Sources */,
 				043AD49B230CF50E007BD6CA /* LaunchIntroductionView.m in Sources */,
 				0435D5632315168100802E3A /* TZPhotoPreviewController.m in Sources */,
+				0420E781231CB7B300E0C44F /* LWHWalletHeaderView.m in Sources */,
 				043AD4AD230CF50E007BD6CA /* ArbitrarilyTool.m in Sources */,
 				0435D5CE2315168100802E3A /* SDWebImagePrefetcher.m in Sources */,
 				0435D5A92315168100802E3A /* YBImageBrowseCell.m in Sources */,

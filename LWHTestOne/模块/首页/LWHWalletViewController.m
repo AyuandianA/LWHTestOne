@@ -7,11 +7,12 @@
 //
 
 #import "LWHWalletViewController.h"
-#import "UIImage+Category.h"
 #import "BaseNaviController.h"
+#import "LWHWalletHeaderView.h"
 
 @interface LWHWalletViewController ()
-
+@property (nonatomic,strong) LWHWalletHeaderViewModel *viewModel;
+@property (nonatomic,strong) LWHWalletHeaderView *headerView;
 @end
 
 @implementation LWHWalletViewController
@@ -20,16 +21,30 @@
     [super viewDidLoad];
     self.title = @"钱包";
     [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:(UIBarMetricsDefault)];
-    UIImageView *imageView = [[UIImageView alloc]init];
-    imageView.contentMode = UIViewContentModeScaleAspectFit;
-    imageView.frame = CGRectMake(0, 0, self.view.width, 250);
-    imageView.image = [UIImage convertViewToImage];
-    imageView.layer.masksToBounds = YES;
-    imageView.contentMode = UIViewContentModeScaleToFill;
-    imageView.layer.cornerRadius = 5;
-    [self.view addSubview:imageView];
+    
+    [self.view addSubview:self.headerView];
+    
+    __weak typeof(self)weakSelf = self;
+    [self.viewModel getModelUseingUrlstring:User_Account_Index params:@{} Block:^{
+        weakSelf.headerView.WalletHeaderViewModel = weakSelf.viewModel;
+    }];
+    
+    
 }
-
+-(LWHWalletHeaderView *)headerView
+{
+    if (!_headerView) {
+        _headerView = [LWHWalletHeaderView standardWalletHeaderViewWithFrame:CGRectMake(0, 0, 0, 0)];
+    }
+    return _headerView;
+}
+-(LWHWalletHeaderViewModel *)viewModel
+{
+    if (!_viewModel) {
+        _viewModel =  [[LWHWalletHeaderViewModel alloc]init];
+    }
+    return _viewModel;
+}
 /*
 #pragma mark - Navigation
 

@@ -72,4 +72,14 @@ isYes = YES; \
 // 获取图片路径
 #define BundleTabeImage(name) [UIImage imageWithContentsOfFile:[[NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"image.bundle" ofType:nil]] pathForResource:name ofType:nil]]
 
+//测试网址
+#pragma mark ------------------------------------------账户中心--------------------------------------
+
+#define URL_API  @"https://cxapi.yimeiq.cn/"//首页
+#define User_Account_Index  URL_API@"account/index"//首页
+#define User_Account_getLogList  URL_API@"account/get-log-list"//账单列表
+
+#define User_Account_getTixianList  URL_API@"account/get-tixian-list"//提现列表
+
+#define User_Account_getDeductionList  URL_API@"account/get-deduction-list"//分成明细列表
 #endif /* LWHHeader_h */
