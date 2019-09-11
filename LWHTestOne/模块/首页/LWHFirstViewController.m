@@ -34,11 +34,12 @@
     Button.centerX = self.view.centerX;
     Button.centerY  = self.view.centerY;
     
-//    convertViewToImage
+    
+    
 }
 -(void)ButtonAction{
-    LWHWalletViewController *VC = [[LWHWalletViewController alloc]init];
-    [self.navigationController pushViewController:VC animated:YES];
+    LWHSwiftViewController *swiftVC = [[LWHSwiftViewController alloc]init];
+    [self.navigationController pushViewController:swiftVC animated:YES];
 }
 /*
 #pragma mark - Navigation
