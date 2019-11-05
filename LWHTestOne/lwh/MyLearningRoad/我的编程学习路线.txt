@@ -3,16 +3,17 @@
 优先完成以下学习
 @Swift: swiftGG
 @&objective-c:《objective-c基础教程》《OC-自动引用计数》《c-指针的艺术》《iOS开发进阶》
-@直播：采集-》美颜-》编码-》封装-》推流-》拉流-》解封装-》解码-》播放《音视频开发进阶指南》
+@直播：采集-》美颜-》编码-》封装-》推流-》拉流-》解封装-》解码-》播放《音视频开发进阶指南》<ffmpeg>
 @即时通讯：socketRocket
 @H5交互：wkwebview JavaScriptcore
+戴明老师博客： https://ming1016.github.io/categories/Programming/
 
 1.  ios领域深入学习
 
 常用库和框架深入学习：
 &Reachbility &Appirater &YXCalendar &JHPickView &WJPopoverViewController
 &YYKit     &WMPlayer   &DZNEmptyDataset  &IVersion     &MJRefresh &Masonry &TZImagePickerController
- &SocketRocket &SDWebImage  &AFNetworking    &WeChat  &SVProgressHUD &FMDB &SWTableViewCell
+ &SocketRocket &SDWebImage  &AFNetworking    &SVProgressHUD &FMDB &SWTableViewCell
 &YNPageViewController  &YBImageBrowser
  &SDCycleScrollView &IQKeyboardManager &AliPaySDK &UMSDK &SGPagingView
 &MapSDK &WeChatSDK &LSNavigationController &CustomCamera &BBVoiceRecord
