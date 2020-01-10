@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
+#import "Masonry.h"
 @interface ViewController ()
+@property (nonatomic,strong) UITextField *friendField;
 
 @end
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 }
-
 
 @end
