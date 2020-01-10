@@ -82,7 +82,7 @@ static AFHTTPSessionManager *manager = nil;
 //    [mDic setValue:@"2" forKey:Source_Type];
 //
 //    [mDic setValue:@"1" forKey:Source_Genre];
-//
+////
 //    if ([UserMaterialModel shareUser].longitude) {
 //        [mDic setValue:[UserMaterialModel shareUser].longitude forKey:@"longitude"];
 //    } else {

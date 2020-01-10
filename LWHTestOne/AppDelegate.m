@@ -20,11 +20,23 @@
     BaseTabbarController *tab = [[BaseTabbarController alloc]init];
     
     self.window.rootViewController = tab;
-    
+//    [self fontNames];
     [self.window makeKeyAndVisible];
     return YES;
 }
-
+//-(void)fontNames
+//{
+//    NSMutableArray *familyNameArray = [[NSMutableArray alloc] init];
+//    NSArray* familyNamesAll = [UIFont familyNames];
+//    for (id family in familyNamesAll) {
+//            NSArray* fonts = [UIFont fontNamesForFamilyName:family];
+//            for (id font in fonts)
+//            {
+//                [familyNameArray addObject:font];
+//            }
+//        }
+//    NSLog(@"%@",familyNameArray);
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
