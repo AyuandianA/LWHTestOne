@@ -326,6 +326,7 @@
 		045E842623710638002C4C4E /* WMZDiaLogBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E840B23710638002C4C4E /* WMZDiaLogBase.m */; };
 		045E842723710638002C4C4E /* WMZDialog+Share.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E840D23710638002C4C4E /* WMZDialog+Share.m */; };
 		045E842A237108BB002C4C4E /* MNFloatBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E8429237108BB002C4C4E /* MNFloatBtn.m */; };
+		0484309B24557E3F001F0D1A /* LWHTabbarBottomIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484309924557E3E001F0D1A /* LWHTabbarBottomIView.m */; };
 		04F26A5723288A8400A11809 /* LWHSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F26A5623288A8400A11809 /* LWHSwiftViewController.swift */; };
 		FC8D688FA6B1DF040397DCD7 /* Pods_LWHTestOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAB44D22521DA4656F509C1 /* Pods_LWHTestOne.framework */; };
 /* End PBXBuildFile section */
@@ -937,6 +938,8 @@
 		045E840E23710638002C4C4E /* WMZDialog+Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WMZDialog+Share.h"; sourceTree = "<group>"; };
 		045E8428237108BB002C4C4E /* MNFloatBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNFloatBtn.h; sourceTree = "<group>"; };
 		045E8429237108BB002C4C4E /* MNFloatBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNFloatBtn.m; sourceTree = "<group>"; };
+		0484309924557E3E001F0D1A /* LWHTabbarBottomIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHTabbarBottomIView.m; sourceTree = "<group>"; };
+		0484309A24557E3E001F0D1A /* LWHTabbarBottomIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHTabbarBottomIView.h; sourceTree = "<group>"; };
 		04F26A5523288A8400A11809 /* LWHTestOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LWHTestOne-Bridging-Header.h"; sourceTree = "<group>"; };
 		04F26A5623288A8400A11809 /* LWHSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWHSwiftViewController.swift; sourceTree = "<group>"; };
 		6C1165A5B99C96AC32E9D232 /* Pods-LWHTestOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHTestOne.release.xcconfig"; path = "Target Support Files/Pods-LWHTestOne/Pods-LWHTestOne.release.xcconfig"; sourceTree = "<group>"; };
@@ -996,6 +999,8 @@
 			children = (
 				0438239B2319250200A339FD /* left_return_white.png */,
 				0438239C2319250200A339FD /* left_return_white@2x.png */,
+				0484309A24557E3E001F0D1A /* LWHTabbarBottomIView.h */,
+				0484309924557E3E001F0D1A /* LWHTabbarBottomIView.m */,
 				0438239D2319250200A339FD /* left_return_white@3x.png */,
 				0435D04E2314C5A200802E3A /* LWHFirstViewController.h */,
 				0435D04F2314C5A200802E3A /* LWHFirstViewController.m */,
@@ -2527,6 +2532,7 @@
 				045E841823710638002C4C4E /* WMZDialog+PopView.m in Sources */,
 				0435D5AA2315168100802E3A /* YBIBWebImageManager.m in Sources */,
 				043AD18E230CF3F4007BD6CA /* ViewController.m in Sources */,
+				0484309B24557E3F001F0D1A /* LWHTabbarBottomIView.m in Sources */,
 				0435D5D62315168100802E3A /* SDImageAssetManager.m in Sources */,
 				0435D5A22315168100802E3A /* YBVideoBrowseCellData.m in Sources */,
 				043AD4A3230CF50E007BD6CA /* ShareView.m in Sources */,
