@@ -9,7 +9,6 @@
 #import "LWHTabbarBottomIView.h"
 @interface LWHTabbarBottomIView ()
 @property (nonatomic,strong) UIImageView *centerImage;
-@property (nonatomic,strong) UIButton *tapButton;
 @property (nonatomic,strong) UIBezierPath *touchPath;
 @end
 @implementation LWHTabbarBottomIView
@@ -36,8 +35,8 @@
         CGFloat widthCenterImage = 55;
         CGFloat centerOffsetCenterImage = 10;
         _centerImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, widthCenterImage, widthCenterImage)];
-        _centerImage.centerX = widthCenterImage / 2.0;
-        _centerImage.centerY = widthCenterImage / 2.0 - centerOffsetCenterImage;
+        _centerImage.centerX = self.frame.size.width / 2.0;
+        _centerImage.centerY = self.frame.size.width / 2.0 - centerOffsetCenterImage;
     }
     return _centerImage;
 }
@@ -51,10 +50,10 @@
 }
 -(void)drawRect:(CGRect)rect
 {
-    [[UIColor blueColor]setFill];
+    [[UIColor redColor]setFill];
     CGFloat arcFirstPointX = 22;
-    CGFloat arcControllPointY = -10;
-    CGFloat orY = -self.frame.origin.y;
+    CGFloat arcControllPointY = -7;
+    CGFloat orY = 20;
     UIBezierPath *touchPath = [UIBezierPath bezierPath];
     self.touchPath = touchPath;
     [touchPath moveToPoint:CGPointMake(0, orY)];
@@ -66,7 +65,6 @@
     [touchPath addLineToPoint:CGPointMake(0 , orY )];
     [touchPath closePath];
     [touchPath fill];
-    [touchPath addClip];
 }
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {

@@ -3,5 +3,3 @@
 //
 
 
-#import "LWHWalletViewController.h"
-#import "LWHTabbarBottomIView.h"

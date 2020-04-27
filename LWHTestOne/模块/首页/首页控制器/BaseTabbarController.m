@@ -48,11 +48,6 @@
         
     }
     
-//    if ([StorageManager objForKey:Badge_Number] && [[StorageManager objForKey:Badge_Number] integerValue] > 0) {
-//        self.redPoint.hidden = NO;
-//    } else {
-//        self.redPoint.hidden = YES;
-//    }
     
     // 修改TabBar背景色
     [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
@@ -75,26 +70,7 @@
     
     NSMutableArray *navArr = [NSMutableArray array];
     
-//    if (APP_USER_ID) {
-    
-//    YNPageConfigration *configration = [YNPageConfigration defaultConfig];
-//    configration.pageStyle = YNPageStyleSuspensionCenter;
-//    configration.headerViewCouldScale = YES;
-//    //    configration.headerViewScaleMode = YNPageHeaderViewScaleModeCenter;
-//    configration.showTabbar = YES;
-//    configration.lineColor = MainTopColor;
-//    configration.itemFont = [UIFont systemFontOfSize:TextFont+1];
-//    configration.selectedItemFont = [UIFont boldSystemFontOfSize:TextFont+3];
-//    configration.normalItemColor = [UIColor lightGrayColor];
-//    configration.selectedItemColor = MainTopColor;
-//    configration.scrollMenu = NO;
-//    configration.aligmentModeCenter = NO;
-//    configration.showNavigation = NO;
-//    configration.showBottomLine = NO;
-//    configration.suspenOffsetY = StatusHeight;
-//    configration.itemLeftAndRightMargin = 60;
-//    configration.lineWidthEqualFontWidth = YES;
-    
+
     //第三级控制器
     LWHFirstViewController *homeCtrl = [[LWHFirstViewController alloc] init];
     
@@ -133,27 +109,7 @@
 }
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
     BaseNaviController *navi = (BaseNaviController *)viewController;
-////    NSLog(@"----%@",navi.visibleViewController);
-//    if ([navi.visibleViewController isKindOfClass:[ConversationViewController class]]) {
-    
-//        if (!User_Id || [[NSString stringWithFormat:@"%@",User_Id] isEmptyString]) {
-//
-//            LoginViewController *vc = [[LoginViewController alloc]init];
-//
-//            vc.type = 1;
-//
-//            vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
-//
-//            BaseNaviController *navi = [[BaseNaviController alloc]initWithRootViewController:vc];
-//
-//            [[self getCurrentVC] bd_presentViewController:navi animated:YES completion:nil];
-//
-//            return NO;
-//
-//        }
-      
-//    }
-    
+
     return YES;
     
 }

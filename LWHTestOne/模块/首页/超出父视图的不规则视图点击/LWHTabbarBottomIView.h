@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LWHTabbarBottomIView : UIView
 
 
-@property (nonatomic,strong,readonly) UIButton *tapButton;
+@property (nonatomic,strong) UIButton *tapButton;
 
 -(instancetype)initWithFrame:(CGRect)rect andimage:(UIImage *)image obveHeight:(NSInteger)height;
 
