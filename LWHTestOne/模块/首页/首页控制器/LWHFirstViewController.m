@@ -23,7 +23,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     CGFloat widthTabbar = UIScreen.mainScreen.bounds.size.width / 5.0;
-    LWHTarbarView *tarbar = [[LWHTarbarView alloc]initWithFrame:CGRectMake(widthTabbar * 2, 200, 100, 100)];
+    LWHTarbarView *tarbar = [[LWHTarbarView alloc]initWithFrame:CGRectMake(widthTabbar * 2, 200, widthTabbar, 49)];
     [self.view addSubview:tarbar];
     [tarbar.arcView.tapButton addTarget:self action:@selector(tapBarButton) forControlEvents:(UIControlEventTouchUpInside)];
 }

@@ -52,7 +52,7 @@
 {
     [[UIColor redColor]setFill];
     CGFloat arcFirstPointX = 22;
-    CGFloat arcControllPointY = -7;
+    CGFloat arcControllPointY = -10;
     CGFloat orY = 20;
     UIBezierPath *touchPath = [UIBezierPath bezierPath];
     self.touchPath = touchPath;

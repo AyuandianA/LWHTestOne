@@ -22,7 +22,7 @@
 -(void)creatSubViews
 {
     CGFloat obveHeight = 20;
-    LWHTabbarBottomIView *bottomCenterBar = [[LWHTabbarBottomIView alloc]initWithFrame:CGRectMake(0, -obveHeight, self.width, self.height + obveHeight) andimage:[UIImage imageNamed:@"left_return_white"] obveHeight:obveHeight];
+    LWHTabbarBottomIView *bottomCenterBar = [[LWHTabbarBottomIView alloc]initWithFrame:CGRectMake(0, -obveHeight, self.width, self.height + obveHeight) andimage:[UIImage imageNamed:@""] obveHeight:obveHeight];
     self.arcView = bottomCenterBar;
     [self addSubview:bottomCenterBar];
 }
