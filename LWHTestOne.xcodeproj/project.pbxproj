@@ -322,6 +322,9 @@
 		045E842623710638002C4C4E /* WMZDiaLogBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E840B23710638002C4C4E /* WMZDiaLogBase.m */; };
 		045E842723710638002C4C4E /* WMZDialog+Share.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E840D23710638002C4C4E /* WMZDialog+Share.m */; };
 		045E842A237108BB002C4C4E /* MNFloatBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E8429237108BB002C4C4E /* MNFloatBtn.m */; };
+		046ED40F2463F3E600319B78 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 046ED40C2463F3E500319B78 /* 11.png */; };
+		046ED4102463F3E600319B78 /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 046ED40D2463F3E600319B78 /* 22.png */; };
+		046ED4112463F3E600319B78 /* 33.png in Resources */ = {isa = PBXBuildFile; fileRef = 046ED40E2463F3E600319B78 /* 33.png */; };
 		0484309B24557E3F001F0D1A /* LWHTabbarBottomIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484309924557E3E001F0D1A /* LWHTabbarBottomIView.m */; };
 		049FF48C2456671D004A2E49 /* LWHTarbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049FF48B2456671D004A2E49 /* LWHTarbarView.m */; };
 		04F26A5723288A8400A11809 /* LWHSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F26A5623288A8400A11809 /* LWHSwiftViewController.swift */; };
@@ -927,6 +930,9 @@
 		045E840E23710638002C4C4E /* WMZDialog+Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WMZDialog+Share.h"; sourceTree = "<group>"; };
 		045E8428237108BB002C4C4E /* MNFloatBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNFloatBtn.h; sourceTree = "<group>"; };
 		045E8429237108BB002C4C4E /* MNFloatBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNFloatBtn.m; sourceTree = "<group>"; };
+		046ED40C2463F3E500319B78 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		046ED40D2463F3E600319B78 /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		046ED40E2463F3E600319B78 /* 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 33.png; sourceTree = "<group>"; };
 		0484309924557E3E001F0D1A /* LWHTabbarBottomIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHTabbarBottomIView.m; sourceTree = "<group>"; };
 		0484309A24557E3E001F0D1A /* LWHTabbarBottomIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHTabbarBottomIView.h; sourceTree = "<group>"; };
 		049FF48A2456671D004A2E49 /* LWHTarbarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTarbarView.h; sourceTree = "<group>"; };
@@ -988,6 +994,7 @@
 		0435D04D2314BB2C00802E3A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				046ED4052463A80100319B78 /* New Group */,
 				049FF48F245672E9004A2E49 /* 首页控制器 */,
 				049FF48E245672CC004A2E49 /* Swift混编 */,
 				049FF48D2456728F004A2E49 /* 超出父视图的不规则视图点击 */,
@@ -2312,6 +2319,13 @@
 			path = Share;
 			sourceTree = "<group>";
 		};
+		046ED4052463A80100319B78 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		049FF48D2456728F004A2E49 /* 超出父视图的不规则视图点击 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2335,6 +2349,9 @@
 		049FF48F245672E9004A2E49 /* 首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				046ED40C2463F3E500319B78 /* 11.png */,
+				046ED40D2463F3E600319B78 /* 22.png */,
+				046ED40E2463F3E600319B78 /* 33.png */,
 				0438239B2319250200A339FD /* left_return_white.png */,
 				0438239C2319250200A339FD /* left_return_white@2x.png */,
 				0438239D2319250200A339FD /* left_return_white@3x.png */,
@@ -2439,6 +2456,7 @@
 				043AD196230CF3F5007BD6CA /* LaunchScreen.storyboard in Resources */,
 				0435D5B52315168100802E3A /* LICENSE in Resources */,
 				043AD4B5230CF50E007BD6CA /* emojiName.plist in Resources */,
+				046ED40F2463F3E600319B78 /* 11.png in Resources */,
 				0435D5392315168100802E3A /* ic_release_to_cancel@3x.png in Resources */,
 				0435D5B42315168100802E3A /* YBImageBrowser.bundle in Resources */,
 				043AD4AF230CF50E007BD6CA /* ChatViewImages.xcassets in Resources */,
@@ -2458,6 +2476,7 @@
 				0435D58A2315168100802E3A /* IQKeyboardManager.bundle in Resources */,
 				0435D55A2315168100802E3A /* AMap.bundle in Resources */,
 				0435D5822315168100802E3A /* AlipaySDK.bundle in Resources */,
+				046ED4102463F3E600319B78 /* 22.png in Resources */,
 				0435D5352315168100802E3A /* ic_record_ripple@3x.png in Resources */,
 				0435D53C2315168100802E3A /* ic_release_to_cancel@2x.png in Resources */,
 				0435D6062315168100802E3A /* province_data.json in Resources */,
@@ -2467,6 +2486,7 @@
 				0435D5642315168100802E3A /* TZImagePickerController.bundle in Resources */,
 				0435D53A2315168100802E3A /* ic_record@2x.png in Resources */,
 				0435D53B2315168100802E3A /* ic_record@3x.png in Resources */,
+				046ED4112463F3E600319B78 /* 33.png in Resources */,
 				0438239F2319250300A339FD /* left_return_white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2930,7 +2950,7 @@
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/UMSocialUI",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/AliPaySDK",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/lwh/Header/LWHHeader.h";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/LWHHeader.h";
 				INFOPLIST_FILE = LWHTestOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2969,7 +2989,7 @@
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/UMSocialUI",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/AliPaySDK",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/lwh/Header/LWHHeader.h";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/LWHHeader.h";
 				INFOPLIST_FILE = LWHTestOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
