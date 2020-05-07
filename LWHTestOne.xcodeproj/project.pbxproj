@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		007A388724644AF700D7F5FF /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 007A388424644AF700D7F5FF /* 3.png */; };
-		007A388824644AF700D7F5FF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 007A388524644AF700D7F5FF /* 2.png */; };
-		007A388924644AF700D7F5FF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 007A388624644AF700D7F5FF /* 1.png */; };
 		007B083F24643B6F00ACAF36 /* LWHScrollViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B083E24643B6F00ACAF36 /* LWHScrollViewOne.m */; };
 		0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D04F2314C5A200802E3A /* LWHFirstViewController.m */; };
 		0435D0852314CEEF00802E3A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D07A2314CEEF00802E3A /* LoginViewController.m */; };
@@ -307,9 +304,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		007A388424644AF700D7F5FF /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
-		007A388524644AF700D7F5FF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
-		007A388624644AF700D7F5FF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		007B083D24643B6F00ACAF36 /* LWHScrollViewOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHScrollViewOne.h; sourceTree = "<group>"; };
 		007B083E24643B6F00ACAF36 /* LWHScrollViewOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHScrollViewOne.m; sourceTree = "<group>"; };
 		0435D04E2314C5A200802E3A /* LWHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHFirstViewController.h; sourceTree = "<group>"; };
@@ -2030,9 +2024,6 @@
 		049FF48F245672E9004A2E49 /* 首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				007A388624644AF700D7F5FF /* 1.png */,
-				007A388524644AF700D7F5FF /* 2.png */,
-				007A388424644AF700D7F5FF /* 3.png */,
 				0438239B2319250200A339FD /* left_return_white.png */,
 				0438239C2319250200A339FD /* left_return_white@2x.png */,
 				0438239D2319250200A339FD /* left_return_white@3x.png */,
@@ -2149,7 +2140,6 @@
 				0435D5362315168100802E3A /* ic_record_ripple@2x.png in Resources */,
 				0435D5532315168100802E3A /* WMPlayer.bundle in Resources */,
 				0438239E2319250300A339FD /* left_return_white.png in Resources */,
-				007A388824644AF700D7F5FF /* 2.png in Resources */,
 				043AD193230CF3F5007BD6CA /* Assets.xcassets in Resources */,
 				043AD191230CF3F4007BD6CA /* Main.storyboard in Resources */,
 				0435D5572315168100802E3A /* README.txt in Resources */,
@@ -2160,12 +2150,10 @@
 				0435D5822315168100802E3A /* AlipaySDK.bundle in Resources */,
 				0435D5352315168100802E3A /* ic_record_ripple@3x.png in Resources */,
 				0435D53C2315168100802E3A /* ic_release_to_cancel@2x.png in Resources */,
-				007A388724644AF700D7F5FF /* 3.png in Resources */,
 				0435D6062315168100802E3A /* province_data.json in Resources */,
 				0435D5382315168100802E3A /* ic_record_too_short@3x.png in Resources */,
 				043823A02319250300A339FD /* left_return_white@3x.png in Resources */,
 				043AD49A230CF50E007BD6CA /* cocopods.txt in Resources */,
-				007A388924644AF700D7F5FF /* 1.png in Resources */,
 				0435D5642315168100802E3A /* TZImagePickerController.bundle in Resources */,
 				0435D53A2315168100802E3A /* ic_record@2x.png in Resources */,
 				0435D53B2315168100802E3A /* ic_record@3x.png in Resources */,
@@ -2600,7 +2588,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MU45XF42D7;
+				DEVELOPMENT_TEAM = 2CUR84X7U3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/MapSDK",
@@ -2639,7 +2627,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = MU45XF42D7;
+				DEVELOPMENT_TEAM = 2CUR84X7U3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/MapSDK",

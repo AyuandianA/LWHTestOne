@@ -27,7 +27,7 @@
     if (self = [super initWithFrame:frame]) {
         self.scaleArray = scaleArray;
         self.imagesName = nameArray;
-        
+        self.imageSArray = [NSMutableArray array];
         self.delegate = self;
         self.pagingEnabled = YES;
         self.alwaysBounceVertical = YES;
@@ -49,6 +49,7 @@
     }
     return self;
 }
+
 -(void)imagesFrameArrayWithHeight:(CGFloat)height andIndex:(int)index
 {
     self.height = height;
@@ -64,7 +65,7 @@
             backX = self.width * (index + 1) - backWidth ;
         }
         UIImageView *imageView = self.imageSArray[i];
-        imageView.frame = frame;;
+        imageView.frame = frame;
         
     }
     self.imagesBackView.frame = CGRectMake(backX , 0, backWidth, height);
