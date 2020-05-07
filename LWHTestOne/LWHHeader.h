@@ -33,7 +33,17 @@
 #import <UIKit/UIKit.h>
 #import "LWHTestOne-Swift.h"
 
-//宏定义
+
+
+// 参数一：当前控制器(适配iOS11以下)，参数二：scrollview或子类
+#define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}
+
+
+//屏幕宽高
+#define KScreenWidth [UIScreen mainScreen].bounds.size.width
+#define KScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//是否刘海屏
 #define isIponeX \
 ({\
 BOOL isYes = NO; \
@@ -46,19 +56,31 @@ isYes = YES; \
 (isYes);\
 })\
 
-// 参数一：当前控制器(适配iOS11以下)，参数二：scrollview或子类
-#define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}
-
-
-//屏幕宽高
-#define KScreenWidth [UIScreen mainScreen].bounds.size.width
-#define KScreenHeight [UIScreen mainScreen].bounds.size.height
-
 //状态栏高度
-#define StatusHeight [UIApplication sharedApplication].statusBarFrame.size.height
+#define StatusHeight \
+({\
+    CGFloat statH = 0.0; \
+    if ([[UIApplication sharedApplication] isStatusBarHidden]) {\
+        statH = SafeAreaH > 0 ? 44 : 20;\
+    } else {\
+        if(@available(iOS 13.0, *)){\
+            statH = [[UIApplication sharedApplication].keyWindow.windowScene.statusBarManager statusBarFrame].size.height;\
+        } else {\
+            statH = [[UIApplication sharedApplication] statusBarFrame].size.height;\
+        }\
+    }\
+    (statH);\
+})\
+//导航条高度
 #define NaviH 44
+//tabbar条高度
 #define TabbarH 49
+//下屏幕边缘系统横线高度
 #define SafeAreaH (isIponeX ? 34 : 0)
+//顶部高度
+#define TopHeight NaviH + StatusHeight
+//底部高度
+#define BottomHeight TabbarH + SafeAreaH
 //颜色
 #define ColorHex(hex) ([UIColor colorWithRed:(((hex) & 0xFF0000) >> 16)/255.0f green:(CGFloat) (((hex) & 0xFF00) >> 8)/255.0f blue:((hex) & 0xFF)/255.0f alpha:1])
 #define RGB(a,b,c,d)   [UIColor colorWithRed:(a)/255.0 green:(b)/255.0 blue:(c)/255.0 alpha:d]

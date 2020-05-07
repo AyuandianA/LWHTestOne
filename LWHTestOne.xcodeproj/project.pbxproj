@@ -1924,6 +1924,7 @@
 				0435D04C2314BB1800802E3A /* 模块 */,
 				043AD189230CF3F4007BD6CA /* AppDelegate.h */,
 				043AD18A230CF3F4007BD6CA /* AppDelegate.m */,
+				043AD38E230CF50D007BD6CA /* LWHHeader.h */,
 				043AD192230CF3F5007BD6CA /* Assets.xcassets */,
 				043AD197230CF3F5007BD6CA /* Info.plist */,
 				043AD194230CF3F5007BD6CA /* LaunchScreen.storyboard */,
@@ -1993,7 +1994,6 @@
 		043AD38D230CF50D007BD6CA /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				043AD38E230CF50D007BD6CA /* LWHHeader.h */,
 			);
 			path = Header;
 			sourceTree = "<group>";
