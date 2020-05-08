@@ -1869,7 +1869,6 @@
 				0435D34A2314E04700802E3A /* 自定义控件 */,
 				043AD1A0230CF50C007BD6CA /* MyLearningRoad */,
 				043AD37D230CF50D007BD6CA /* cocopods */,
-				043AD38D230CF50D007BD6CA /* Header */,
 				043AD38F230CF50D007BD6CA /* Tool */,
 			);
 			path = lwh;
@@ -1913,13 +1912,6 @@
 				043AD388230CF50D007BD6CA /* BaseWebController.m */,
 			);
 			path = BaseTabbar;
-			sourceTree = "<group>";
-		};
-		043AD38D230CF50D007BD6CA /* Header */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Header;
 			sourceTree = "<group>";
 		};
 		043AD38F230CF50D007BD6CA /* Tool */ = {
