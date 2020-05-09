@@ -298,6 +298,8 @@
 		045E83C42371059D002C4C4E /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E83BE2371059D002C4C4E /* UIViewController+Extension.m */; };
 		045E83C52371059D002C4C4E /* UIView+Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E83C02371059D002C4C4E /* UIView+Controller.m */; };
 		045E842A237108BB002C4C4E /* MNFloatBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 045E8429237108BB002C4C4E /* MNFloatBtn.m */; };
+		045EA28024668EB7007E325C /* LWHTableViewAutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 045EA27F24668EB7007E325C /* LWHTableViewAutoHeight.m */; };
+		045EA28324668ECF007E325C /* LWHTableViewCellAutoHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 045EA28224668ECF007E325C /* LWHTableViewCellAutoHeight.m */; };
 		0484309B24557E3F001F0D1A /* LWHTabbarBottomIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0484309924557E3E001F0D1A /* LWHTabbarBottomIView.m */; };
 		049FF48C2456671D004A2E49 /* LWHTarbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 049FF48B2456671D004A2E49 /* LWHTarbarView.m */; };
 		FC8D688FA6B1DF040397DCD7 /* Pods_LWHTestOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAB44D22521DA4656F509C1 /* Pods_LWHTestOne.framework */; };
@@ -854,6 +856,10 @@
 		045E83C02371059D002C4C4E /* UIView+Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Controller.m"; sourceTree = "<group>"; };
 		045E8428237108BB002C4C4E /* MNFloatBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNFloatBtn.h; sourceTree = "<group>"; };
 		045E8429237108BB002C4C4E /* MNFloatBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNFloatBtn.m; sourceTree = "<group>"; };
+		045EA27E24668EB7007E325C /* LWHTableViewAutoHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTableViewAutoHeight.h; sourceTree = "<group>"; };
+		045EA27F24668EB7007E325C /* LWHTableViewAutoHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTableViewAutoHeight.m; sourceTree = "<group>"; };
+		045EA28124668ECF007E325C /* LWHTableViewCellAutoHeight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTableViewCellAutoHeight.h; sourceTree = "<group>"; };
+		045EA28224668ECF007E325C /* LWHTableViewCellAutoHeight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTableViewCellAutoHeight.m; sourceTree = "<group>"; };
 		0484309924557E3E001F0D1A /* LWHTabbarBottomIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHTabbarBottomIView.m; sourceTree = "<group>"; };
 		0484309A24557E3E001F0D1A /* LWHTabbarBottomIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHTabbarBottomIView.h; sourceTree = "<group>"; };
 		049FF48A2456671D004A2E49 /* LWHTarbarView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTarbarView.h; sourceTree = "<group>"; };
@@ -913,9 +919,10 @@
 		0435D04D2314BB2C00802E3A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
-				046ED4052463A80100319B78 /* New Group */,
-				049FF48F245672E9004A2E49 /* 首页控制器 */,
+				045EA27D24668E62007E325C /* 简单tableView根据UILable内容自适应高度 */,
 				049FF48D2456728F004A2E49 /* 超出父视图的不规则视图点击 */,
+				046ED4052463A80100319B78 /* 轮播图固定为屏幕宽度根据图片比例自适应高度 */,
+				049FF48F245672E9004A2E49 /* 首页控制器 */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -1995,11 +2002,24 @@
 			path = cotegory;
 			sourceTree = "<group>";
 		};
-		046ED4052463A80100319B78 /* New Group */ = {
+		045EA27D24668E62007E325C /* 简单tableView根据UILable内容自适应高度 */ = {
 			isa = PBXGroup;
 			children = (
+				045EA27E24668EB7007E325C /* LWHTableViewAutoHeight.h */,
+				045EA27F24668EB7007E325C /* LWHTableViewAutoHeight.m */,
+				045EA28124668ECF007E325C /* LWHTableViewCellAutoHeight.h */,
+				045EA28224668ECF007E325C /* LWHTableViewCellAutoHeight.m */,
 			);
-			path = "New Group";
+			path = "简单tableView根据UILable内容自适应高度";
+			sourceTree = "<group>";
+		};
+		046ED4052463A80100319B78 /* 轮播图固定为屏幕宽度根据图片比例自适应高度 */ = {
+			isa = PBXGroup;
+			children = (
+				007B083D24643B6F00ACAF36 /* LWHScrollViewOne.h */,
+				007B083E24643B6F00ACAF36 /* LWHScrollViewOne.m */,
+			);
+			path = "轮播图固定为屏幕宽度根据图片比例自适应高度";
 			sourceTree = "<group>";
 		};
 		049FF48D2456728F004A2E49 /* 超出父视图的不规则视图点击 */ = {
@@ -2023,8 +2043,6 @@
 				043AD38A230CF50D007BD6CA /* BaseTabbarController.m */,
 				0435D04E2314C5A200802E3A /* LWHFirstViewController.h */,
 				0435D04F2314C5A200802E3A /* LWHFirstViewController.m */,
-				007B083D24643B6F00ACAF36 /* LWHScrollViewOne.h */,
-				007B083E24643B6F00ACAF36 /* LWHScrollViewOne.m */,
 			);
 			path = "首页控制器";
 			sourceTree = "<group>";
@@ -2297,6 +2315,7 @@
 				043AD49D230CF50E007BD6CA /* BaseViewController.m in Sources */,
 				043AD4A2230CF50E007BD6CA /* GBStarRateView.m in Sources */,
 				0435D5462315168100802E3A /* PTXShowImageView.m in Sources */,
+				045EA28024668EB7007E325C /* LWHTableViewAutoHeight.m in Sources */,
 				0435D6072315168100802E3A /* JHPickView.m in Sources */,
 				0435D54E2315168100802E3A /* UIScrollView+LSCategory.m in Sources */,
 				0435D5952315168100802E3A /* NSObject+SXRuntime.m in Sources */,
@@ -2338,6 +2357,7 @@
 				0435D53F2315168100802E3A /* BBVoiceRecordPowerAnimationView.m in Sources */,
 				043AD199230CF3F5007BD6CA /* main.m in Sources */,
 				0435D5C72315168100802E3A /* SDImageCodersManager.m in Sources */,
+				045EA28324668ECF007E325C /* LWHTableViewCellAutoHeight.m in Sources */,
 				0435D5F32315168100802E3A /* UIButton+WebCache.m in Sources */,
 				0435D5C92315168100802E3A /* SDMemoryCache.m in Sources */,
 				0435D5B12315168100802E3A /* YBIBGestureInteractionProfile.m in Sources */,
