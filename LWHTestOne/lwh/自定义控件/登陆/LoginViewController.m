@@ -9,7 +9,6 @@
 #import "LoginViewController.h"
 #import "LSNavigationController.h"
 #import "BaseTabbarController.h"
-#import "WXApi.h"
 #import "CZSocketManager.h"
 #import "AppDelegate.h"
 @interface LoginViewController () {
@@ -120,27 +119,6 @@
         
         [self creatButtons];
         
-        if ([WXApi isWXAppInstalled] && [WXApi isWXAppSupportApi]) {
-            
-            UILabel *tsLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(_btn.frame)+40, kScreenWidth, 20)];
-            tsLabel.font = [UIFont systemFontOfSize:TextFont];
-            tsLabel.textColor = [UIColor darkGrayColor];
-            tsLabel.textAlignment = NSTextAlignmentCenter;
-            tsLabel.text = @"第三方账号直接登录";
-            [self.view addSubview:tsLabel];
-            
-            UIButton *wxBtn = [UIButton buttonWithType: UIButtonTypeCustom];
-            wxBtn.frame = CGRectMake((kScreenWidth-50)/2, CGRectGetMaxY(tsLabel.frame)+20, 50, 50);
-            [wxBtn setImage:BundleTabeImage(@"wx_login.png") forState:UIControlStateNormal];
-            [wxBtn setImage:BundleTabeImage(@"wx_login.png") forState:UIControlStateNormal];
-            wxBtn.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
-            wxBtn.backgroundColor = MainBackColor;
-            wxBtn.layer.cornerRadius = 25;
-            wxBtn.layer.masksToBounds = YES;
-            [wxBtn addTarget:self action:@selector(weiChatButtonClick) forControlEvents:UIControlEventTouchUpInside];
-            [self.view addSubview:wxBtn];
-            
-        }
         
     }
   
@@ -292,16 +270,6 @@
         return;
     }
 
-    if ([WXApi isWXAppInstalled]) {
-
-        //构造SendAuthReq结构体
-        SendAuthReq* req =[[SendAuthReq alloc]init];
-        req.scope = @"snsapi_userinfo" ;
-        req.state = @"123" ;
-        //第三方向微信终端发送一个SendAuthReq消息结构
-        [WXApi sendReq:req];
-
-    }
 
 }
 
