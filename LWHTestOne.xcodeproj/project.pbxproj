@@ -2603,10 +2603,10 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/MapSDK",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/UMSocialUI",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/AliPaySDK",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/MapSDK",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK/UMSocialUI",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/AliPaySDK",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/lwh/LWHHeader.h";
 				INFOPLIST_FILE = LWHTestOne/Info.plist;
@@ -2617,10 +2617,10 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/WeChatSDK",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/SocialLibraries/WeChat",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/SocialLibraries/Sina",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/WeChatSDK",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK/SocialLibraries/QQ",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BraveShine.LWHTestOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2642,10 +2642,10 @@
 				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/MapSDK",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/UMSocialUI",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/AliPaySDK",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/MapSDK",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK/UMSocialUI",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/AliPaySDK",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/lwh/LWHHeader.h";
 				INFOPLIST_FILE = LWHTestOne/Info.plist;
@@ -2656,10 +2656,10 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/WeChatSDK",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/SocialLibraries/WeChat",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/SocialLibraries/Sina",
-					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/SocialLibraries/QQ",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/WeChatSDK",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK/SocialLibraries/WeChat",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK/SocialLibraries/Sina",
+					"$(PROJECT_DIR)/LWHTestOne/OtherFrameworks/UMSDK/SocialLibraries/QQ",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BraveShine.LWHTestOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
