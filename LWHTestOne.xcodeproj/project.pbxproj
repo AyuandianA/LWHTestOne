@@ -919,9 +919,6 @@
 		0435D04D2314BB2C00802E3A /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
-				045EA27D24668E62007E325C /* 简单tableView根据UILable内容自适应高度 */,
-				049FF48D2456728F004A2E49 /* 超出父视图的不规则视图点击 */,
-				046ED4052463A80100319B78 /* 轮播图固定为屏幕宽度根据图片比例自适应高度 */,
 				049FF48F245672E9004A2E49 /* 首页控制器 */,
 			);
 			path = "首页";
@@ -954,6 +951,12 @@
 		0435D34A2314E04700802E3A /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				0435D4292315168000802E3A /* SDCycleScrollView */,
+				0435D3CD2315168000802E3A /* SGPagingView */,
+				0435D43D2315168000802E3A /* YBImageBrowser */,
+				045EA27D24668E62007E325C /* 简单tableView根据UILable内容自适应高度 */,
+				049FF48D2456728F004A2E49 /* 超出父视图的不规则视图点击 */,
+				046ED4052463A80100319B78 /* 轮播图固定为屏幕宽度根据图片比例自适应高度 */,
 				04372A3D2316345200FFC36F /* 时间选择器 */,
 				04372A24231624D000FFC36F /* 图片选择器 */,
 				0435D3522314E18A00802E3A /* 九宫格 */,
@@ -997,16 +1000,13 @@
 				0435D5282315168100802E3A /* JHPickView */,
 				0435D38A2315168000802E3A /* LSNavigationController */,
 				0435D3A72315168000802E3A /* MapSDK */,
-				0435D4292315168000802E3A /* SDCycleScrollView */,
 				0435D47A2315168000802E3A /* SDWebImage */,
-				0435D3CD2315168000802E3A /* SGPagingView */,
 				0435D3AD2315168000802E3A /* TZImagePickerController */,
 				0435D4222315168000802E3A /* UINavigationController+SXFullScreen */,
 				0435D3E32315168000802E3A /* UMSDK */,
+				0435D3942315168000802E3A /* WMPlayer */,
 				0435D3A12315168000802E3A /* WeChatSDK */,
 				0435D5022315168100802E3A /* WJPopoverViewController */,
-				0435D3942315168000802E3A /* WMPlayer */,
-				0435D43D2315168000802E3A /* YBImageBrowser */,
 				0435D5052315168100802E3A /* YNPageViewController */,
 				0435D51C2315168100802E3A /* YXCalendar */,
 			);
@@ -1855,10 +1855,12 @@
 				0435D04C2314BB1800802E3A /* 模块 */,
 				043AD189230CF3F4007BD6CA /* AppDelegate.h */,
 				043AD18A230CF3F4007BD6CA /* AppDelegate.m */,
-				043AD38E230CF50D007BD6CA /* LWHHeader.h */,
 				043AD192230CF3F5007BD6CA /* Assets.xcassets */,
 				043AD197230CF3F5007BD6CA /* Info.plist */,
 				043AD194230CF3F5007BD6CA /* LaunchScreen.storyboard */,
+				043AD37D230CF50D007BD6CA /* cocopods */,
+				043AD1A0230CF50C007BD6CA /* MyLearningRoad */,
+				0435D3562315168000802E3A /* OtherFrameworks */,
 				043AD19F230CF50C007BD6CA /* lwh */,
 				043AD198230CF3F5007BD6CA /* main.m */,
 				043AD18F230CF3F4007BD6CA /* Main.storyboard */,
@@ -1871,11 +1873,11 @@
 		043AD19F230CF50C007BD6CA /* lwh */ = {
 			isa = PBXGroup;
 			children = (
+				043AD38E230CF50D007BD6CA /* LWHHeader.h */,
+				043AD387230CF50D007BD6CA /* BaseTabbarController.h */,
+				043AD38A230CF50D007BD6CA /* BaseTabbarController.m */,
 				045E839B23710117002C4C4E /* cotegory */,
-				0435D3562315168000802E3A /* OtherFrameworks */,
 				0435D34A2314E04700802E3A /* 自定义控件 */,
-				043AD1A0230CF50C007BD6CA /* MyLearningRoad */,
-				043AD37D230CF50D007BD6CA /* cocopods */,
 				043AD38F230CF50D007BD6CA /* Tool */,
 			);
 			path = lwh;
@@ -2039,8 +2041,6 @@
 				0438239B2319250200A339FD /* left_return_white.png */,
 				0438239C2319250200A339FD /* left_return_white@2x.png */,
 				0438239D2319250200A339FD /* left_return_white@3x.png */,
-				043AD387230CF50D007BD6CA /* BaseTabbarController.h */,
-				043AD38A230CF50D007BD6CA /* BaseTabbarController.m */,
 				0435D04E2314C5A200802E3A /* LWHFirstViewController.h */,
 				0435D04F2314C5A200802E3A /* LWHFirstViewController.m */,
 			);
@@ -2600,7 +2600,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2CUR84X7U3;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/MapSDK",
@@ -2608,7 +2608,7 @@
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/UMSocialUI",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/AliPaySDK",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/LWHHeader.h";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/lwh/LWHHeader.h";
 				INFOPLIST_FILE = LWHTestOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2639,7 +2639,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2CUR84X7U3;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/MapSDK",
@@ -2647,7 +2647,7 @@
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/UMSDK/UMSocialUI",
 					"$(PROJECT_DIR)/LWHTestOne/lwh/OtherFrameworks/AliPaySDK",
 				);
-				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/LWHHeader.h";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LWHTestOne/lwh/LWHHeader.h";
 				INFOPLIST_FILE = LWHTestOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
