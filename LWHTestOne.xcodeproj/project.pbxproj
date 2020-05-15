@@ -153,6 +153,7 @@
 		043AD4CB230CF6DD007BD6CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */; };
 		043AD4CD230CF6F2007BD6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CC230CF6F2007BD6CA /* UIKit.framework */; };
 		043AD4CF230CF79D007BD6CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CE230CF79D007BD6CA /* libc++.tbd */; };
+		04671C42246E249100B8F9E8 /* CodeSnippets.zip in Resources */ = {isa = PBXBuildFile; fileRef = 04671C41246E249100B8F9E8 /* CodeSnippets.zip */; };
 		FC8D688FA6B1DF040397DCD7 /* Pods_LWHTestOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAB44D22521DA4656F509C1 /* Pods_LWHTestOne.framework */; };
 /* End PBXBuildFile section */
 
@@ -436,6 +437,7 @@
 		043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		043AD4CC230CF6F2007BD6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		043AD4CE230CF79D007BD6CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		04671C41246E249100B8F9E8 /* CodeSnippets.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = CodeSnippets.zip; sourceTree = "<group>"; };
 		6C1165A5B99C96AC32E9D232 /* Pods-LWHTestOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHTestOne.release.xcconfig"; path = "Target Support Files/Pods-LWHTestOne/Pods-LWHTestOne.release.xcconfig"; sourceTree = "<group>"; };
 		7409A492B6678AA007D0EF41 /* Pods-LWHTestOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHTestOne.debug.xcconfig"; path = "Target Support Files/Pods-LWHTestOne/Pods-LWHTestOne.debug.xcconfig"; sourceTree = "<group>"; };
 		EBAB44D22521DA4656F509C1 /* Pods_LWHTestOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LWHTestOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -469,9 +471,10 @@
 			children = (
 				00738956246D8ABE00842B16 /* LWHHeader.h */,
 				00738957246D8ABE00842B16 /* BaseTabbarController.h */,
+				00738A42246D8ABF00842B16 /* BaseTabbarController.m */,
+				04671C41246E249100B8F9E8 /* CodeSnippets.zip */,
 				00738958246D8ABE00842B16 /* 自定义控件 */,
 				00738A31246D8ABF00842B16 /* cotegory */,
-				00738A42246D8ABF00842B16 /* BaseTabbarController.m */,
 				00738A43246D8ABF00842B16 /* Tool */,
 			);
 			path = lwh;
@@ -1166,6 +1169,7 @@
 			files = (
 				00738ACB246D8ABF00842B16 /* YBImageBrowser.bundle in Resources */,
 				043AD3BF230CF50D007BD6CA /* 我的编程学习路线.txt in Resources */,
+				04671C42246E249100B8F9E8 /* CodeSnippets.zip in Resources */,
 				043AD196230CF3F5007BD6CA /* LaunchScreen.storyboard in Resources */,
 				0438239E2319250300A339FD /* left_return_white.png in Resources */,
 				00738AE3246D8ABF00842B16 /* ChatViewImages.xcassets in Resources */,
