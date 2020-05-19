@@ -156,6 +156,9 @@
 		043AD4CD230CF6F2007BD6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CC230CF6F2007BD6CA /* UIKit.framework */; };
 		043AD4CF230CF79D007BD6CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CE230CF79D007BD6CA /* libc++.tbd */; };
 		04671C42246E249100B8F9E8 /* CodeSnippets.zip in Resources */ = {isa = PBXBuildFile; fileRef = 04671C41246E249100B8F9E8 /* CodeSnippets.zip */; };
+		0476861E24737EB7004017EC /* LWHComplexScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */; };
+		0476862124737F00004017EC /* LWHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476862024737F00004017EC /* LWHBaseTableView.m */; };
+		0476862424737F53004017EC /* LWHComplexSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476862324737F53004017EC /* LWHComplexSubViewController.m */; };
 		FC8D688FA6B1DF040397DCD7 /* Pods_LWHTestOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAB44D22521DA4656F509C1 /* Pods_LWHTestOne.framework */; };
 /* End PBXBuildFile section */
 
@@ -444,6 +447,12 @@
 		043AD4CC230CF6F2007BD6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		043AD4CE230CF79D007BD6CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		04671C41246E249100B8F9E8 /* CodeSnippets.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = CodeSnippets.zip; sourceTree = "<group>"; };
+		0476861C24737EB7004017EC /* LWHComplexScrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHComplexScrollerViewController.h; sourceTree = "<group>"; };
+		0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHComplexScrollerViewController.m; sourceTree = "<group>"; };
+		0476861F24737F00004017EC /* LWHBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHBaseTableView.h; sourceTree = "<group>"; };
+		0476862024737F00004017EC /* LWHBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHBaseTableView.m; sourceTree = "<group>"; };
+		0476862224737F53004017EC /* LWHComplexSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHComplexSubViewController.h; sourceTree = "<group>"; };
+		0476862324737F53004017EC /* LWHComplexSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHComplexSubViewController.m; sourceTree = "<group>"; };
 		6C1165A5B99C96AC32E9D232 /* Pods-LWHTestOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHTestOne.release.xcconfig"; path = "Target Support Files/Pods-LWHTestOne/Pods-LWHTestOne.release.xcconfig"; sourceTree = "<group>"; };
 		7409A492B6678AA007D0EF41 /* Pods-LWHTestOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHTestOne.debug.xcconfig"; path = "Target Support Files/Pods-LWHTestOne/Pods-LWHTestOne.debug.xcconfig"; sourceTree = "<group>"; };
 		EBAB44D22521DA4656F509C1 /* Pods_LWHTestOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LWHTestOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -489,6 +498,7 @@
 		00738958246D8ABE00842B16 /* 自定义控件 */ = {
 			isa = PBXGroup;
 			children = (
+				0476861B24737E20004017EC /* 复杂子控制器滚动交互 */,
 				0078FDAC24733D7C00282BDB /* collectionView高度自适应 */,
 				00738959246D8ABE00842B16 /* 搜索 */,
 				00738960246D8ABE00842B16 /* 简易菜单栏 */,
@@ -1085,6 +1095,19 @@
 			path = cocopods;
 			sourceTree = "<group>";
 		};
+		0476861B24737E20004017EC /* 复杂子控制器滚动交互 */ = {
+			isa = PBXGroup;
+			children = (
+				0476861C24737EB7004017EC /* LWHComplexScrollerViewController.h */,
+				0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */,
+				0476861F24737F00004017EC /* LWHBaseTableView.h */,
+				0476862024737F00004017EC /* LWHBaseTableView.m */,
+				0476862224737F53004017EC /* LWHComplexSubViewController.h */,
+				0476862324737F53004017EC /* LWHComplexSubViewController.m */,
+			);
+			path = "复杂子控制器滚动交互";
+			sourceTree = "<group>";
+		};
 		049FF48F245672E9004A2E49 /* 首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1297,6 +1320,7 @@
 				00738AC5246D8ABF00842B16 /* YBIBLayoutDirectionManager.m in Sources */,
 				0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */,
 				00738A93246D8ABF00842B16 /* TZAssetCell.m in Sources */,
+				0476861E24737EB7004017EC /* LWHComplexScrollerViewController.m in Sources */,
 				00738A86246D8ABF00842B16 /* UIView+SGPagingView.m in Sources */,
 				00738ABC246D8ABF00842B16 /* YBImageBrowserTipView.m in Sources */,
 				00738AB4246D8ABF00842B16 /* TAAbstractDotView.m in Sources */,
@@ -1313,6 +1337,7 @@
 				00738ABA246D8ABF00842B16 /* YBImageBrowserProgressView.m in Sources */,
 				00738AB3246D8ABF00842B16 /* TAAnimatedDotView.m in Sources */,
 				00738A8F246D8ABF00842B16 /* IssueDynamicToolBar.m in Sources */,
+				0476862424737F53004017EC /* LWHComplexSubViewController.m in Sources */,
 				00738A9B246D8ABF00842B16 /* TZImageManager.m in Sources */,
 				00738A9A246D8ABF00842B16 /* TZProgressView.m in Sources */,
 				00738AA3246D8ABF00842B16 /* OrderListModel.m in Sources */,
@@ -1334,6 +1359,7 @@
 				00738A9E246D8ABF00842B16 /* TZImagePickerController.m in Sources */,
 				00738A97246D8ABF00842B16 /* UIView+Layout.m in Sources */,
 				00738AA8246D8ABF00842B16 /* LWHTabbarBottomIView.m in Sources */,
+				0476862124737F00004017EC /* LWHBaseTableView.m in Sources */,
 				00738AA6246D8ABF00842B16 /* ChatBoxFaceView.m in Sources */,
 				00738AAE246D8ABF00842B16 /* SDCycleScrollView.m in Sources */,
 				00738A74246D8ABF00842B16 /* LLSearchSuggestionVC.m in Sources */,

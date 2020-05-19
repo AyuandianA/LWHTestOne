@@ -13,6 +13,8 @@
 #import "CZSocketManager.h"
 #import "UIViewController+PresentAnimation.h"
 #import "LWHFirstViewController.h"
+#import "LWHComplexScrollerViewController.h"
+#import "LWHComplexSubViewController.h"
 @interface BaseTabbarController ()<UITabBarControllerDelegate,CZSocketManagerDelegate> {
      NSString *_message_id;
 }
@@ -74,9 +76,9 @@
     //第三级控制器
     LWHFirstViewController *homeCtrl = [[LWHFirstViewController alloc] init];
     
-    UIViewController *messgeCtrl = [[UIViewController alloc] init];
+    LWHComplexScrollerViewController *messgeCtrl = [[LWHComplexScrollerViewController alloc] init];
     
-    UIViewController *findCtrl = [[UIViewController alloc] init];
+    LWHComplexSubViewController *findCtrl = [[LWHComplexSubViewController alloc] init];
     
     UIViewController *meCtrl = [[UIViewController alloc] init];
     
@@ -108,8 +110,6 @@
     
 }
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
-    BaseNaviController *navi = (BaseNaviController *)viewController;
-
     return YES;
     
 }
