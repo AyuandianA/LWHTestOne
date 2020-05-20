@@ -156,6 +156,8 @@
 		043AD4CD230CF6F2007BD6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CC230CF6F2007BD6CA /* UIKit.framework */; };
 		043AD4CF230CF79D007BD6CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CE230CF79D007BD6CA /* libc++.tbd */; };
 		04671C42246E249100B8F9E8 /* CodeSnippets.zip in Resources */ = {isa = PBXBuildFile; fileRef = 04671C41246E249100B8F9E8 /* CodeSnippets.zip */; };
+		0467272B2474F3900012AD7C /* LWHTeacherListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467272A2474F3900012AD7C /* LWHTeacherListViewController.m */; };
+		0467272E2474F4F70012AD7C /* LWHTeacherListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467272D2474F4F70012AD7C /* LWHTeacherListTableViewCell.m */; };
 		0476861E24737EB7004017EC /* LWHComplexScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */; };
 		0476862124737F00004017EC /* LWHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476862024737F00004017EC /* LWHBaseTableView.m */; };
 		0476862424737F53004017EC /* LWHComplexSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476862324737F53004017EC /* LWHComplexSubViewController.m */; };
@@ -447,6 +449,10 @@
 		043AD4CC230CF6F2007BD6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		043AD4CE230CF79D007BD6CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		04671C41246E249100B8F9E8 /* CodeSnippets.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = CodeSnippets.zip; sourceTree = "<group>"; };
+		046727292474F3900012AD7C /* LWHTeacherListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTeacherListViewController.h; sourceTree = "<group>"; };
+		0467272A2474F3900012AD7C /* LWHTeacherListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTeacherListViewController.m; sourceTree = "<group>"; };
+		0467272C2474F4F70012AD7C /* LWHTeacherListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTeacherListTableViewCell.h; sourceTree = "<group>"; };
+		0467272D2474F4F70012AD7C /* LWHTeacherListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTeacherListTableViewCell.m; sourceTree = "<group>"; };
 		0476861C24737EB7004017EC /* LWHComplexScrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHComplexScrollerViewController.h; sourceTree = "<group>"; };
 		0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHComplexScrollerViewController.m; sourceTree = "<group>"; };
 		0476861F24737F00004017EC /* LWHBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHBaseTableView.h; sourceTree = "<group>"; };
@@ -1116,6 +1122,10 @@
 				0438239D2319250200A339FD /* left_return_white@3x.png */,
 				0435D04E2314C5A200802E3A /* LWHFirstViewController.h */,
 				0435D04F2314C5A200802E3A /* LWHFirstViewController.m */,
+				046727292474F3900012AD7C /* LWHTeacherListViewController.h */,
+				0467272A2474F3900012AD7C /* LWHTeacherListViewController.m */,
+				0467272C2474F4F70012AD7C /* LWHTeacherListTableViewCell.h */,
+				0467272D2474F4F70012AD7C /* LWHTeacherListTableViewCell.m */,
 			);
 			path = "首页控制器";
 			sourceTree = "<group>";
@@ -1392,6 +1402,7 @@
 				00738ADB246D8ABF00842B16 /* CXCameraManager.m in Sources */,
 				00738AB7246D8ABF00842B16 /* YBVideoBrowseActionBar.m in Sources */,
 				00738A7B246D8ABF00842B16 /* UIViewController+LSNavigationController.m in Sources */,
+				0467272B2474F3900012AD7C /* LWHTeacherListViewController.m in Sources */,
 				00738AA0246D8ABF00842B16 /* TZGifPhotoPreviewController.m in Sources */,
 				00738ADE246D8ABF00842B16 /* MNFloatBtn.m in Sources */,
 				00738A8A246D8ABF00842B16 /* SGPageTitleViewConfigure.m in Sources */,
@@ -1400,6 +1411,7 @@
 				0078FDB124733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m in Sources */,
 				00738A8C246D8ABF00842B16 /* LaunchIntroductionView.m in Sources */,
 				00738ACD246D8ABF00842B16 /* UIImage+Category.m in Sources */,
+				0467272E2474F4F70012AD7C /* LWHTeacherListTableViewCell.m in Sources */,
 				00738AE1246D8ABF00842B16 /* ArbitrarilyTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
