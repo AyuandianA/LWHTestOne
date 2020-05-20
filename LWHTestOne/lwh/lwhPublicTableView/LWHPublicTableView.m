@@ -63,11 +63,13 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     id (*action)(id, SEL, id) = (id (*)(id, SEL, id)) objc_msgSend;
+    SEL sel = sel_registerName("creatPublicTableViewCellWithTableView:");
     Class cellName = NSClassFromString(self.cellName);
-    id cell = action(cellName,@selector(creatPublicTableViewCellWithTableView:),tableView);
+    id cell = action(cellName,sel,tableView);
     id model = self.PublicSourceArray[indexPath.row];
     void (*actionTwo)(id, SEL, id) = (void (*)(id, SEL, id)) objc_msgSend;
-     actionTwo(cell,@selector(changeDataWithModel:),model);
+    SEL selTwo = sel_registerName("changeDataWithModel:");
+     actionTwo(cell,selTwo,model);
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
