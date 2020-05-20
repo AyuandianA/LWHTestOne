@@ -62,10 +62,12 @@
     }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    id (*action)(id, SEL, id) = (id (*)(id, SEL, id)) objc_msgSend;
     Class cellName = NSClassFromString(self.cellName);
-    id cell = objc_msgSend(cellName,@selector(creatPublicTableViewCellWithTableView:),tableView);
+    id cell = action(cellName,@selector(creatPublicTableViewCellWithTableView:),tableView);
     id model = self.PublicSourceArray[indexPath.row];
-    objc_msgSend(cell,@selector(changeDataWithModel:),model);
+    void (*actionTwo)(id, SEL, id) = (void (*)(id, SEL, id)) objc_msgSend;
+     actionTwo(cell,@selector(changeDataWithModel:),model);
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
