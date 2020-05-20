@@ -134,6 +134,8 @@
 		0078FDB224733D7C00282BDB /* LWHAutoHeightCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078FDAF24733D7C00282BDB /* LWHAutoHeightCollectionView.m */; };
 		007FFDFD2475CBDC00DD5B42 /* LWHPublicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFDFA2475CBDC00DD5B42 /* LWHPublicTableViewCell.m */; };
 		007FFDFE2475CBDC00DD5B42 /* LWHPublicTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFDFB2475CBDC00DD5B42 /* LWHPublicTableView.m */; };
+		007FFE092475DFB400DD5B42 /* LWHPublicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFE052475DFB400DD5B42 /* LWHPublicCollectionView.m */; };
+		007FFE0A2475DFB400DD5B42 /* LWHPublicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFE062475DFB400DD5B42 /* LWHPublicCollectionViewCell.m */; };
 		0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D04F2314C5A200802E3A /* LWHFirstViewController.m */; };
 		0438239E2319250300A339FD /* left_return_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0438239B2319250200A339FD /* left_return_white.png */; };
 		0438239F2319250300A339FD /* left_return_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0438239C2319250200A339FD /* left_return_white@2x.png */; };
@@ -426,6 +428,10 @@
 		007FFDFA2475CBDC00DD5B42 /* LWHPublicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHPublicTableViewCell.m; sourceTree = "<group>"; };
 		007FFDFB2475CBDC00DD5B42 /* LWHPublicTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHPublicTableView.m; sourceTree = "<group>"; };
 		007FFDFC2475CBDC00DD5B42 /* LWHPublicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHPublicTableViewCell.h; sourceTree = "<group>"; };
+		007FFE052475DFB400DD5B42 /* LWHPublicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHPublicCollectionView.m; sourceTree = "<group>"; };
+		007FFE062475DFB400DD5B42 /* LWHPublicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHPublicCollectionViewCell.m; sourceTree = "<group>"; };
+		007FFE072475DFB400DD5B42 /* LWHPublicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHPublicCollectionView.h; sourceTree = "<group>"; };
+		007FFE082475DFB400DD5B42 /* LWHPublicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHPublicCollectionViewCell.h; sourceTree = "<group>"; };
 		0435D04E2314C5A200802E3A /* LWHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHFirstViewController.h; sourceTree = "<group>"; };
 		0435D04F2314C5A200802E3A /* LWHFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHFirstViewController.m; sourceTree = "<group>"; };
 		0438239B2319250200A339FD /* left_return_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_return_white.png; sourceTree = "<group>"; };
@@ -1045,6 +1051,10 @@
 				007FFDFA2475CBDC00DD5B42 /* LWHPublicTableViewCell.m */,
 				007FFDFB2475CBDC00DD5B42 /* LWHPublicTableView.m */,
 				007FFDFC2475CBDC00DD5B42 /* LWHPublicTableViewCell.h */,
+				007FFE072475DFB400DD5B42 /* LWHPublicCollectionView.h */,
+				007FFE052475DFB400DD5B42 /* LWHPublicCollectionView.m */,
+				007FFE082475DFB400DD5B42 /* LWHPublicCollectionViewCell.h */,
+				007FFE062475DFB400DD5B42 /* LWHPublicCollectionViewCell.m */,
 			);
 			path = lwhPublicTableView;
 			sourceTree = "<group>";
@@ -1308,6 +1318,7 @@
 				00738AD5246D8ABF00842B16 /* LJCProgressHUD.m in Sources */,
 				00738A7C246D8ABF00842B16 /* WMPlayerModel.m in Sources */,
 				00738ADD246D8ABF00842B16 /* LWHWkPlayerManager.m in Sources */,
+				007FFE0A2475DFB400DD5B42 /* LWHPublicCollectionViewCell.m in Sources */,
 				00738A9D246D8ABF00842B16 /* TZPhotoPreviewCell.m in Sources */,
 				007FFDFD2475CBDC00DD5B42 /* LWHPublicTableViewCell.m in Sources */,
 				00738AEA246D8ABF00842B16 /* BDPresentAnimator.m in Sources */,
@@ -1428,6 +1439,7 @@
 				00738A7F246D8ABF00842B16 /* WMLightView.m in Sources */,
 				00738AB6246D8ABF00842B16 /* YBVideoBrowseCell.m in Sources */,
 				0078FDB124733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m in Sources */,
+				007FFE092475DFB400DD5B42 /* LWHPublicCollectionView.m in Sources */,
 				00738A8C246D8ABF00842B16 /* LaunchIntroductionView.m in Sources */,
 				00738ACD246D8ABF00842B16 /* UIImage+Category.m in Sources */,
 				0467272E2474F4F70012AD7C /* LWHTeacherListTableViewCell.m in Sources */,
