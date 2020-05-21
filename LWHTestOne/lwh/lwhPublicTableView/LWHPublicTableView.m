@@ -79,7 +79,38 @@
         self.tapSection(indexPath);
     }
 }
-
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (self.headerView) {
+        return self.headerView(section);
+    }else{
+        return [UIView new];
+    }
+}
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if (self.footerView) {
+        return self.footerView(section);
+    }else{
+        return [UIView new];
+    }
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (self.headerHeight) {
+        return self.headerHeight(section);
+    }else{
+        return 0.01;
+    }
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (self.footerHeight) {
+        return self.footerHeight(section);
+    }else{
+        return 0.01;
+    }
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return UITableViewAutomaticDimension;
