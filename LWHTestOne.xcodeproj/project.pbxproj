@@ -160,7 +160,6 @@
 		043AD4CB230CF6DD007BD6CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */; };
 		043AD4CD230CF6F2007BD6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CC230CF6F2007BD6CA /* UIKit.framework */; };
 		043AD4CF230CF79D007BD6CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CE230CF79D007BD6CA /* libc++.tbd */; };
-		04671C42246E249100B8F9E8 /* CodeSnippets.zip in Resources */ = {isa = PBXBuildFile; fileRef = 04671C41246E249100B8F9E8 /* CodeSnippets.zip */; };
 		0467272B2474F3900012AD7C /* LWHTeacherListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467272A2474F3900012AD7C /* LWHTeacherListViewController.m */; };
 		0467272E2474F4F70012AD7C /* LWHTeacherListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467272D2474F4F70012AD7C /* LWHTeacherListTableViewCell.m */; };
 		0476861E24737EB7004017EC /* LWHComplexScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */; };
@@ -463,7 +462,6 @@
 		043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		043AD4CC230CF6F2007BD6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		043AD4CE230CF79D007BD6CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		04671C41246E249100B8F9E8 /* CodeSnippets.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = CodeSnippets.zip; sourceTree = "<group>"; };
 		046727292474F3900012AD7C /* LWHTeacherListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTeacherListViewController.h; sourceTree = "<group>"; };
 		0467272A2474F3900012AD7C /* LWHTeacherListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTeacherListViewController.m; sourceTree = "<group>"; };
 		0467272C2474F4F70012AD7C /* LWHTeacherListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTeacherListTableViewCell.h; sourceTree = "<group>"; };
@@ -508,7 +506,6 @@
 				00738956246D8ABE00842B16 /* LWHHeader.h */,
 				00738957246D8ABE00842B16 /* BaseTabbarController.h */,
 				00738A42246D8ABF00842B16 /* BaseTabbarController.m */,
-				04671C41246E249100B8F9E8 /* CodeSnippets.zip */,
 				007FFDF82475CBDC00DD5B42 /* lwhPublicTableView */,
 				00738958246D8ABE00842B16 /* 自定义控件 */,
 				00738A31246D8ABF00842B16 /* cotegory */,
@@ -1261,7 +1258,6 @@
 			files = (
 				00738ACB246D8ABF00842B16 /* YBImageBrowser.bundle in Resources */,
 				043AD3BF230CF50D007BD6CA /* 我的编程学习路线.txt in Resources */,
-				04671C42246E249100B8F9E8 /* CodeSnippets.zip in Resources */,
 				043AD196230CF3F5007BD6CA /* LaunchScreen.storyboard in Resources */,
 				0438239E2319250300A339FD /* left_return_white.png in Resources */,
 				00738AE3246D8ABF00842B16 /* ChatViewImages.xcassets in Resources */,
