@@ -91,4 +91,10 @@
     }
     return _PublicSourceArray;
 }
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    if (self.scrollSection) {
+        self.scrollSection();
+    }
+}
 @end

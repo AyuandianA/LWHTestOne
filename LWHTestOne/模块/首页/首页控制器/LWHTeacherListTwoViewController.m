@@ -8,15 +8,16 @@
 
 #import "LWHTeacherListTwoViewController.h"
 #import "LWHTeacherListTwoTableView.h"
-#import "SGPageContentScrollView.h"
+#import "SGPagingView.h"
 #import "BaseNaviController.h"
 #import "LWHTeacherListTwoSubViewController.h"
-@interface LWHTeacherListTwoViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface LWHTeacherListTwoViewController ()<UITableViewDataSource,UITableViewDelegate,SGPageTitleViewDelegate,SGPageContentScrollViewDelegate>
 
 @property (nonatomic,assign) BOOL canScroller;
 @property (nonatomic,strong) LWHTeacherListTwoTableView *tableView;
 @property (nonatomic,strong) NSMutableArray *contArray;
 @property (nonatomic,strong) SGPageContentScrollView *sgscrollView;
+@property (nonatomic,strong) SGPageTitleView * titleClassView;
 @end
 
 @implementation LWHTeacherListTwoViewController
@@ -32,7 +33,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.canScroller = YES;
     [self.view addSubview:self.tableView];
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(selector) name:@"adsfsdfasdf" object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(selectorppp) name:@"adsfsdfasdf" object:nil];
     AdjustsScrollViewInsetNever(self, _tableView);
 }
 -(void)dealloc
@@ -67,16 +68,40 @@
 -(SGPageContentScrollView *)sgscrollView
 {
     if (!_sgscrollView) {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             LWHTeacherListTwoSubViewController *subCtr = [[LWHTeacherListTwoSubViewController  alloc]init];
             
             [self.contArray addObject: subCtr];
         }
-        _sgscrollView = [[SGPageContentScrollView  alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth    , KScreenHeight - TopHeight - BottomHeight) parentVC:self childVCs:self.contArray];
+        _sgscrollView = [[SGPageContentScrollView  alloc]initWithFrame:CGRectMake(0, 50, KScreenWidth  , KScreenHeight - TopHeight - BottomHeight - 50) parentVC:self childVCs:self.contArray];
+        _sgscrollView.delegatePageContentScrollView = self;
+        _sgscrollView.isAnimated = YES;
         [_sgscrollView setPageContentScrollViewCurrentIndex:0];
     }
     return _sgscrollView;
 }
+-(SGPageTitleView *)titleClassView
+{
+    if (!_titleClassView) {
+        SGPageTitleViewConfigure *configure1 = [SGPageTitleViewConfigure pageTitleViewConfigure];
+        configure1.titleFont = [UIFont systemFontOfSize:TextFont+3];
+        configure1.titleGradientEffect = YES;
+        configure1.showBottomSeparator = NO;
+        configure1.titleSelectedFont = [UIFont boldSystemFontOfSize:TextFont+3];
+        configure1.titleColor = [UIColor blackColor];
+        configure1.titleSelectedColor = [UIColor blackColor];
+        configure1.indicatorColor = [UIColor redColor];
+        configure1.indicatorToBottomDistance = 5;
+        configure1.indicatorHeight = 1.5;
+        configure1.indicatorFixedWidth = (KScreenWidth - 20) / 2.0;
+        configure1.indicatorStyle = SGIndicatorStyleFixed;
+
+        _titleClassView = [SGPageTitleView pageTitleViewWithFrame:CGRectMake(0, 0, kScreenWidth, 50) delegate:self titleNames:@[@"查项目",@"找医生(本人)"] configure:configure1];
+        _titleClassView.selectedIndex = 0;
+    }
+    return _titleClassView;
+}
+
 -(NSMutableArray *)contArray
 {
     if (!_contArray) {
@@ -98,6 +123,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:@"cell"];
     }
+    [cell addSubview:self.titleClassView];
     [cell addSubview:self.sgscrollView];
     return cell;
 }
@@ -105,9 +131,8 @@
 {
     return KScreenHeight - TopHeight - BottomHeight ;
 }
--(void)selector
+-(void)selectorppp
 {
-
     self.canScroller = YES;
     [self subTabviewcanScr:NO];
 }
@@ -134,5 +159,20 @@
                 scrollView.contentOffset = CGPointMake(0, height);
             }
         }
+}
+#pragma - mark  SGPageTitleViewDelegate
+- (void)pageTitleView:(SGPageTitleView *)pageTitleView selectedIndex:(NSInteger)selectedIndex {
+    
+    [self.sgscrollView setPageContentScrollViewCurrentIndex:selectedIndex];
+
+}
+#pragma - mark  SGPageContentScrollViewDelegate
+
+
+- (void)pageContentScrollView:(SGPageContentScrollView *)pageContentScrollView index:(NSInteger)index {
+    if (self.titleClassView.selectedIndex != index) {
+        self.titleClassView.selectedIndex = index;
+    }
+    
 }
 @end

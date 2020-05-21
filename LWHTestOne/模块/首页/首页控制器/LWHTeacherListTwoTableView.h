@@ -6,7 +6,6 @@
 //  Copyright © 2020 BraveShine. All rights reserved.
 //
 
-#import "LWHPublicTableView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

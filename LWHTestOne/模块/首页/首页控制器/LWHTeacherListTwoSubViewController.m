@@ -35,26 +35,31 @@
 -(LWHPublicTableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [LWHPublicTableView creatPublicTableViewWithFrame:CGRectMake(0, TopHeight + 50, KScreenWidth, KScreenHeight - TopHeight - 50) style:(UITableViewStylePlain)];
+        __weak typeof(self)weakSelf = self;
+        _tableView = [LWHPublicTableView creatPublicTableViewWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight - TopHeight  - BottomHeight) style:(UITableViewStylePlain)];
         _tableView.cellName = @"LWHTescherListTwoTableViewCell";
         _tableView.tapSection = ^(NSIndexPath *indexPath) {
             
+        };
+        _tableView.scrollSection = ^(void) {
+            [weakSelf scrolling];
         };
     }
     return _tableView;
 }
 
-
-
--(void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
+//一旦属性被操作了，这里会自动响应（上面设置观察的属性才会在这响应）
+- (void)scrolling {
     if (!self.canScroll) {
-        scrollView.contentOffset = CGPointZero;
+        self.tableView.contentOffset = CGPointZero;
     }
-    if (scrollView.contentOffset.y <= 0) {
+    if (self.tableView.contentOffset.y <= 0) {
         self.canScroll = NO;
-        scrollView.contentOffset = CGPointZero;
+        self.tableView.contentOffset = CGPointZero;
         [[NSNotificationCenter defaultCenter]postNotificationName:@"adsfsdfasdf" object:nil];
     }
 }
+
+
+
 @end

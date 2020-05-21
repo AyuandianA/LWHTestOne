@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^tapSection)(NSIndexPath *indexPath);
+typedef void(^scrollSection)(void);
 @interface LWHPublicTableView : UITableView
 
 @property (nonatomic,strong) NSMutableArray *PublicSourceArray;
 @property (nonatomic,copy) NSString *cellName;
 @property (nonatomic,copy) tapSection tapSection;
+@property (nonatomic,copy) scrollSection scrollSection;
 +(instancetype)creatPublicTableViewWithFrame:(CGRect)frame style:(UITableViewStyle)style;
 @end
