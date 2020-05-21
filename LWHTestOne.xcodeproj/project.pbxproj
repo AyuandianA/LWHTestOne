@@ -130,6 +130,8 @@
 		00738AEB246D8ABF00842B16 /* LJCGIFRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 00738A6F246D8ABF00842B16 /* LJCGIFRefreshHeader.m */; };
 		00738AEC246D8ABF00842B16 /* LJCGIFRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00738A70246D8ABF00842B16 /* LJCGIFRefreshFooter.m */; };
 		00738AED246D8ABF00842B16 /* CustomerTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00738A72246D8ABF00842B16 /* CustomerTextView.m */; };
+		0077369624774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077369224774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m */; };
+		0077369724774C4800D3A126 /* LWHSouSuoCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077369324774C4800D3A126 /* LWHSouSuoCourseViewController.m */; };
 		0078FDB124733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078FDAE24733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m */; };
 		0078FDB224733D7C00282BDB /* LWHAutoHeightCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078FDAF24733D7C00282BDB /* LWHAutoHeightCollectionView.m */; };
 		007FFDFD2475CBDC00DD5B42 /* LWHPublicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFDFA2475CBDC00DD5B42 /* LWHPublicTableViewCell.m */; };
@@ -424,6 +426,10 @@
 		00738A70246D8ABF00842B16 /* LJCGIFRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJCGIFRefreshFooter.m; sourceTree = "<group>"; };
 		00738A71246D8ABF00842B16 /* CXCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXCameraManager.h; sourceTree = "<group>"; };
 		00738A72246D8ABF00842B16 /* CustomerTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTextView.m; sourceTree = "<group>"; };
+		0077369224774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHSouSuoCourseTableViewCell.m; sourceTree = "<group>"; };
+		0077369324774C4800D3A126 /* LWHSouSuoCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHSouSuoCourseViewController.m; sourceTree = "<group>"; };
+		0077369424774C4800D3A126 /* LWHSouSuoCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHSouSuoCourseViewController.h; sourceTree = "<group>"; };
+		0077369524774C4800D3A126 /* LWHSouSuoCourseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHSouSuoCourseTableViewCell.h; sourceTree = "<group>"; };
 		0078FDAD24733D7C00282BDB /* LWHAutoHeightCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHAutoHeightCollectionView.h; sourceTree = "<group>"; };
 		0078FDAE24733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHAutoHeightCollectionViewCell.m; sourceTree = "<group>"; };
 		0078FDAF24733D7C00282BDB /* LWHAutoHeightCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHAutoHeightCollectionView.m; sourceTree = "<group>"; };
@@ -1045,6 +1051,17 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		0077369124774C4800D3A126 /* sousuo */ = {
+			isa = PBXGroup;
+			children = (
+				0077369224774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m */,
+				0077369324774C4800D3A126 /* LWHSouSuoCourseViewController.m */,
+				0077369424774C4800D3A126 /* LWHSouSuoCourseViewController.h */,
+				0077369524774C4800D3A126 /* LWHSouSuoCourseTableViewCell.h */,
+			);
+			path = sousuo;
+			sourceTree = "<group>";
+		};
 		0078FDAC24733D7C00282BDB /* collectionView高度自适应 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1166,6 +1183,7 @@
 		049FF48F245672E9004A2E49 /* 首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				0077369124774C4800D3A126 /* sousuo */,
 				0438239B2319250200A339FD /* left_return_white.png */,
 				0438239C2319250200A339FD /* left_return_white@2x.png */,
 				0438239D2319250200A339FD /* left_return_white@3x.png */,
@@ -1376,6 +1394,7 @@
 				00738ACE246D8ABF00842B16 /* UIView+TL.m in Sources */,
 				00738AEC246D8ABF00842B16 /* LJCGIFRefreshFooter.m in Sources */,
 				00738AC6246D8ABF00842B16 /* YBIBPhotoAlbumManager.m in Sources */,
+				0077369624774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m in Sources */,
 				00738AD7246D8ABF00842B16 /* ChatFace.m in Sources */,
 				00738A80246D8ABF00842B16 /* FastForwardView.m in Sources */,
 				00738ABE246D8ABF00842B16 /* YBImage.m in Sources */,
@@ -1453,6 +1472,7 @@
 				00738A83246D8ABF00842B16 /* LoginPageShow.m in Sources */,
 				00738AC4246D8ABF00842B16 /* YBIBUtilities.m in Sources */,
 				00738AC7246D8ABF00842B16 /* YBIBTransitionManager.m in Sources */,
+				0077369724774C4800D3A126 /* LWHSouSuoCourseViewController.m in Sources */,
 				00738ADC246D8ABF00842B16 /* ChatHelper.m in Sources */,
 				00738AE2246D8ABF00842B16 /* LJCSwitch.m in Sources */,
 				00738AA7246D8ABF00842B16 /* LWHTarbarView.m in Sources */,
