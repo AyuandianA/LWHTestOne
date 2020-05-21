@@ -15,6 +15,7 @@
 #import "LWHFirstViewController.h"
 #import "LWHComplexScrollerViewController.h"
 #import "LWHComplexSubViewController.h"
+#import "LWHTeacherListTwoViewController.h"
 @interface BaseTabbarController ()<UITabBarControllerDelegate,CZSocketManagerDelegate> {
      NSString *_message_id;
 }
@@ -80,7 +81,7 @@
     
     LWHComplexSubViewController *findCtrl = [[LWHComplexSubViewController alloc] init];
     
-    UIViewController *meCtrl = [[UIViewController alloc] init];
+    LWHTeacherListTwoViewController *meCtrl = [[LWHTeacherListTwoViewController alloc] init];
     
     controllerArr = @[homeCtrl,messgeCtrl,findCtrl,meCtrl];
     
