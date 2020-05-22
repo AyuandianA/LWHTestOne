@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "BaseViewController.h"
+#import "LWHPublicTableView.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LWHPublicViewController : UIViewController
+@interface LWHPublicViewController : BaseViewController
 
+@property (nonatomic,strong) LWHPublicTableView *tableView;
 @end
 
 NS_ASSUME_NONNULL_END
