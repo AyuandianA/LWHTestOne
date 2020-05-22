@@ -40,7 +40,7 @@
     self.separatorColor = MainBackColor;
     self.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.showsHorizontalScrollIndicator = NO;
-    self.estimatedRowHeight = 80;
+    self.estimatedRowHeight = 10;
     self.estimatedSectionHeaderHeight = 0;
     self.estimatedSectionFooterHeight = 0;
     self.rowHeight = UITableViewAutomaticDimension;

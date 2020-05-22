@@ -74,9 +74,9 @@ isYes = YES; \
 //下屏幕边缘系统横线高度
 #define SafeAreaH (isIponeX ? 34 : 0)
 //顶部高度
-#define TopHeight NaviH + StatusHeight
+#define TopHeight (NaviH + StatusHeight)
 //底部高度
-#define BottomHeight TabbarH + SafeAreaH
+#define BottomHeight (TabbarH + SafeAreaH)
 //颜色
 #define ColorHex(hex) ([UIColor colorWithRed:(((hex) & 0xFF0000) >> 16)/255.0f green:(CGFloat) (((hex) & 0xFF00) >> 8)/255.0f blue:((hex) & 0xFF)/255.0f alpha:1])
 #define RGB(a,b,c,d)   [UIColor colorWithRed:(a)/255.0 green:(b)/255.0 blue:(c)/255.0 alpha:d]

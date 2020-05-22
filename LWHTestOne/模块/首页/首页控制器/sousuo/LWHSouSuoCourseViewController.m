@@ -34,9 +34,8 @@
 #pragma mark 获取数据源
 -(void)getDataSources
 {
-    AdjustsScrollViewInsetNever(self, self.tableView);
     for (int i = 0; i < 20; i++) {
-        [self.tableView.PublicSourceArray addObject:@[@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"},@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"},@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"}]];
+        [self.tableView.PublicSourceArray addObject:@[@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"},@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"},@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"},@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"},@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"},@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"}]];
     }
     [self.tableView reloadData];
 }
@@ -44,7 +43,7 @@
 -(LWHPublicTableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [LWHPublicTableView creatPublicTableViewWithFrame:CGRectMake(0, TopHeight , KScreenWidth,KScreenHeight - TopHeight) style:(UITableViewStylePlain)];
+        _tableView = [LWHPublicTableView creatPublicTableViewWithFrame:CGRectMake(0, TopHeight , KScreenWidth,KScreenHeight - TopHeight - BottomHeight) style:(UITableViewStyleGrouped)];
         _tableView.cellName = @"LWHSouSuoCourseTableViewCell";
         
         __weak typeof(self)weakSelf = self;
@@ -62,6 +61,11 @@
             UILabel *lable = [[UILabel alloc]init];
             lable.font = [UIFont systemFontOfSize:TextFont weight:-0.3];
             lable.textColor = [UIColor colorWithWhite:0 alpha:1];
+            if (section == 0) {
+                lable.text = @"语音直播";
+            }else{
+                lable.text = @"视频直播";
+            }
             [view addSubview:lable];
             lable.frame = CGRectMake(viewOne.right + 10, 5, 100, 30);
             lable.textAlignment = NSTextAlignmentLeft;
@@ -71,7 +75,23 @@
           return 40;
         };
         _tableView.footerView = ^UIView *(NSInteger section) {
-          return [UIView new];
+            UIView *view = [UIView new];
+            UILabel *lable = [[UILabel alloc]init];
+            lable.font = [UIFont systemFontOfSize:TextFont weight:-0.3];
+            lable.frame = CGRectMake(10, 0, KScreenWidth - 20, 40);
+            lable.textAlignment = NSTextAlignmentLeft;
+            lable.textColor = [UIColor redColor];
+            if (section == 0) {
+                lable.text = @"更多语音直播";
+            }else{
+                lable.text = @"更多视频直播";
+            }
+            lable.userInteractionEnabled = YES;
+            [lable addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithActionBlock:^(id  _Nonnull sender) {
+                NSLog(@"%ld",(long)section);
+            }]];
+            [view addSubview:lable];
+          return view;
         };
         _tableView.footerHeight = ^CGFloat(NSInteger section) {
           return 40;

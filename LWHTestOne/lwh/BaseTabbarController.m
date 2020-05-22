@@ -101,7 +101,6 @@
         item.image = [BundleTabeImage(buttonImages[i]) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         item.selectedImage = [BundleTabeImage(array[i]) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]; //
         [item setTitleTextAttributes:@{NSForegroundColorAttributeName:MainTopColor} forState:UIControlStateSelected];
-        //        item.imageInsets = UIEdgeInsetsMake(3, 3, 3, 3);
         [navArr addObject:navCtrl];
         
     }

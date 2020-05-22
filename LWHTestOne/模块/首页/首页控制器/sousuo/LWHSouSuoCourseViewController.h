@@ -6,11 +6,11 @@
 //  Copyright © 2020 李武华. All rights reserved.
 //
 
-#import "BaseViewController.h"
+//#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LWHSouSuoCourseViewController : BaseViewController
+@interface LWHSouSuoCourseViewController : UIViewController
 
 @end
 

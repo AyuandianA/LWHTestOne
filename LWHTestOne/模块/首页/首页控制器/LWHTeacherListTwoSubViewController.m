@@ -8,6 +8,7 @@
 
 #import "LWHTeacherListTwoSubViewController.h"
 #import "LWHTeacherListTwoModel.h"
+#import "LWHSouSuoCourseViewController.h"
 @interface LWHTeacherListTwoSubViewController ()
 
 @end
@@ -36,10 +37,11 @@
 {
     if (!_tableView) {
         __weak typeof(self)weakSelf = self;
-        _tableView = [LWHPublicTableView creatPublicTableViewWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight - TopHeight  - BottomHeight) style:(UITableViewStylePlain)];
+        _tableView = [LWHPublicTableView creatPublicTableViewWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight - TopHeight ) style:(UITableViewStylePlain)];
         _tableView.cellName = @"LWHTescherListTwoTableViewCell";
         _tableView.tapSection = ^(NSIndexPath *indexPath) {
-            
+            LWHSouSuoCourseViewController *cto = [[LWHSouSuoCourseViewController alloc]init];
+            [weakSelf.navigationController pushViewController:cto animated:YES];
         };
         _tableView.scrollSection = ^(void) {
             [weakSelf scrolling];
