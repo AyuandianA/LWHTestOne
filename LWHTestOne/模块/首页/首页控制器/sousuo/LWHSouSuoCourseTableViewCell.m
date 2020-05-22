@@ -44,7 +44,7 @@
     //初始化控件
     CGFloat leftIamgeWidth = (KScreenWidth - self.margin * 2 - self.margin)/2.0 - 30;
     self.leftImageView = [[UIImageView alloc]init];
-    self.leftImageView.image = ImageWithName(@"categaryImage");
+    self.leftImageView.image = [UIImage imageNamed:@"teacherListTwo"];
     [self.contentView addSubview:self.leftImageView];
     [self.leftImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(self.margin);

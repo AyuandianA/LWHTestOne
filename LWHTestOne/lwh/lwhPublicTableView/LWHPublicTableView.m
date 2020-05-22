@@ -51,14 +51,22 @@
 #pragma mark - Table view data source和代理方法
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    if (self.cellSections) {
+        return self.cellSections();
+    }else{
+        return 1;
+    }
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (self.PublicSourceArray.count) {
-        return self.PublicSourceArray.count;
+    if (self.cellRows) {
+        return self.cellRows(section);
     }else{
-        return 0;
+        if (self.PublicSourceArray.count != 0) {
+            return self.PublicSourceArray.count;
+        }else{
+            return 0;
+        }
     }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -12,7 +12,7 @@
 #import "LSNavigationController.h"
 #import "CZSocketManager.h"
 #import "UIViewController+PresentAnimation.h"
-#import "LWHFirstViewController.h"
+#import "LWHSouSuoCourseViewController.h"
 #import "LWHComplexScrollerViewController.h"
 #import "LWHComplexSubViewController.h"
 #import "LWHTeacherListTwoViewController.h"
@@ -75,7 +75,7 @@
     
 
     //第三级控制器
-    LWHFirstViewController *homeCtrl = [[LWHFirstViewController alloc] init];
+    LWHSouSuoCourseViewController *homeCtrl = [[LWHSouSuoCourseViewController alloc] init];
     
     LWHComplexScrollerViewController *messgeCtrl = [[LWHComplexScrollerViewController alloc] init];
     
