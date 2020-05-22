@@ -16,6 +16,7 @@
 #import "LWHComplexScrollerViewController.h"
 #import "LWHComplexSubViewController.h"
 #import "LWHTeacherListTwoViewController.h"
+#import "LWHPublicViewController.h"
 @interface BaseTabbarController ()<UITabBarControllerDelegate,CZSocketManagerDelegate> {
      NSString *_message_id;
 }
@@ -77,7 +78,7 @@
     //第三级控制器
     LWHSouSuoCourseViewController *homeCtrl = [[LWHSouSuoCourseViewController alloc] init];
     
-    LWHComplexScrollerViewController *messgeCtrl = [[LWHComplexScrollerViewController alloc] init];
+    LWHPublicViewController *messgeCtrl = [[LWHPublicViewController alloc] init];
     
     LWHComplexSubViewController *findCtrl = [[LWHComplexSubViewController alloc] init];
     

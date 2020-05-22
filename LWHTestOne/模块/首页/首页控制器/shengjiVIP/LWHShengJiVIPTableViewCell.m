@@ -1,28 +1,29 @@
 //
-//  LWHPublicTableViewCell.m
-//  zhibo
+//  LWHShengJiVIPTableViewCell.m
+//  LWHTestOne
 //
-//  Created by 李武华 on 2020/5/21.
-//  Copyright © 2020 李武华. All rights reserved.
+//  Created by mac on 2020/5/22.
+//  Copyright © 2020 BraveShine. All rights reserved.
 //
 
-#import "LWHPublicTableViewCell.h"
+#import "LWHShengJiVIPTableViewCell.h"
 
-@interface LWHPublicTableViewCell ()
+
+@interface LWHShengJiVIPTableViewCell ()
 @property (nonatomic,strong) UIImageView *userImageView;
 @property (nonatomic,strong) UILabel *titleLable;
-@property (nonatomic,strong) UILabel *timeLable;
+@property (nonatomic,strong) UIButton *button;
 @property (nonatomic,assign) CGFloat margin;
 @end
 
-@implementation LWHPublicTableViewCell
+@implementation LWHShengJiVIPTableViewCell
 
 +(instancetype)creatPublicTableViewCellWithTableView:(UITableView *)tableView
 {
-    LWHPublicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LWHPublicTableViewCell"];
+    LWHShengJiVIPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LWHShengJiVIPTableViewCell"];
     // 判断如果没有可以重用的cell，创建
     if (!cell) {
-        cell = [[LWHPublicTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"LWHPublicTableViewCell"];
+        cell = [[LWHShengJiVIPTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"LWHShengJiVIPTableViewCell"];
     }
     return cell;
 }
@@ -44,7 +45,7 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.margin = 10;
     //初始化子控件
-    CGFloat iamgeWidth = 100;
+    CGFloat iamgeWidth = 30;
     self.userImageView = [[UIImageView alloc]initWithFrame:CGRectMake(30, 100, 60, 60)];
     [self.userImageView setImage:[UIImage imageNamed:@"teacherList"]];
     self.userImageView.layer.cornerRadius = 7;
@@ -55,13 +56,14 @@
         make.left.equalTo(self.contentView).offset(self.margin);
         make.bottom.equalTo(self.contentView).offset(-self.margin);
         make.width.mas_equalTo(iamgeWidth);
-        make.height.mas_equalTo(60);
+        make.height.mas_equalTo(iamgeWidth);
     }];
     CGFloat preWidth = KScreenWidth - iamgeWidth - self.margin * 3;
     UILabel *titleLable = [[UILabel alloc]init];
     titleLable.font = [UIFont systemFontOfSize:TextFont weight:-0.3];
     titleLable.textColor = [UIColor colorWithWhite:0 alpha:1];
     titleLable.numberOfLines = 0;
+    titleLable.textAlignment = NSTextAlignmentLeft;
     titleLable.preferredMaxLayoutWidth = preWidth;
     [titleLable setContentHuggingPriority:(UILayoutPriorityRequired) forAxis:(UILayoutConstraintAxisVertical)];
     [self.contentView addSubview:titleLable];
@@ -69,29 +71,43 @@
         make.top.equalTo(self.userImageView.mas_top);
         make.left.equalTo(self.userImageView.mas_right).offset(self.margin);
         make.width.mas_lessThanOrEqualTo(preWidth);
-        make.height.mas_lessThanOrEqualTo(titleLable.font.lineHeight * 2 + 2);
+        make.height.mas_lessThanOrEqualTo(titleLable.font.lineHeight + 2);
     }];
     self.titleLable = titleLable;
     
-    UILabel *timeLable = [[UILabel alloc]init];
-    timeLable.font = [UIFont systemFontOfSize:TextFont - 2 weight:-0.3];
-    timeLable.textColor = [UIColor colorWithWhite:0.65 alpha:1];
-    timeLable.numberOfLines = 0;
-    timeLable.preferredMaxLayoutWidth = preWidth;
-    [timeLable setContentHuggingPriority:(UILayoutPriorityRequired) forAxis:(UILayoutConstraintAxisVertical)];
-    [self.contentView addSubview:timeLable];
-    [timeLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.userImageView.mas_bottom);
-        make.left.equalTo(self.userImageView.mas_right).offset(self.margin);
-        make.width.mas_lessThanOrEqualTo(preWidth);
+    
+    
+    UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
+    [button setImage:[UIImage imageNamed:@""] forState:(UIControlStateNormal)];
+    [button setImage:[UIImage imageNamed:@""] forState:(UIControlStateSelected)];
+    [button addTarget:self action:@selector(buttonButtonAction) forControlEvents:(UIControlEventTouchUpInside)];
+    button.layer.masksToBounds = YES;
+    button.layer.cornerRadius = 10;
+    [self.contentView addSubview:button];
+    self.button = button;
+    [button mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.equalTo(self.userImageView.mas_centerY);
+        make.right.equalTo(self.contentView).offset(-self.margin);
+        make.height.width.mas_equalTo(20);
     }];
-    self.timeLable = timeLable;
+    UIView *segmentView = [[UIView alloc]init];
+    segmentView.backgroundColor = RGB(250, 250, 250, 1);
+    [self.contentView addSubview:segmentView];
+    [segmentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.equalTo(self.contentView);
+        make.left.equalTo(self.contentView);
+        make.right.equalTo(self.contentView);
+        make.height.mas_equalTo(0.8);
+    }];
+    
+}
+-(void)buttonButtonAction
+{
     
 }
 -(void)changeDataWithModel:(NSDictionary *)dic
 {
     self.titleLable.text = dic[@"title"];
-    self.timeLable.text = dic[@"time"];
 }
 
 -(void)changeDataWithModel:(NSDictionary *)dic andSection:(NSInteger)section

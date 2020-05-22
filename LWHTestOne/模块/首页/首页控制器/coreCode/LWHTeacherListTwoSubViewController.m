@@ -8,7 +8,8 @@
 
 #import "LWHTeacherListTwoSubViewController.h"
 #import "LWHTeacherListTwoModel.h"
-#import "LWHSouSuoCourseViewController.h"
+#import "LWHGuankanjiluViewController.h"
+#import "LWHShengJiVIPViewController.h"
 @interface LWHTeacherListTwoSubViewController ()
 
 @end
@@ -40,7 +41,7 @@
         _tableView = [LWHPublicTableView creatPublicTableViewWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight - TopHeight ) style:(UITableViewStylePlain)];
         _tableView.cellName = @"LWHTescherListTwoTableViewCell";
         _tableView.tapSection = ^(NSIndexPath *indexPath) {
-            LWHSouSuoCourseViewController *cto = [[LWHSouSuoCourseViewController alloc]init];
+            LWHShengJiVIPViewController *cto = [[LWHShengJiVIPViewController alloc]init];
             [weakSelf.navigationController pushViewController:cto animated:YES];
         };
         _tableView.scrollSection = ^(void) {
