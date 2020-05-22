@@ -91,4 +91,9 @@
 -(void)changeDataWithModel:(NSDictionary *)dic
 {
 }
+
+-(void)changeDataWithModel:(NSDictionary *)dic andSection:(NSInteger)section
+{
+    
+}
 @end

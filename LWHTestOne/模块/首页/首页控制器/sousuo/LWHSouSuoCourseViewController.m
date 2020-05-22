@@ -36,7 +36,7 @@
 {
     AdjustsScrollViewInsetNever(self, self.tableView);
     for (int i = 0; i < 20; i++) {
-        [self.tableView.PublicSourceArray addObject:@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"}];
+        [self.tableView.PublicSourceArray addObject:@[@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"},@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"},@{@"time":@"2020-03-30 13：55：33",@"title":@"四库国学之奇门遁甲课程"}]];
     }
     [self.tableView reloadData];
 }
@@ -46,8 +46,38 @@
     if (!_tableView) {
         _tableView = [LWHPublicTableView creatPublicTableViewWithFrame:CGRectMake(0, TopHeight , KScreenWidth,KScreenHeight - TopHeight) style:(UITableViewStylePlain)];
         _tableView.cellName = @"LWHSouSuoCourseTableViewCell";
+        
+        __weak typeof(self)weakSelf = self;
+        _tableView.cellSections = ^NSInteger{
+            return 2;
+        };
+        _tableView.cellRows = ^NSInteger(NSInteger section) {
+            return [weakSelf.tableView.PublicSourceArray[section] count];
+        };
+        _tableView.headerView = ^UIView *(NSInteger section) {
+            UIView *view = [[UIView alloc]init];
+            UIView *viewOne = [[UIView alloc]initWithFrame:CGRectMake(10, 5, 1.5, 30)];
+            viewOne.backgroundColor = [UIColor blueColor];
+            [view addSubview:viewOne];
+            UILabel *lable = [[UILabel alloc]init];
+            lable.font = [UIFont systemFontOfSize:TextFont weight:-0.3];
+            lable.textColor = [UIColor colorWithWhite:0 alpha:1];
+            [view addSubview:lable];
+            lable.frame = CGRectMake(viewOne.right + 10, 5, 100, 30);
+            lable.textAlignment = NSTextAlignmentLeft;
+          return view;
+        };
+        _tableView.headerHeight = ^CGFloat(NSInteger section) {
+          return 40;
+        };
+        _tableView.footerView = ^UIView *(NSInteger section) {
+          return [UIView new];
+        };
+        _tableView.footerHeight = ^CGFloat(NSInteger section) {
+          return 40;
+        };
         _tableView.tapSection = ^(NSIndexPath *indexPath) {
-            
+
         };
     }
     return _tableView;

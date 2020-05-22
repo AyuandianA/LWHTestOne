@@ -116,5 +116,10 @@
     
 }
 
+-(void)changeDataWithModel:(NSDictionary *)dic andSection:(NSIndexPath *)indexPath
+{
+
+    
+}
 
 @end

@@ -19,7 +19,9 @@ typedef NSInteger(^cellRows)(NSInteger section);
 @interface LWHPublicTableView : UITableView
 
 @property (nonatomic,strong) NSMutableArray *PublicSourceArray;
+
 @property (nonatomic,copy) NSString *cellName;
+
 @property (nonatomic,copy) tapSection tapSection;
 @property (nonatomic,copy) scrollSection scrollSection;
 @property (nonatomic,copy) cellSections cellSections;

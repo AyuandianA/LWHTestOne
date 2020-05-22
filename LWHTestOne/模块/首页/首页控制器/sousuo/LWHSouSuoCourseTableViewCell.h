@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)creatPublicTableViewCellWithTableView:(UITableView *)tableView;
 
 -(void)changeDataWithModel:(NSDictionary *)dic;
+-(void)changeDataWithModel:(NSDictionary *)dic andSection:(NSIndexPath *)indexPath;
 @end
 
 NS_ASSUME_NONNULL_END
