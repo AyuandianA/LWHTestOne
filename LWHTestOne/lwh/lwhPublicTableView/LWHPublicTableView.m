@@ -9,7 +9,6 @@
 #import "LWHPublicTableView.h"
 #import <objc/message.h>
 @interface LWHPublicTableView ()<UITableViewDataSource,UITableViewDelegate>
-
 @end
 
 @implementation LWHPublicTableView
@@ -150,5 +149,65 @@
     if (self.scrollSection) {
         self.scrollSection();
     }
+}
+-(CGFloat)getCellTableViewHeight
+{
+    id (*action)(id, SEL, id) = (id (*)(id, SEL, id)) objc_msgSend;
+    void (*actionTwo)(id, SEL, id) = (void (*)(id, SEL, id)) objc_msgSend;
+    void (*actionThree)(id, SEL, id,id) = (void (*)(id, SEL, id,id)) objc_msgSend;
+    SEL sel = sel_registerName("creatPublicTableViewCellWithTableView:");
+    Class cellName = NSClassFromString(self.cellName);
+    id cell = action(cellName,sel,self);
+    id model ;
+    SEL selTwo;
+    CGFloat heightAll = 0;
+    if (self.PublicSourceArray.count) {
+            if (self.cellSections) {
+                if (self.cellSections() > 1) {
+                    for (int i = 0; i < self.PublicSourceArray.count; i++) {
+                        for (int j = 0; i < [self.PublicSourceArray[i] count]; i++) {
+                            model = self.PublicSourceArray[i][j];
+                            selTwo = sel_registerName("changeDataWithModel:andSection:");
+                            actionThree(cell,selTwo,model,[NSIndexPath indexPathForRow:j inSection:i]);
+                                //使用systemLayoutSizeFittingSize获取高度
+                            CGFloat heitht = [((UITableViewCell *)cell).contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+                            CGFloat headerHeight;
+                            if (self.headerHeight) {
+                                headerHeight = self.headerHeight(i);
+                            }else{
+                                headerHeight = 0.01;
+                            }
+                            CGFloat footerHeight;
+                            if (self.footerHeight) {
+                                footerHeight = self.footerHeight(i);
+                            }else{
+                                footerHeight = 0.01;
+                            }
+                            heightAll = heightAll + heitht + headerHeight + footerHeight;
+                        }
+                    }
+                }else{
+                    for (int i = 0; i < self.PublicSourceArray.count; i++) {
+                        model = self.PublicSourceArray[i];
+                        selTwo = sel_registerName("changeDataWithModel:");
+                        actionTwo(cell,selTwo,model);
+                            //使用systemLayoutSizeFittingSize获取高度
+                        CGFloat heitht = [((UITableViewCell *)cell).contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+                        heightAll += heitht;
+                    }
+                }
+            }else{
+                for (int i = 0; i < self.PublicSourceArray.count; i++) {
+                    model = self.PublicSourceArray[i];
+                    selTwo = sel_registerName("changeDataWithModel:");
+                    actionTwo(cell,selTwo,model);
+                        //使用systemLayoutSizeFittingSize获取高度
+                    CGFloat heitht = [((UITableViewCell *)cell).contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+                    heightAll += heitht;
+                }
+            }
+        
+    }
+    return heightAll;
 }
 @end

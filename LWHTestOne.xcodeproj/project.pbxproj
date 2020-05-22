@@ -136,10 +136,10 @@
 		0077369724774C4800D3A126 /* LWHSouSuoCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077369324774C4800D3A126 /* LWHSouSuoCourseViewController.m */; };
 		0078FDB124733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078FDAE24733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m */; };
 		0078FDB224733D7C00282BDB /* LWHAutoHeightCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078FDAF24733D7C00282BDB /* LWHAutoHeightCollectionView.m */; };
-		007FFDFE2475CBDC00DD5B42 /* LWHPublicTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFDFB2475CBDC00DD5B42 /* LWHPublicTableView.m */; };
 		007FFE092475DFB400DD5B42 /* LWHPublicCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFE052475DFB400DD5B42 /* LWHPublicCollectionView.m */; };
 		007FFE0A2475DFB400DD5B42 /* LWHPublicCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFE062475DFB400DD5B42 /* LWHPublicCollectionViewCell.m */; };
 		007FFE182475F49000DD5B42 /* SGAdvertScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFE162475F49000DD5B42 /* SGAdvertScrollView.m */; };
+		00B5A2DB2478998300C0BBCC /* LWHPublicTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B5A2D92478998300C0BBCC /* LWHPublicTableView.m */; };
 		0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D04F2314C5A200802E3A /* LWHFirstViewController.m */; };
 		0438239E2319250300A339FD /* left_return_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0438239B2319250200A339FD /* left_return_white.png */; };
 		0438239F2319250300A339FD /* left_return_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0438239C2319250200A339FD /* left_return_white@2x.png */; };
@@ -443,14 +443,14 @@
 		0078FDAE24733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHAutoHeightCollectionViewCell.m; sourceTree = "<group>"; };
 		0078FDAF24733D7C00282BDB /* LWHAutoHeightCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHAutoHeightCollectionView.m; sourceTree = "<group>"; };
 		0078FDB024733D7C00282BDB /* LWHAutoHeightCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHAutoHeightCollectionViewCell.h; sourceTree = "<group>"; };
-		007FFDF92475CBDC00DD5B42 /* LWHPublicTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHPublicTableView.h; sourceTree = "<group>"; };
-		007FFDFB2475CBDC00DD5B42 /* LWHPublicTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHPublicTableView.m; sourceTree = "<group>"; };
 		007FFE052475DFB400DD5B42 /* LWHPublicCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHPublicCollectionView.m; sourceTree = "<group>"; };
 		007FFE062475DFB400DD5B42 /* LWHPublicCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHPublicCollectionViewCell.m; sourceTree = "<group>"; };
 		007FFE072475DFB400DD5B42 /* LWHPublicCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHPublicCollectionView.h; sourceTree = "<group>"; };
 		007FFE082475DFB400DD5B42 /* LWHPublicCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHPublicCollectionViewCell.h; sourceTree = "<group>"; };
 		007FFE162475F49000DD5B42 /* SGAdvertScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAdvertScrollView.m; sourceTree = "<group>"; };
 		007FFE172475F49000DD5B42 /* SGAdvertScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAdvertScrollView.h; sourceTree = "<group>"; };
+		00B5A2D92478998300C0BBCC /* LWHPublicTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHPublicTableView.m; sourceTree = "<group>"; };
+		00B5A2DA2478998300C0BBCC /* LWHPublicTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHPublicTableView.h; sourceTree = "<group>"; };
 		0435D04E2314C5A200802E3A /* LWHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHFirstViewController.h; sourceTree = "<group>"; };
 		0435D04F2314C5A200802E3A /* LWHFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHFirstViewController.m; sourceTree = "<group>"; };
 		0438239B2319250200A339FD /* left_return_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_return_white.png; sourceTree = "<group>"; };
@@ -1095,8 +1095,8 @@
 				007FFE052475DFB400DD5B42 /* LWHPublicCollectionView.m */,
 				007FFE082475DFB400DD5B42 /* LWHPublicCollectionViewCell.h */,
 				007FFE062475DFB400DD5B42 /* LWHPublicCollectionViewCell.m */,
-				007FFDF92475CBDC00DD5B42 /* LWHPublicTableView.h */,
-				007FFDFB2475CBDC00DD5B42 /* LWHPublicTableView.m */,
+				00B5A2DA2478998300C0BBCC /* LWHPublicTableView.h */,
+				00B5A2D92478998300C0BBCC /* LWHPublicTableView.m */,
 				0076481824782DAF000A20F6 /* LWHPublicTableViewCell.h */,
 				0076481A24782DAF000A20F6 /* LWHPublicTableViewCell.m */,
 				0076481B24782DAF000A20F6 /* LWHPublicViewController.h */,
@@ -1510,6 +1510,7 @@
 				00738AC2246D8ABF00842B16 /* YBIBFileManager.m in Sources */,
 				047D0DB72477B1EA000B8808 /* LWHGuankanjiluViewController.m in Sources */,
 				00738A82246D8ABF00842B16 /* LoginViewController.m in Sources */,
+				00B5A2DB2478998300C0BBCC /* LWHPublicTableView.m in Sources */,
 				00738AAC246D8ABF00842B16 /* LWHTableViewCellAutoHeight.m in Sources */,
 				00738AAF246D8ABF00842B16 /* UIView+SDExtension.m in Sources */,
 				00738AAA246D8ABF00842B16 /* BaseNaviController.m in Sources */,
@@ -1549,7 +1550,6 @@
 				048E1728247688980029A859 /* LWHTeacherListTwoTableView.m in Sources */,
 				00738A8C246D8ABF00842B16 /* LaunchIntroductionView.m in Sources */,
 				00738ACD246D8ABF00842B16 /* UIImage+Category.m in Sources */,
-				007FFDFE2475CBDC00DD5B42 /* LWHPublicTableView.m in Sources */,
 				00738AE1246D8ABF00842B16 /* ArbitrarilyTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

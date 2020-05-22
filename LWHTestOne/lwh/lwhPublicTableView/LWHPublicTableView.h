@@ -31,4 +31,6 @@ typedef NSInteger(^cellRows)(NSInteger section);
 @property (nonatomic,copy) footerHeight footerHeight;
 @property (nonatomic,copy) footerView footerView;
 +(instancetype)creatPublicTableViewWithFrame:(CGRect)frame style:(UITableViewStyle)style;
+//不带表头表尾的中间内容总高度
+-(CGFloat)getCellTableViewHeight;
 @end
