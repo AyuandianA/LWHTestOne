@@ -10,6 +10,9 @@
 #import "LWHTeacherListTwoModel.h"
 #import "LWHGuankanjiluViewController.h"
 #import "LWHShengJiVIPViewController.h"
+//测试
+#import "LWHZhiBoWeiKaiShiView.h"
+
 @interface LWHTeacherListTwoSubViewController ()
 
 @end
@@ -41,8 +44,9 @@
         _tableView = [LWHPublicTableView creatPublicTableViewWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight - TopHeight ) style:(UITableViewStylePlain)];
         _tableView.cellName = @"LWHTescherListTwoTableViewCell";
         _tableView.tapSection = ^(NSIndexPath *indexPath) {
-            LWHShengJiVIPViewController *cto = [[LWHShengJiVIPViewController alloc]init];
-            [weakSelf.navigationController pushViewController:cto animated:YES];
+            LWHZhiBoWeiKaiShiView *cto = [[LWHZhiBoWeiKaiShiView alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight)];
+            [cto takeDataWithDic:@{}];
+            [[UIApplication sharedApplication].keyWindow addSubview:cto];
         };
         _tableView.scrollSection = ^(void) {
             [weakSelf scrolling];

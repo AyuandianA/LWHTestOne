@@ -19,9 +19,9 @@ typedef NSInteger(^cellRows)(NSInteger section);
 @interface LWHPublicTableView : UITableView
 
 @property (nonatomic,strong) NSMutableArray *PublicSourceArray;
-
+//必须传入自定义的cell名称
 @property (nonatomic,copy) NSString *cellName;
-
+//以下所有block根据需要初始化
 @property (nonatomic,copy) tapSection tapSection;
 @property (nonatomic,copy) scrollSection scrollSection;
 @property (nonatomic,copy) cellSections cellSections;

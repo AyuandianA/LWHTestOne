@@ -84,7 +84,7 @@
     
     LWHTeacherListTwoViewController *meCtrl = [[LWHTeacherListTwoViewController alloc] init];
     
-    controllerArr = @[homeCtrl,messgeCtrl,findCtrl,meCtrl];
+    controllerArr = @[meCtrl,homeCtrl,messgeCtrl,findCtrl];
     
     // 按钮标题
     NSArray *buttonTitles = @[@"找医生",@"查项目",@"消息",@"我的"];
