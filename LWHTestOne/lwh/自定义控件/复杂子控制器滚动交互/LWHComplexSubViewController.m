@@ -27,11 +27,12 @@
     
 }
 
--(UITableView *)tableView
+-(LWHBaseTwoTableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight - TopHeight - BottomHeight) style:UITableViewStylePlain];
+        _tableView = [[LWHBaseTwoTableView alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenHeight - TopHeight - BottomHeight) style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor whiteColor];
+        _tableView.canScroll = YES;
         //设置代理
         _tableView.delegate = self;
         _tableView.dataSource = self;
@@ -66,19 +67,20 @@
     cell.textLabel.text = @"234234";
     return cell;
 }
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 80;
+}
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    if (!self.canScroll) {
-        scrollView.contentOffset = CGPointZero;
-    }
+//    if (!self.canScroll) {
+//        scrollView.contentOffset = CGPointZero;
+//    }
     if (scrollView.contentOffset.y <= 0) {
         self.canScroll = NO;
         scrollView.contentOffset = CGPointZero;
         [[NSNotificationCenter defaultCenter]postNotificationName:@"adsfsdfasdf" object:nil];
     }
-}
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 80;
 }
 @end

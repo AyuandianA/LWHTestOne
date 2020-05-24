@@ -1,8 +1,8 @@
 //
-//  LWHBaseTableView.h
+//  LWHBaseTwoTableView.h
 //  LWHTestOne
 //
-//  Created by mac on 2020/5/19.
+//  Created by 李武华 on 2020/5/23.
 //  Copyright © 2020 BraveShine. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LWHBaseTableView : UITableView<UIGestureRecognizerDelegate>
+@interface LWHBaseTwoTableView : UITableView<UIGestureRecognizerDelegate>
 
 @property (nonatomic,assign) BOOL canScroll;
 @end

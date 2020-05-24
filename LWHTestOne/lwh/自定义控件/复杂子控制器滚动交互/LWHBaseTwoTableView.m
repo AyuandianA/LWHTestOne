@@ -1,14 +1,15 @@
+
 //
-//  LWHBaseTableView.m
+//  LWHBaseTwoTableView.m
 //  LWHTestOne
 //
-//  Created by mac on 2020/5/19.
+//  Created by 李武华 on 2020/5/23.
 //  Copyright © 2020 BraveShine. All rights reserved.
 //
 
-#import "LWHBaseTableView.h"
+#import "LWHBaseTwoTableView.h"
 
-@implementation LWHBaseTableView
+@implementation LWHBaseTwoTableView
 
 //-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
 //    if (self.canScroll) {
@@ -17,6 +18,5 @@
 //        return NO;;
 //    }
 //}
-
 
 @end

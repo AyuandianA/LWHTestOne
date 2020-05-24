@@ -22,8 +22,6 @@
 
 #pragma mark - - - SGPageTitleView
 @interface SGPageTitleView ()
-/// SGPageTitleViewDelegate
-@property (nonatomic, weak) id<SGPageTitleViewDelegate> delegatePageTitleView;
 /// SGPageTitleView 配置信息
 @property (nonatomic, strong) SGPageTitleViewConfigure *configure;
 /// scrollView

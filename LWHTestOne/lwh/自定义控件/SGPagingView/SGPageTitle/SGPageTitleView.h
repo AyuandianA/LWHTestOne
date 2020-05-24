@@ -60,6 +60,8 @@ typedef enum : NSUInteger {
 
 /**LWH添加的属性 重置选中标题按钮下标（用于子控制器内的点击事件改变标题的选中下标）*/
 @property (nonatomic, assign) NSInteger onlyResetSelectedIndex;
+/// SGPageTitleViewDelegate
+@property (nonatomic, weak) id<SGPageTitleViewDelegate> delegatePageTitleView;
 
 /** 根据标题下标值添加 badge */
 - (void)addBadgeForIndex:(NSInteger)index withText:(NSString *)text;

@@ -12,7 +12,6 @@
 #import "LWHComplexSubViewController.h"
 @interface LWHComplexScrollerViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,assign) BOOL canScroller;
 @property (nonatomic,strong) LWHBaseTableView *tableView;
 @property (nonatomic,strong) NSMutableArray *contArray;
 @property (nonatomic,strong) SGPageContentScrollView *sgscrollView;
@@ -29,10 +28,11 @@
 -(void)ControllerKongJianBuJu
 {
     self.view.backgroundColor = [UIColor whiteColor];
-    self.canScroller = YES;
+    self.tableView.canScroll = YES;
     [self.view addSubview:self.tableView];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(selector) name:@"adsfsdfasdf" object:nil];
     AdjustsScrollViewInsetNever(self, _tableView);
+    
 }
 -(void)dealloc
 {
@@ -43,7 +43,7 @@
 -(LWHBaseTableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[LWHBaseTableView alloc]initWithFrame:CGRectMake(0, TopHeight, KScreenWidth, KScreenHeight - TopHeight - BottomHeight) style:UITableViewStylePlain];
+        _tableView = [[LWHBaseTableView alloc]initWithFrame:CGRectMake(0, -TopHeight, KScreenWidth, KScreenHeight) style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor whiteColor];
         //设置代理
         _tableView.delegate = self;
@@ -57,9 +57,9 @@
         _tableView.estimatedSectionFooterHeight = 0;
         _tableView.rowHeight = UITableViewAutomaticDimension;
         _tableView.showsVerticalScrollIndicator = NO;
-        UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, 200)];
-        headerView.backgroundColor = [UIColor redColor];
-        _tableView.tableHeaderView =  headerView;
+//        UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, 200)];
+//        headerView.backgroundColor = [UIColor redColor];
+//        _tableView.tableHeaderView =  headerView;
     }
     return _tableView;
 }
@@ -107,31 +107,31 @@
 -(void)selector
 {
 
-    self.canScroller = YES;
+    self.tableView.canScroll = YES;
     [self subTabviewcanScr:NO];
 }
 -(void)subTabviewcanScr:(BOOL)canScr
 {
     for (LWHComplexSubViewController *subVC in self.contArray) {
         subVC.canScroll = canScr;
-        if (!canScr) {
-            subVC.tableView.contentOffset = CGPointZero;
-        }
+//        if (!canScr) {
+//            subVC.tableView.contentOffset = CGPointZero;
+//        }
     }
 }
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     CGFloat height = 200;
         if (scrollView.contentOffset.y>height) {
-            scrollView.contentOffset = CGPointMake(0, height);
-            if (self.canScroller) {
-                self.canScroller = NO;
+//            scrollView.contentOffset = CGPointMake(0, height);
+            if (self.tableView.canScroll) {
+                self.tableView.canScroll = NO;
                 [self subTabviewcanScr:YES];
             }
         }else{
-            if (!self.canScroller) {
-                scrollView.contentOffset = CGPointMake(0, height);
-            }
+//            if (!self.canScroller) {
+//                scrollView.contentOffset = CGPointMake(0, height);
+//            }
         }
 }
 @end

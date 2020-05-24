@@ -12,11 +12,15 @@
 @end
 
 @implementation LWHPublicViewController
-#pragma mark 视图已经加载
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    //创建控件
-    [self ControllerKongJianBuJu];
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        //创建控件
+        [self ControllerKongJianBuJu];
+    }
+    return self;
 }
 #pragma mark 创建控件
 -(void)ControllerKongJianBuJu
