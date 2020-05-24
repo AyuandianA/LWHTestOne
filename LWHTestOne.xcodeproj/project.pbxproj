@@ -144,6 +144,10 @@
 		0078FDB124733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078FDAE24733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m */; };
 		0078FDB224733D7C00282BDB /* LWHAutoHeightCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078FDAF24733D7C00282BDB /* LWHAutoHeightCollectionView.m */; };
 		007FFE182475F49000DD5B42 /* SGAdvertScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFE162475F49000DD5B42 /* SGAdvertScrollView.m */; };
+		00B7BA22247B3AE6004F54A5 /* LWHCourseContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7BA1E247B3AE6004F54A5 /* LWHCourseContentViewController.m */; };
+		00B7BA23247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7BA1F247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m */; };
+		00B7BA2A247B3D7F004F54A5 /* LWHVIPFuWuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7BA27247B3D7F004F54A5 /* LWHVIPFuWuViewController.m */; };
+		00B7BA2B247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7BA28247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.m */; };
 		0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435D04F2314C5A200802E3A /* LWHFirstViewController.m */; };
 		0438239E2319250300A339FD /* left_return_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0438239B2319250200A339FD /* left_return_white.png */; };
 		0438239F2319250300A339FD /* left_return_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0438239C2319250200A339FD /* left_return_white@2x.png */; };
@@ -464,6 +468,14 @@
 		0078FDB024733D7C00282BDB /* LWHAutoHeightCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHAutoHeightCollectionViewCell.h; sourceTree = "<group>"; };
 		007FFE162475F49000DD5B42 /* SGAdvertScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAdvertScrollView.m; sourceTree = "<group>"; };
 		007FFE172475F49000DD5B42 /* SGAdvertScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAdvertScrollView.h; sourceTree = "<group>"; };
+		00B7BA1E247B3AE6004F54A5 /* LWHCourseContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHCourseContentViewController.m; sourceTree = "<group>"; };
+		00B7BA1F247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHCourseContentHtmlCell.m; sourceTree = "<group>"; };
+		00B7BA20247B3AE6004F54A5 /* LWHCourseContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHCourseContentViewController.h; sourceTree = "<group>"; };
+		00B7BA21247B3AE6004F54A5 /* LWHCourseContentHtmlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHCourseContentHtmlCell.h; sourceTree = "<group>"; };
+		00B7BA26247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHVIPFuWuTableViewCell.h; sourceTree = "<group>"; };
+		00B7BA27247B3D7F004F54A5 /* LWHVIPFuWuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHVIPFuWuViewController.m; sourceTree = "<group>"; };
+		00B7BA28247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHVIPFuWuTableViewCell.m; sourceTree = "<group>"; };
+		00B7BA29247B3D7F004F54A5 /* LWHVIPFuWuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHVIPFuWuViewController.h; sourceTree = "<group>"; };
 		0435D04E2314C5A200802E3A /* LWHFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHFirstViewController.h; sourceTree = "<group>"; };
 		0435D04F2314C5A200802E3A /* LWHFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHFirstViewController.m; sourceTree = "<group>"; };
 		0438239B2319250200A339FD /* left_return_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_return_white.png; sourceTree = "<group>"; };
@@ -550,32 +562,25 @@
 		00007E2D247AD0C9002B02D5 /* lwhPublicTableView */ = {
 			isa = PBXGroup;
 			children = (
-				00007E2E247AD0C9002B02D5 /* LWHPublicTableView.h */,
-				00007E2F247AD0C9002B02D5 /* LWHPublicViewController.h */,
-				00007E30247AD0C9002B02D5 /* LWHPublicTableViewCell.m */,
-				00007E31247AD0C9002B02D5 /* LWHPublicCollectionView.m */,
-				00007E32247AD0C9002B02D5 /* LWHPublicCollectionViewCell.m */,
-				00007E33247AD0C9002B02D5 /* LWHPublicViewController.m */,
-				00007E34247AD0C9002B02D5 /* LWHPublicTableView.m */,
-				00007E35247AD0C9002B02D5 /* LWHPublicTableViewCell.h */,
-				00007E36247AD0C9002B02D5 /* LWHPublicCollectionViewCell.h */,
-				00007E37247AD0C9002B02D5 /* LWHPublicCollectionView.h */,
-				00007E38247AD0C9002B02D5 /* shangxiagundonghezuoyougundong */,
+				00007E38247AD0C9002B02D5 /* LWHPublicBaseViewController */,
+				00B7BA1D247B3AE6004F54A5 /* LWHPublicBaseViewController用法 */,
+				00B7BA24247B3C64004F54A5 /* LWHPublicViewController */,
+				00B7BA25247B3D7F004F54A5 /* LWHPublicViewController用法 */,
 			);
 			path = lwhPublicTableView;
 			sourceTree = "<group>";
 		};
-		00007E38247AD0C9002B02D5 /* shangxiagundonghezuoyougundong */ = {
+		00007E38247AD0C9002B02D5 /* LWHPublicBaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				00007E39247AD0C9002B02D5 /* LWHPublicBaseViewController.h */,
-				00007E3A247AD0C9002B02D5 /* LWHPublicBaseTwoViewController.h */,
-				00007E3B247AD0C9002B02D5 /* LWHPublicBaseTableView.m */,
-				00007E3C247AD0C9002B02D5 /* LWHPublicBaseTwoViewController.m */,
-				00007E3D247AD0C9002B02D5 /* LWHPublicBaseViewController.m */,
 				00007E3E247AD0C9002B02D5 /* LWHPublicBaseTableView.h */,
+				00007E3B247AD0C9002B02D5 /* LWHPublicBaseTableView.m */,
+				00007E3A247AD0C9002B02D5 /* LWHPublicBaseTwoViewController.h */,
+				00007E3C247AD0C9002B02D5 /* LWHPublicBaseTwoViewController.m */,
+				00007E39247AD0C9002B02D5 /* LWHPublicBaseViewController.h */,
+				00007E3D247AD0C9002B02D5 /* LWHPublicBaseViewController.m */,
 			);
-			path = shangxiagundonghezuoyougundong;
+			path = LWHPublicBaseViewController;
 			sourceTree = "<group>";
 		};
 		00738955246D8ABE00842B16 /* lwh */ = {
@@ -1143,6 +1148,45 @@
 			path = "上下滚动轮播广告";
 			sourceTree = "<group>";
 		};
+		00B7BA1D247B3AE6004F54A5 /* LWHPublicBaseViewController用法 */ = {
+			isa = PBXGroup;
+			children = (
+				00B7BA20247B3AE6004F54A5 /* LWHCourseContentViewController.h */,
+				00B7BA1E247B3AE6004F54A5 /* LWHCourseContentViewController.m */,
+				00B7BA21247B3AE6004F54A5 /* LWHCourseContentHtmlCell.h */,
+				00B7BA1F247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m */,
+			);
+			path = "LWHPublicBaseViewController用法";
+			sourceTree = "<group>";
+		};
+		00B7BA24247B3C64004F54A5 /* LWHPublicViewController */ = {
+			isa = PBXGroup;
+			children = (
+				00007E2E247AD0C9002B02D5 /* LWHPublicTableView.h */,
+				00007E2F247AD0C9002B02D5 /* LWHPublicViewController.h */,
+				00007E30247AD0C9002B02D5 /* LWHPublicTableViewCell.m */,
+				00007E31247AD0C9002B02D5 /* LWHPublicCollectionView.m */,
+				00007E32247AD0C9002B02D5 /* LWHPublicCollectionViewCell.m */,
+				00007E33247AD0C9002B02D5 /* LWHPublicViewController.m */,
+				00007E34247AD0C9002B02D5 /* LWHPublicTableView.m */,
+				00007E35247AD0C9002B02D5 /* LWHPublicTableViewCell.h */,
+				00007E36247AD0C9002B02D5 /* LWHPublicCollectionViewCell.h */,
+				00007E37247AD0C9002B02D5 /* LWHPublicCollectionView.h */,
+			);
+			path = LWHPublicViewController;
+			sourceTree = "<group>";
+		};
+		00B7BA25247B3D7F004F54A5 /* LWHPublicViewController用法 */ = {
+			isa = PBXGroup;
+			children = (
+				00B7BA26247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.h */,
+				00B7BA27247B3D7F004F54A5 /* LWHVIPFuWuViewController.m */,
+				00B7BA28247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.m */,
+				00B7BA29247B3D7F004F54A5 /* LWHVIPFuWuViewController.h */,
+			);
+			path = "LWHPublicViewController用法";
+			sourceTree = "<group>";
+		};
 		0435D04C2314BB1800802E3A /* 模块 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1285,11 +1329,11 @@
 		049FF48F245672E9004A2E49 /* 首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				0470B49C2478B52900FC597F /* zhiBoWeiKaiShi */,
 				047D0DC52477BE53000B8808 /* coreCode */,
 				047D0DBE2477BDD1000B8808 /* shengjiVIP */,
 				047D0DB424779C7D000B8808 /* guankanjilu */,
 				0077369124774C4800D3A126 /* sousuo */,
+				0470B49C2478B52900FC597F /* zhiBoWeiKaiShi */,
 			);
 			path = "首页控制器";
 			sourceTree = "<group>";
@@ -1455,10 +1499,13 @@
 				00738A7C246D8ABF00842B16 /* WMPlayerModel.m in Sources */,
 				00738ADD246D8ABF00842B16 /* LWHWkPlayerManager.m in Sources */,
 				00738A9D246D8ABF00842B16 /* TZPhotoPreviewCell.m in Sources */,
+				00B7BA22247B3AE6004F54A5 /* LWHCourseContentViewController.m in Sources */,
 				00738AEA246D8ABF00842B16 /* BDPresentAnimator.m in Sources */,
 				00738A84246D8ABF00842B16 /* LWHScrollViewOne.m in Sources */,
+				00B7BA23247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m in Sources */,
 				00007E45247AD0CA002B02D5 /* LWHPublicBaseTwoViewController.m in Sources */,
 				048E1720247683520029A859 /* LWHTescherListTwoTableViewCell.m in Sources */,
+				00B7BA2A247B3D7F004F54A5 /* LWHVIPFuWuViewController.m in Sources */,
 				00738AC3246D8ABF00842B16 /* YBIBCopywriter.m in Sources */,
 				00738A77246D8ABF00842B16 /* HLSegementView.m in Sources */,
 				00738A79246D8ABF00842B16 /* UINavigationBar+LSNavigationController.m in Sources */,
@@ -1470,6 +1517,7 @@
 				00738A95246D8ABF00842B16 /* TZAssetModel.m in Sources */,
 				00007E3F247AD0CA002B02D5 /* LWHPublicTableViewCell.m in Sources */,
 				00007E44247AD0CA002B02D5 /* LWHPublicBaseTableView.m in Sources */,
+				00B7BA2B247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.m in Sources */,
 				043AD18E230CF3F4007BD6CA /* ViewController.m in Sources */,
 				00738ABF246D8ABF00842B16 /* YBImageBrowseCellData.m in Sources */,
 				00738ADA246D8ABF00842B16 /* ChatFaceHeleper.m in Sources */,

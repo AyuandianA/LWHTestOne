@@ -9,6 +9,7 @@
 #import "LWHPublicTableViewCell.h"
 
 @interface LWHPublicTableViewCell ()
+@property (nonatomic,assign) CGFloat margin;
 @end
 
 @implementation LWHPublicTableViewCell
@@ -28,6 +29,7 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         self.backgroundColor = [UIColor whiteColor];
         self.selectionStyle = UITableViewCellSelectionStyleNone;
+        self.margin = 10;
         //初始化控件
         [self chuShiHua];
     }
