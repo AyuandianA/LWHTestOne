@@ -108,7 +108,7 @@
 //
 //}
 - (void)injected{
-//    NSLog(@"I've been injected: %@", self);
+    NSLog(@"I've been injected: %@", self);
     [self viewDidLoad];
 }
 

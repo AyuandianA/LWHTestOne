@@ -62,10 +62,12 @@
 - (instancetype)initWithFrame:(CGRect)frame delegate:(id<SGPageTitleViewDelegate>)delegate titleNames:(NSArray *)titleNames configure:(SGPageTitleViewConfigure *)configure {
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.77];
-        if (delegate == nil) {
-            @throw [NSException exceptionWithName:@"SGPagingView" reason:@"SGPageTitleView 初始化方法中的代理必须设置" userInfo:nil];
+//        if (delegate == nil) {
+//            @throw [NSException exceptionWithName:@"SGPagingView" reason:@"SGPageTitleView 初始化方法中的代理必须设置" userInfo:nil];
+//        }
+        if (delegate) {
+            self.delegatePageTitleView = delegate;
         }
-        self.delegatePageTitleView = delegate;
         if (titleNames == nil) {
             @throw [NSException exceptionWithName:@"SGPagingView" reason:@"SGPageTitleView 初始化方法中的标题数组必须设置" userInfo:nil];
         }

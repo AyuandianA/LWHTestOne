@@ -6,11 +6,10 @@
 //  Copyright © 2020 李武华. All rights reserved.
 //
 
-#import "LWHCourseContentViewController.h"
-#import "LWHTeacherListTwoModel.h"
+#import "LWHPublicBaseUseViewController.h"
 #import "SGPagingView.h"
 #import "LWHPublicBaseTwoViewController.h"
-@interface LWHCourseContentViewController ()
+@interface LWHPublicBaseUseViewController ()
 
 @property (nonatomic,strong) UIImageView *userImageView;
 @property (nonatomic,strong) UILabel *userNameLable;
@@ -20,7 +19,7 @@
 
 @end
 
-@implementation LWHCourseContentViewController
+@implementation LWHPublicBaseUseViewController
 #pragma mark 视图已经加载
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -132,11 +131,10 @@
         LWHPublicBaseTwoViewController *subCtr = [[LWHPublicBaseTwoViewController  alloc]init];
 
         subCtr.tableView.frame = CGRectMake(0, 0, KScreenWidth, KScreenHeight - TopHeight  - BottomHeight);
-        subCtr.tableView.cellName = @"LWHTescherListTwoTableViewCell";
-        for (int i = 0; i < 20; i++) {
-            LWHTeacherListTwoModel *model = [LWHTeacherListTwoModel modelWithDictionary:@{@"q":@"q",@"a":@"q"}];
-            [subCtr.tableView.PublicSourceArray addObject:model];
-        }
+        subCtr.tableView.cellName = @"LWHPublicTableViewCell";
+        [subCtr.tableView.PublicSourceArray addObject:@[@{},@{},@{}]];
+        [subCtr.tableView.PublicSourceArray addObject:@[@{},@{},@{}]];
+        [subCtr.tableView.PublicSourceArray addObject:@[@{},@{},@{}]];
         [subCtr.tableView reloadData];
         [self.contArray addObject: subCtr];
     }

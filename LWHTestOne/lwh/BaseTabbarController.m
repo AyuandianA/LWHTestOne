@@ -12,11 +12,7 @@
 #import "LSNavigationController.h"
 #import "CZSocketManager.h"
 #import "UIViewController+PresentAnimation.h"
-#import "LWHSouSuoCourseViewController.h"
-#import "LWHComplexScrollerViewController.h"
-#import "LWHComplexSubViewController.h"
-#import "LWHTeacherListTwoViewController.h"
-#import "LWHPublicViewController.h"
+#import "LWHFirstViewController.h"
 @interface BaseTabbarController ()<UITabBarControllerDelegate,CZSocketManagerDelegate> {
      NSString *_message_id;
 }
@@ -41,7 +37,6 @@
     
     [super viewDidLoad];
     
-    [[UIApplication sharedApplication] setStatusBarHidden:NO];
     
     self.delegate = self;
     
@@ -76,13 +71,13 @@
     
 
     //第三级控制器
-    LWHSouSuoCourseViewController *homeCtrl = [[LWHSouSuoCourseViewController alloc] init];
+    LWHFirstViewController *homeCtrl = [[LWHFirstViewController alloc] init];
     
-    LWHPublicViewController *messgeCtrl = [[LWHPublicViewController alloc] init];
+    LWHFirstViewController *messgeCtrl = [[LWHFirstViewController alloc] init];
     
-    LWHComplexSubViewController *findCtrl = [[LWHComplexSubViewController alloc] init];
+    LWHFirstViewController *findCtrl = [[LWHFirstViewController alloc] init];
     
-    LWHTeacherListTwoViewController *meCtrl = [[LWHTeacherListTwoViewController alloc] init];
+    LWHFirstViewController *meCtrl = [[LWHFirstViewController alloc] init];
     
     controllerArr = @[findCtrl,meCtrl,homeCtrl,messgeCtrl];
     

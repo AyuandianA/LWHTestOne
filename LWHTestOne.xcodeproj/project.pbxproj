@@ -139,12 +139,10 @@
 		00738AEC246D8ABF00842B16 /* LJCGIFRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00738A70246D8ABF00842B16 /* LJCGIFRefreshFooter.m */; };
 		00738AED246D8ABF00842B16 /* CustomerTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00738A72246D8ABF00842B16 /* CustomerTextView.m */; };
 		00757EC12479210500FCEAAC /* LWHBaseTwoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00757EC02479210500FCEAAC /* LWHBaseTwoTableView.m */; };
-		0077369624774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077369224774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m */; };
-		0077369724774C4800D3A126 /* LWHSouSuoCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0077369324774C4800D3A126 /* LWHSouSuoCourseViewController.m */; };
 		0078FDB124733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078FDAE24733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m */; };
 		0078FDB224733D7C00282BDB /* LWHAutoHeightCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0078FDAF24733D7C00282BDB /* LWHAutoHeightCollectionView.m */; };
 		007FFE182475F49000DD5B42 /* SGAdvertScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FFE162475F49000DD5B42 /* SGAdvertScrollView.m */; };
-		00B7BA22247B3AE6004F54A5 /* LWHCourseContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7BA1E247B3AE6004F54A5 /* LWHCourseContentViewController.m */; };
+		00B7BA22247B3AE6004F54A5 /* LWHPublicBaseUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7BA1E247B3AE6004F54A5 /* LWHPublicBaseUseViewController.m */; };
 		00B7BA23247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7BA1F247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m */; };
 		00B7BA2A247B3D7F004F54A5 /* LWHVIPFuWuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7BA27247B3D7F004F54A5 /* LWHVIPFuWuViewController.m */; };
 		00B7BA2B247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B7BA28247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.m */; };
@@ -171,20 +169,12 @@
 		043AD4CB230CF6DD007BD6CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */; };
 		043AD4CD230CF6F2007BD6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CC230CF6F2007BD6CA /* UIKit.framework */; };
 		043AD4CF230CF79D007BD6CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CE230CF79D007BD6CA /* libc++.tbd */; };
+		04686B62247B7AAD00CE9535 /* LWHCourseContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B61247B7AAD00CE9535 /* LWHCourseContentViewController.m */; };
 		0470B49F2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470B49E2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.m */; };
 		0476861E24737EB7004017EC /* LWHComplexScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */; };
 		0476862124737F00004017EC /* LWHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476862024737F00004017EC /* LWHBaseTableView.m */; };
 		0476862424737F53004017EC /* LWHComplexSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476862324737F53004017EC /* LWHComplexSubViewController.m */; };
-		047D0DB72477B1EA000B8808 /* LWHGuankanjiluViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DB62477B1EA000B8808 /* LWHGuankanjiluViewController.m */; };
-		047D0DBA2477B20E000B8808 /* LWHGuankanjiliTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DB92477B20E000B8808 /* LWHGuankanjiliTableViewCell.m */; };
-		047D0DC12477BDF8000B8808 /* LWHShengJiVIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DC02477BDF8000B8808 /* LWHShengJiVIPViewController.m */; };
-		047D0DC42477BE19000B8808 /* LWHShengJiVIPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047D0DC32477BE19000B8808 /* LWHShengJiVIPTableViewCell.m */; };
-		048E1720247683520029A859 /* LWHTescherListTwoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E171F247683520029A859 /* LWHTescherListTwoTableViewCell.m */; };
-		048E1723247684160029A859 /* LWHTeacherListTwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E1722247684160029A859 /* LWHTeacherListTwoModel.m */; };
 		048E1725247687690029A859 /* teacherListTwo.png in Resources */ = {isa = PBXBuildFile; fileRef = 048E1724247687690029A859 /* teacherListTwo.png */; };
-		048E1728247688980029A859 /* LWHTeacherListTwoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E1727247688980029A859 /* LWHTeacherListTwoTableView.m */; };
-		048E172B2476894B0029A859 /* LWHTeacherListTwoSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E172A2476894B0029A859 /* LWHTeacherListTwoSubViewController.m */; };
-		048E172E24768D3B0029A859 /* LWHTeacherListTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 048E172D24768D3B0029A859 /* LWHTeacherListTwoViewController.m */; };
 		FC8D688FA6B1DF040397DCD7 /* Pods_LWHTestOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBAB44D22521DA4656F509C1 /* Pods_LWHTestOne.framework */; };
 /* End PBXBuildFile section */
 
@@ -458,19 +448,15 @@
 		00738A72246D8ABF00842B16 /* CustomerTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerTextView.m; sourceTree = "<group>"; };
 		00757EBF2479210500FCEAAC /* LWHBaseTwoTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHBaseTwoTableView.h; sourceTree = "<group>"; };
 		00757EC02479210500FCEAAC /* LWHBaseTwoTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHBaseTwoTableView.m; sourceTree = "<group>"; };
-		0077369224774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHSouSuoCourseTableViewCell.m; sourceTree = "<group>"; };
-		0077369324774C4800D3A126 /* LWHSouSuoCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHSouSuoCourseViewController.m; sourceTree = "<group>"; };
-		0077369424774C4800D3A126 /* LWHSouSuoCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHSouSuoCourseViewController.h; sourceTree = "<group>"; };
-		0077369524774C4800D3A126 /* LWHSouSuoCourseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHSouSuoCourseTableViewCell.h; sourceTree = "<group>"; };
 		0078FDAD24733D7C00282BDB /* LWHAutoHeightCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHAutoHeightCollectionView.h; sourceTree = "<group>"; };
 		0078FDAE24733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHAutoHeightCollectionViewCell.m; sourceTree = "<group>"; };
 		0078FDAF24733D7C00282BDB /* LWHAutoHeightCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHAutoHeightCollectionView.m; sourceTree = "<group>"; };
 		0078FDB024733D7C00282BDB /* LWHAutoHeightCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHAutoHeightCollectionViewCell.h; sourceTree = "<group>"; };
 		007FFE162475F49000DD5B42 /* SGAdvertScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGAdvertScrollView.m; sourceTree = "<group>"; };
 		007FFE172475F49000DD5B42 /* SGAdvertScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGAdvertScrollView.h; sourceTree = "<group>"; };
-		00B7BA1E247B3AE6004F54A5 /* LWHCourseContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHCourseContentViewController.m; sourceTree = "<group>"; };
+		00B7BA1E247B3AE6004F54A5 /* LWHPublicBaseUseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHPublicBaseUseViewController.m; sourceTree = "<group>"; };
 		00B7BA1F247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHCourseContentHtmlCell.m; sourceTree = "<group>"; };
-		00B7BA20247B3AE6004F54A5 /* LWHCourseContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHCourseContentViewController.h; sourceTree = "<group>"; };
+		00B7BA20247B3AE6004F54A5 /* LWHPublicBaseUseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHPublicBaseUseViewController.h; sourceTree = "<group>"; };
 		00B7BA21247B3AE6004F54A5 /* LWHCourseContentHtmlCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHCourseContentHtmlCell.h; sourceTree = "<group>"; };
 		00B7BA26247B3D7F004F54A5 /* LWHVIPFuWuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWHVIPFuWuTableViewCell.h; sourceTree = "<group>"; };
 		00B7BA27247B3D7F004F54A5 /* LWHVIPFuWuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWHVIPFuWuViewController.m; sourceTree = "<group>"; };
@@ -504,6 +490,8 @@
 		043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		043AD4CC230CF6F2007BD6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		043AD4CE230CF79D007BD6CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		04686B60247B7AAD00CE9535 /* LWHCourseContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHCourseContentViewController.h; sourceTree = "<group>"; };
+		04686B61247B7AAD00CE9535 /* LWHCourseContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHCourseContentViewController.m; sourceTree = "<group>"; };
 		0470B49D2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHZhiBoWeiKaiShiView.h; sourceTree = "<group>"; };
 		0470B49E2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHZhiBoWeiKaiShiView.m; sourceTree = "<group>"; };
 		0476861C24737EB7004017EC /* LWHComplexScrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHComplexScrollerViewController.h; sourceTree = "<group>"; };
@@ -512,25 +500,7 @@
 		0476862024737F00004017EC /* LWHBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHBaseTableView.m; sourceTree = "<group>"; };
 		0476862224737F53004017EC /* LWHComplexSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHComplexSubViewController.h; sourceTree = "<group>"; };
 		0476862324737F53004017EC /* LWHComplexSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHComplexSubViewController.m; sourceTree = "<group>"; };
-		047D0DB52477B1EA000B8808 /* LWHGuankanjiluViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHGuankanjiluViewController.h; sourceTree = "<group>"; };
-		047D0DB62477B1EA000B8808 /* LWHGuankanjiluViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHGuankanjiluViewController.m; sourceTree = "<group>"; };
-		047D0DB82477B20E000B8808 /* LWHGuankanjiliTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHGuankanjiliTableViewCell.h; sourceTree = "<group>"; };
-		047D0DB92477B20E000B8808 /* LWHGuankanjiliTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHGuankanjiliTableViewCell.m; sourceTree = "<group>"; };
-		047D0DBF2477BDF8000B8808 /* LWHShengJiVIPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHShengJiVIPViewController.h; sourceTree = "<group>"; };
-		047D0DC02477BDF8000B8808 /* LWHShengJiVIPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHShengJiVIPViewController.m; sourceTree = "<group>"; };
-		047D0DC22477BE19000B8808 /* LWHShengJiVIPTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHShengJiVIPTableViewCell.h; sourceTree = "<group>"; };
-		047D0DC32477BE19000B8808 /* LWHShengJiVIPTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHShengJiVIPTableViewCell.m; sourceTree = "<group>"; };
-		048E171E247683520029A859 /* LWHTescherListTwoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTescherListTwoTableViewCell.h; sourceTree = "<group>"; };
-		048E171F247683520029A859 /* LWHTescherListTwoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTescherListTwoTableViewCell.m; sourceTree = "<group>"; };
-		048E1721247684160029A859 /* LWHTeacherListTwoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTeacherListTwoModel.h; sourceTree = "<group>"; };
-		048E1722247684160029A859 /* LWHTeacherListTwoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTeacherListTwoModel.m; sourceTree = "<group>"; };
 		048E1724247687690029A859 /* teacherListTwo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teacherListTwo.png; sourceTree = "<group>"; };
-		048E1726247688980029A859 /* LWHTeacherListTwoTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTeacherListTwoTableView.h; sourceTree = "<group>"; };
-		048E1727247688980029A859 /* LWHTeacherListTwoTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTeacherListTwoTableView.m; sourceTree = "<group>"; };
-		048E17292476894B0029A859 /* LWHTeacherListTwoSubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTeacherListTwoSubViewController.h; sourceTree = "<group>"; };
-		048E172A2476894B0029A859 /* LWHTeacherListTwoSubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTeacherListTwoSubViewController.m; sourceTree = "<group>"; };
-		048E172C24768D3B0029A859 /* LWHTeacherListTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHTeacherListTwoViewController.h; sourceTree = "<group>"; };
-		048E172D24768D3B0029A859 /* LWHTeacherListTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHTeacherListTwoViewController.m; sourceTree = "<group>"; };
 		6C1165A5B99C96AC32E9D232 /* Pods-LWHTestOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHTestOne.release.xcconfig"; path = "Target Support Files/Pods-LWHTestOne/Pods-LWHTestOne.release.xcconfig"; sourceTree = "<group>"; };
 		7409A492B6678AA007D0EF41 /* Pods-LWHTestOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LWHTestOne.debug.xcconfig"; path = "Target Support Files/Pods-LWHTestOne/Pods-LWHTestOne.debug.xcconfig"; sourceTree = "<group>"; };
 		EBAB44D22521DA4656F509C1 /* Pods_LWHTestOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LWHTestOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1117,17 +1087,6 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
-		0077369124774C4800D3A126 /* sousuo */ = {
-			isa = PBXGroup;
-			children = (
-				0077369224774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m */,
-				0077369324774C4800D3A126 /* LWHSouSuoCourseViewController.m */,
-				0077369424774C4800D3A126 /* LWHSouSuoCourseViewController.h */,
-				0077369524774C4800D3A126 /* LWHSouSuoCourseTableViewCell.h */,
-			);
-			path = sousuo;
-			sourceTree = "<group>";
-		};
 		0078FDAC24733D7C00282BDB /* collectionView高度自适应 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1151,10 +1110,8 @@
 		00B7BA1D247B3AE6004F54A5 /* LWHPublicBaseViewController用法 */ = {
 			isa = PBXGroup;
 			children = (
-				00B7BA20247B3AE6004F54A5 /* LWHCourseContentViewController.h */,
-				00B7BA1E247B3AE6004F54A5 /* LWHCourseContentViewController.m */,
-				00B7BA21247B3AE6004F54A5 /* LWHCourseContentHtmlCell.h */,
-				00B7BA1F247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m */,
+				00B7BA20247B3AE6004F54A5 /* LWHPublicBaseUseViewController.h */,
+				00B7BA1E247B3AE6004F54A5 /* LWHPublicBaseUseViewController.m */,
 			);
 			path = "LWHPublicBaseViewController用法";
 			sourceTree = "<group>";
@@ -1257,6 +1214,17 @@
 			path = cocopods;
 			sourceTree = "<group>";
 		};
+		04686B5F247B791300CE9535 /* courseContent */ = {
+			isa = PBXGroup;
+			children = (
+				00B7BA21247B3AE6004F54A5 /* LWHCourseContentHtmlCell.h */,
+				00B7BA1F247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m */,
+				04686B60247B7AAD00CE9535 /* LWHCourseContentViewController.h */,
+				04686B61247B7AAD00CE9535 /* LWHCourseContentViewController.m */,
+			);
+			path = courseContent;
+			sourceTree = "<group>";
+		};
 		0470B49C2478B52900FC597F /* zhiBoWeiKaiShi */ = {
 			isa = PBXGroup;
 			children = (
@@ -1281,47 +1249,15 @@
 			path = "复杂子控制器滚动交互";
 			sourceTree = "<group>";
 		};
-		047D0DB424779C7D000B8808 /* guankanjilu */ = {
-			isa = PBXGroup;
-			children = (
-				047D0DB52477B1EA000B8808 /* LWHGuankanjiluViewController.h */,
-				047D0DB62477B1EA000B8808 /* LWHGuankanjiluViewController.m */,
-				047D0DB82477B20E000B8808 /* LWHGuankanjiliTableViewCell.h */,
-				047D0DB92477B20E000B8808 /* LWHGuankanjiliTableViewCell.m */,
-			);
-			path = guankanjilu;
-			sourceTree = "<group>";
-		};
-		047D0DBE2477BDD1000B8808 /* shengjiVIP */ = {
-			isa = PBXGroup;
-			children = (
-				047D0DBF2477BDF8000B8808 /* LWHShengJiVIPViewController.h */,
-				047D0DC02477BDF8000B8808 /* LWHShengJiVIPViewController.m */,
-				047D0DC22477BE19000B8808 /* LWHShengJiVIPTableViewCell.h */,
-				047D0DC32477BE19000B8808 /* LWHShengJiVIPTableViewCell.m */,
-			);
-			path = shengjiVIP;
-			sourceTree = "<group>";
-		};
 		047D0DC52477BE53000B8808 /* coreCode */ = {
 			isa = PBXGroup;
 			children = (
 				0438239B2319250200A339FD /* left_return_white.png */,
 				0438239C2319250200A339FD /* left_return_white@2x.png */,
 				0438239D2319250200A339FD /* left_return_white@3x.png */,
+				048E1724247687690029A859 /* teacherListTwo.png */,
 				0435D04E2314C5A200802E3A /* LWHFirstViewController.h */,
 				0435D04F2314C5A200802E3A /* LWHFirstViewController.m */,
-				048E1724247687690029A859 /* teacherListTwo.png */,
-				048E172C24768D3B0029A859 /* LWHTeacherListTwoViewController.h */,
-				048E172D24768D3B0029A859 /* LWHTeacherListTwoViewController.m */,
-				048E17292476894B0029A859 /* LWHTeacherListTwoSubViewController.h */,
-				048E172A2476894B0029A859 /* LWHTeacherListTwoSubViewController.m */,
-				048E1726247688980029A859 /* LWHTeacherListTwoTableView.h */,
-				048E1727247688980029A859 /* LWHTeacherListTwoTableView.m */,
-				048E171E247683520029A859 /* LWHTescherListTwoTableViewCell.h */,
-				048E171F247683520029A859 /* LWHTescherListTwoTableViewCell.m */,
-				048E1721247684160029A859 /* LWHTeacherListTwoModel.h */,
-				048E1722247684160029A859 /* LWHTeacherListTwoModel.m */,
 			);
 			path = coreCode;
 			sourceTree = "<group>";
@@ -1330,9 +1266,7 @@
 			isa = PBXGroup;
 			children = (
 				047D0DC52477BE53000B8808 /* coreCode */,
-				047D0DBE2477BDD1000B8808 /* shengjiVIP */,
-				047D0DB424779C7D000B8808 /* guankanjilu */,
-				0077369124774C4800D3A126 /* sousuo */,
+				04686B5F247B791300CE9535 /* courseContent */,
 				0470B49C2478B52900FC597F /* zhiBoWeiKaiShi */,
 			);
 			path = "首页控制器";
@@ -1499,19 +1433,17 @@
 				00738A7C246D8ABF00842B16 /* WMPlayerModel.m in Sources */,
 				00738ADD246D8ABF00842B16 /* LWHWkPlayerManager.m in Sources */,
 				00738A9D246D8ABF00842B16 /* TZPhotoPreviewCell.m in Sources */,
-				00B7BA22247B3AE6004F54A5 /* LWHCourseContentViewController.m in Sources */,
+				00B7BA22247B3AE6004F54A5 /* LWHPublicBaseUseViewController.m in Sources */,
 				00738AEA246D8ABF00842B16 /* BDPresentAnimator.m in Sources */,
 				00738A84246D8ABF00842B16 /* LWHScrollViewOne.m in Sources */,
 				00B7BA23247B3AE6004F54A5 /* LWHCourseContentHtmlCell.m in Sources */,
 				00007E45247AD0CA002B02D5 /* LWHPublicBaseTwoViewController.m in Sources */,
-				048E1720247683520029A859 /* LWHTescherListTwoTableViewCell.m in Sources */,
 				00B7BA2A247B3D7F004F54A5 /* LWHVIPFuWuViewController.m in Sources */,
 				00738AC3246D8ABF00842B16 /* YBIBCopywriter.m in Sources */,
 				00738A77246D8ABF00842B16 /* HLSegementView.m in Sources */,
 				00738A79246D8ABF00842B16 /* UINavigationBar+LSNavigationController.m in Sources */,
 				00738A75246D8ABF00842B16 /* LLSearchViewController.m in Sources */,
 				00738A7D246D8ABF00842B16 /* UIViewController+ShouldAutorotate.m in Sources */,
-				048E172E24768D3B0029A859 /* LWHTeacherListTwoViewController.m in Sources */,
 				00738AD9246D8ABF00842B16 /* LJCActionSheet.m in Sources */,
 				00738ABB246D8ABF00842B16 /* YBImageBrowserToolBar.m in Sources */,
 				00738A95246D8ABF00842B16 /* TZAssetModel.m in Sources */,
@@ -1535,7 +1467,6 @@
 				00738ACE246D8ABF00842B16 /* UIView+TL.m in Sources */,
 				00738AEC246D8ABF00842B16 /* LJCGIFRefreshFooter.m in Sources */,
 				00738AC6246D8ABF00842B16 /* YBIBPhotoAlbumManager.m in Sources */,
-				0077369624774C4800D3A126 /* LWHSouSuoCourseTableViewCell.m in Sources */,
 				00738AD7246D8ABF00842B16 /* ChatFace.m in Sources */,
 				00738A80246D8ABF00842B16 /* FastForwardView.m in Sources */,
 				00738ABE246D8ABF00842B16 /* YBImage.m in Sources */,
@@ -1549,7 +1480,6 @@
 				00738AA9246D8ABF00842B16 /* BaseViewController.m in Sources */,
 				00738AC5246D8ABF00842B16 /* YBIBLayoutDirectionManager.m in Sources */,
 				0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */,
-				047D0DC42477BE19000B8808 /* LWHShengJiVIPTableViewCell.m in Sources */,
 				00738A93246D8ABF00842B16 /* TZAssetCell.m in Sources */,
 				0476861E24737EB7004017EC /* LWHComplexScrollerViewController.m in Sources */,
 				00738A86246D8ABF00842B16 /* UIView+SGPagingView.m in Sources */,
@@ -1558,7 +1488,6 @@
 				00738AB4246D8ABF00842B16 /* TAAbstractDotView.m in Sources */,
 				00738A81246D8ABF00842B16 /* WMPlayer.m in Sources */,
 				00738AD4246D8ABF00842B16 /* BaseTabbarController.m in Sources */,
-				048E172B2476894B0029A859 /* LWHTeacherListTwoSubViewController.m in Sources */,
 				00738AC9246D8ABF00842B16 /* YBImageBrowserView.m in Sources */,
 				00738A8E246D8ABF00842B16 /* LWHProjectHeaderButtonsView.m in Sources */,
 				00738AC1246D8ABF00842B16 /* YBIBWebImageManager.m in Sources */,
@@ -1568,7 +1497,6 @@
 				00007E46247AD0CA002B02D5 /* LWHPublicBaseViewController.m in Sources */,
 				00738ADF246D8ABF00842B16 /* BDPresentAnimatorAction.m in Sources */,
 				00738A8B246D8ABF00842B16 /* SGPagingViewPopGestureVC.m in Sources */,
-				048E1723247684160029A859 /* LWHTeacherListTwoModel.m in Sources */,
 				00738ABA246D8ABF00842B16 /* YBImageBrowserProgressView.m in Sources */,
 				00738AB3246D8ABF00842B16 /* TAAnimatedDotView.m in Sources */,
 				00738A8F246D8ABF00842B16 /* IssueDynamicToolBar.m in Sources */,
@@ -1583,7 +1511,6 @@
 				007FFE182475F49000DD5B42 /* SGAdvertScrollView.m in Sources */,
 				00738A8D246D8ABF00842B16 /* GuideViewController.m in Sources */,
 				00738A76246D8ABF00842B16 /* UIView+HLExtension.m in Sources */,
-				047D0DBA2477B20E000B8808 /* LWHGuankanjiliTableViewCell.m in Sources */,
 				00738A78246D8ABF00842B16 /* LSNavigationController.m in Sources */,
 				00738AE6246D8ABF00842B16 /* StorageManager.m in Sources */,
 				00738AB5246D8ABF00842B16 /* YBImageBrowser.m in Sources */,
@@ -1604,7 +1531,6 @@
 				00738ACA246D8ABF00842B16 /* YBImageBrowserViewLayout.m in Sources */,
 				00738AB0246D8ABF00842B16 /* SDCollectionViewCell.m in Sources */,
 				00738AC2246D8ABF00842B16 /* YBIBFileManager.m in Sources */,
-				047D0DB72477B1EA000B8808 /* LWHGuankanjiluViewController.m in Sources */,
 				00738A82246D8ABF00842B16 /* LoginViewController.m in Sources */,
 				00007E41247AD0CA002B02D5 /* LWHPublicCollectionViewCell.m in Sources */,
 				00738AAC246D8ABF00842B16 /* LWHTableViewCellAutoHeight.m in Sources */,
@@ -1621,7 +1547,6 @@
 				0470B49F2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.m in Sources */,
 				00738AC4246D8ABF00842B16 /* YBIBUtilities.m in Sources */,
 				00738AC7246D8ABF00842B16 /* YBIBTransitionManager.m in Sources */,
-				0077369724774C4800D3A126 /* LWHSouSuoCourseViewController.m in Sources */,
 				00738ADC246D8ABF00842B16 /* ChatHelper.m in Sources */,
 				00738AE2246D8ABF00842B16 /* LJCSwitch.m in Sources */,
 				00738AA7246D8ABF00842B16 /* LWHTarbarView.m in Sources */,
@@ -1630,6 +1555,7 @@
 				00738A96246D8ABF00842B16 /* NSBundle+TZImagePicker.m in Sources */,
 				00738A94246D8ABF00842B16 /* TZVideoPlayerController.m in Sources */,
 				00738AE8246D8ABF00842B16 /* UserMaterialModel.m in Sources */,
+				04686B62247B7AAD00CE9535 /* LWHCourseContentViewController.m in Sources */,
 				00738AC8246D8ABF00842B16 /* YBIBGestureInteractionProfile.m in Sources */,
 				00738ADB246D8ABF00842B16 /* CXCameraManager.m in Sources */,
 				00738AB7246D8ABF00842B16 /* YBVideoBrowseActionBar.m in Sources */,
@@ -1640,8 +1566,6 @@
 				00738A7F246D8ABF00842B16 /* WMLightView.m in Sources */,
 				00738AB6246D8ABF00842B16 /* YBVideoBrowseCell.m in Sources */,
 				0078FDB124733D7C00282BDB /* LWHAutoHeightCollectionViewCell.m in Sources */,
-				047D0DC12477BDF8000B8808 /* LWHShengJiVIPViewController.m in Sources */,
-				048E1728247688980029A859 /* LWHTeacherListTwoTableView.m in Sources */,
 				00738A8C246D8ABF00842B16 /* LaunchIntroductionView.m in Sources */,
 				00738ACD246D8ABF00842B16 /* UIImage+Category.m in Sources */,
 				00738AE1246D8ABF00842B16 /* ArbitrarilyTool.m in Sources */,
