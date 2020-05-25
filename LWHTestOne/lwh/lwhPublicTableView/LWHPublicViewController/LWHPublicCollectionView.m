@@ -36,7 +36,7 @@
     self.backgroundColor = [UIColor whiteColor];
     self.cellName = @"LWHPublicCollectionViewCell";
     //注册collectionViewCell
-    [self registerClass:[LWHPublicCollectionViewCell class] forCellWithReuseIdentifier:self.cellName];
+    [self registerClass:NSClassFromString(self.cellName) forCellWithReuseIdentifier:self.cellName];
     #pragma mark -- 注册头部视图
     [self registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
     [self registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:@"HeaderView"];
@@ -133,7 +133,7 @@
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
 
     UICollectionReusableView *headerView =[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
-    headerView.backgroundColor = [UIColor redColor];
+    headerView.backgroundColor = [UIColor colorWithWhite:0.7 alpha:0.9];
     return headerView;
 }
 //设置每个item水平间距

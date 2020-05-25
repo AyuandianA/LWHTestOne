@@ -16,10 +16,10 @@
 
 +(instancetype)creatPublicTableViewCellWithTableView:(UITableView *)tableView
 {
-    LWHPublicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"LWHPublicTableViewCell"];
+    LWHPublicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([LWHPublicTableViewCell class])];
     // 判断如果没有可以重用的cell，创建
     if (!cell) {
-        cell = [[LWHPublicTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"LWHPublicTableViewCell"];
+        cell = [[LWHPublicTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:NSStringFromClass([LWHPublicTableViewCell class])];
     }
     return cell;
 }
