@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LWHCourseContentHtmlCell : UITableViewCell
 
 +(instancetype)creatPublicTableViewCellWithTableView:(UITableView *)tableView;
--(void)changeDataWithModel:(id)model andSection:(NSInteger)section;
+-(void)changeDataWithModel:(id)model andSection:(NSIndexPath *)section;
 @end
 
 NS_ASSUME_NONNULL_END

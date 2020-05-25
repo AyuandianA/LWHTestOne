@@ -10,7 +10,7 @@
 #import <WebKit/WebKit.h>
 
 
-@interface LWHCourseContentHtmlCell ()
+@interface LWHCourseContentHtmlCell ()<WKNavigationDelegate>
 @property (nonatomic,strong) WKWebView *contentLable;
 @property (nonatomic,strong) YYLabel *titleLable;
 @property (nonatomic,strong) YYLabel *titleBottomLable;
@@ -47,24 +47,24 @@
 -(void)chuShiHua
 {
     self.backgroundColor = [UIColor whiteColor];
-    //section == 0
+    //section == 1 || 2
     WKWebView *contentLable = [[WKWebView alloc]initWithFrame:CGRectMake(0,0,self.width,1)];
     self.contentLable = contentLable;
+    contentLable.navigationDelegate = self;
     contentLable.scrollView.scrollEnabled = NO;
     AdjustsScrollViewInsetNever([self viewController], contentLable.scrollView)
     contentLable.opaque =NO;
     [self.contentView addSubview:contentLable];
     [contentLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.contentView);
-        make.left.equalTo(self.contentView).offset(10);
-        make.right.equalTo(self.contentView).offset(-10);
-        
+        make.top.equalTo(self.contentView).offset(self.margin);
+        make.left.equalTo(self.contentView).offset(self.margin);
+        make.right.equalTo(self.contentView).offset(-self.margin);
+        make.bottom.equalTo(self.contentView).offset(-self.margin);
     }];
-    [self.contentLable.scrollView addObserver:self forKeyPath:@"contentSize" options:NSKeyValueObservingOptionNew context:nil];
-    //section == 1 || 2
+    //section == 0
     YYLabel *titleLable = [[YYLabel alloc]init];
     titleLable.font = [UIFont systemFontOfSize:TextFont weight:1];
-    titleLable.textColor = [UIColor colorWithWhite:0.1 alpha:1];
+    titleLable.textColor = [UIColor blackColor];
     titleLable.numberOfLines = 0;
     titleLable.preferredMaxLayoutWidth = KScreenWidth - self.margin * 2;
     [titleLable setContentHuggingPriority:(UILayoutPriorityRequired) forAxis:(UILayoutConstraintAxisVertical)];
@@ -72,62 +72,93 @@
     self.titleLable = titleLable;
     [titleLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.contentView).offset(self.margin);
-        
+        make.left.equalTo(self.contentView).offset(self.margin);
+    }];
+    
+    YYLabel *titleBottomLable = [[YYLabel alloc]init];
+    titleBottomLable.font = [UIFont systemFontOfSize:TextFont - 1 weight:-0.2];
+    titleBottomLable.textColor = [UIColor redColor];
+    titleBottomLable.numberOfLines = 0;
+    titleBottomLable.preferredMaxLayoutWidth = KScreenWidth - self.margin * 2;
+    [titleBottomLable setContentHuggingPriority:(UILayoutPriorityRequired) forAxis:(UILayoutConstraintAxisVertical)];
+    [self.contentView addSubview:titleBottomLable];
+    self.titleBottomLable = titleBottomLable;
+    [titleBottomLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(titleLable.mas_bottom).offset(self.margin);
+        make.left.equalTo(self.contentView).offset(self.margin);
+    }];
+    
+    YYLabel *nameLable = [[YYLabel alloc]init];
+    nameLable.font = [UIFont systemFontOfSize:TextFont - 1 weight:-0.2];
+    nameLable.textColor = [UIColor blackColor];
+    nameLable.numberOfLines = 0;
+    nameLable.preferredMaxLayoutWidth = 150;
+    [nameLable setContentHuggingPriority:(UILayoutPriorityRequired) forAxis:(UILayoutConstraintAxisVertical)];
+    [self.contentView addSubview:nameLable];
+    self.nameLable = nameLable;
+    [nameLable mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(titleBottomLable.mas_bottom).offset(self.margin);
+        make.left.equalTo(self.contentView).offset(self.margin);
+        make.bottom.equalTo(self.contentView).offset(-self.margin);
     }];
     
     
 }
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
-{
-    
-    if ([keyPath isEqualToString:@"contentSize"]) {
-        //通过webview的contentSize获取内容高度
-        CGFloat height = self.contentLable.scrollView.contentSize.height;
-        if (!self.contentLable.isLoading) {
-            [self.contentLable mas_updateConstraints:^(MASConstraintMaker *make) {
-                make.height.mas_equalTo(height);
-                make.bottom.equalTo(self.contentView);
-            }];
-            [self.contentLable sizeToFit];
-            [self.contentView layoutIfNeeded];
-        }
-        
-    }
-}
 
--(void)dealloc{
-    [self.contentLable.scrollView removeObserver:self forKeyPath:@"contentSize"];
-}
 
--(void)changeDataWithModel:(id )model andSection:(NSInteger)section
+-(void)changeDataWithModel:(id )model andSection:(NSIndexPath *)section
 {
-    if (section == 0) {
-        
+    if (section.section == 0) {
+        self.titleLable.text = model;
+        self.titleBottomLable.text = @"¥2887.00 | 两节";
+        self.nameLable.text = @"孔令伟老师";
+        self.contentLable.hidden = YES;
+        self.titleLable.hidden = NO;
+        self.titleBottomLable.hidden = NO;
+        self.nameLable.hidden = NO;
+        [self.titleLable mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.contentView).offset(self.margin);
+            make.left.equalTo(self.contentView).offset(self.margin);
+        }];
+        [self.contentLable mas_remakeConstraints:^(MASConstraintMaker *make) {
+        }];
     }else{
-        [self.contentLable loadHTMLString:model baseURL:nil];
-        [self.contentLable mas_updateConstraints:^(MASConstraintMaker *make) {
-            make.bottom.equalTo(self.contentView);
+        NSString *htmlString1 = [NSString stringWithFormat:@"<html> \n"
+        "<head> \n"
+        "<style type=\"text/css\"> \n"
+         "body {font-size:%fpx;color:#696969}\n"
+         "a {color:#1E90FF}\n"
+        "</style> \n"
+        "</head> \n"
+        "<body>"
+        "<script type='text/javascript'>"
+        "window.onload = function(){\n"
+        "var $img = document.getElementsByTagName('img');\n"
+        "for(var p in  $img){\n"
+        " $img[p].style.width = '100%%';\n"
+        "$img[p].style.height ='auto'\n"
+        "}\n"
+        "}"
+        "</script>%@"
+        "</body>"
+        "</html>",TextFont * 2.1, model];
+        [self.contentLable loadHTMLString:htmlString1 baseURL:nil];
+        self.contentLable.hidden = NO;
+        self.titleLable.hidden = YES;
+        self.titleBottomLable.hidden = YES;
+        self.nameLable.hidden = YES;
+        [self.contentLable mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.contentView).offset(self.margin);
+            make.left.equalTo(self.contentView).offset(self.margin);
+            make.right.equalTo(self.contentView).offset(-self.margin);
+            make.bottom.equalTo(self.contentView).offset(-self.margin);
+            make.height.mas_equalTo(100);
+        }];
+        [self.titleLable mas_remakeConstraints:^(MASConstraintMaker *make) {
         }];
     }
 }
 
 @end
-//NSString *htmlString1 = [NSString stringWithFormat:@"<html> \n"
-//"<head> \n"
-//"<style type=\"text/css\"> \n"
-// "body {font-size:%fpx;color:#696969}\n"
-// "a {color:#1E90FF}\n"
-//"</style> \n"
-//"</head> \n"
-//"<body>"
-//"<script type='text/javascript'>"
-//"window.onload = function(){\n"
-//"var $img = document.getElementsByTagName('img');\n"
-//"for(var p in  $img){\n"
-//" $img[p].style.width = '100%%';\n"
-//"$img[p].style.height ='auto'\n"
-//"}\n"
-//"}"
-//"</script>%@"
-//"</body>"
-//"</html>",TextFont * 2.1, htmlString];
+//改变HTML中字体大小
+

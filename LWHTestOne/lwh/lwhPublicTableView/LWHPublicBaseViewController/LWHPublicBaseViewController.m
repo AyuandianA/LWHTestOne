@@ -51,7 +51,7 @@
 -(LWHPublicBaseTableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[LWHPublicBaseTableView alloc]initWithFrame:CGRectMake(0, StatusHeight, KScreenWidth, KScreenHeight - StatusHeight - BottomHeight) style:UITableViewStylePlain];
+        _tableView = [[LWHPublicBaseTableView alloc]initWithFrame:CGRectMake(0, TopHeight, KScreenWidth, KScreenHeight - TopHeight - BottomHeight) style:UITableViewStylePlain];
         _tableView.backgroundColor = [UIColor whiteColor];
         //设置代理
         _tableView.delegate = self;
@@ -98,7 +98,7 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return KScreenHeight - TopHeight - BottomHeight ;
+    return self.tableView.height ;
 }
 -(void)selectorppp
 {

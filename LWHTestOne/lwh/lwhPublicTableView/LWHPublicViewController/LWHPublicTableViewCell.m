@@ -40,12 +40,12 @@
 -(void)chuShiHua
 {
 }
--(void)changeDataWithModel:(id _Nullable *_Nullable)model
+-(void)changeDataWithModel:(id )model
 {
     
 }
 
--(void)changeDataWithModel:(id _Nullable *_Nullable)model andSection:(NSInteger)section
+-(void)changeDataWithModel:(id)model andSection:(NSIndexPath *)section
 {
     
 }

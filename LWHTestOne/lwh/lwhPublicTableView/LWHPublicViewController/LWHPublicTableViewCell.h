@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LWHPublicTableViewCell : UITableViewCell
 
 +(instancetype)creatPublicTableViewCellWithTableView:(UITableView *)tableView;
--(void)changeDataWithModel:(id _Nullable *_Nullable)model;
--(void)changeDataWithModel:(id _Nullable *_Nullable)model andSection:(NSInteger)section;
+-(void)changeDataWithModel:(id)model;
+-(void)changeDataWithModel:(id)model andSection:(NSIndexPath *)section;
 @end
 
 NS_ASSUME_NONNULL_END

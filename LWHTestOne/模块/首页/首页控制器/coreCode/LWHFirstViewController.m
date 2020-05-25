@@ -9,7 +9,7 @@
 #import "LWHFirstViewController.h"
 #import "BaseNaviController.h"
 #import "UIImage+Category.h"
-#import "LWHPublicBaseUseViewController.h"
+#import "LWHCourseContentViewController.h"
 @interface LWHFirstViewController ()
 //展示列表
 @end
@@ -20,7 +20,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationBar.hidden = YES;
     
-    LWHPublicBaseUseViewController *baseCtro = [[LWHPublicBaseUseViewController alloc]init];
+    LWHCourseContentViewController *baseCtro = [[LWHCourseContentViewController alloc]init];
     [self.navigationController pushViewController:baseCtro animated:YES];
 }
 
