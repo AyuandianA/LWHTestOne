@@ -171,6 +171,11 @@
 		043AD4CF230CF79D007BD6CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CE230CF79D007BD6CA /* libc++.tbd */; };
 		04686B62247B7AAD00CE9535 /* LWHCourseContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B61247B7AAD00CE9535 /* LWHCourseContentViewController.m */; };
 		04686B65247BAD0300CE9535 /* LWHCourseContentTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B64247BAD0300CE9535 /* LWHCourseContentTwoCell.m */; };
+		04686B69247BC16100CE9535 /* LWHGuanKanJiLuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B68247BC16100CE9535 /* LWHGuanKanJiLuViewController.m */; };
+		04686B6C247BC18600CE9535 /* LWHGuanKanJiLuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B6B247BC18600CE9535 /* LWHGuanKanJiLuTableViewCell.m */; };
+		04686B6F247BD04A00CE9535 /* LWHPublicCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B6E247BD04900CE9535 /* LWHPublicCollectionViewController.m */; };
+		04686B73247BD1BD00CE9535 /* LWHNewCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B72247BD1BD00CE9535 /* LWHNewCollectionViewController.m */; };
+		04686B76247BD1D500CE9535 /* LWHNewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B75247BD1D500CE9535 /* LWHNewCollectionViewCell.m */; };
 		0470B49F2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470B49E2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.m */; };
 		0476861E24737EB7004017EC /* LWHComplexScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */; };
 		0476862124737F00004017EC /* LWHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476862024737F00004017EC /* LWHBaseTableView.m */; };
@@ -495,6 +500,16 @@
 		04686B61247B7AAD00CE9535 /* LWHCourseContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHCourseContentViewController.m; sourceTree = "<group>"; };
 		04686B63247BAD0300CE9535 /* LWHCourseContentTwoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHCourseContentTwoCell.h; sourceTree = "<group>"; };
 		04686B64247BAD0300CE9535 /* LWHCourseContentTwoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHCourseContentTwoCell.m; sourceTree = "<group>"; };
+		04686B67247BC16100CE9535 /* LWHGuanKanJiLuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHGuanKanJiLuViewController.h; sourceTree = "<group>"; };
+		04686B68247BC16100CE9535 /* LWHGuanKanJiLuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHGuanKanJiLuViewController.m; sourceTree = "<group>"; };
+		04686B6A247BC18600CE9535 /* LWHGuanKanJiLuTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHGuanKanJiLuTableViewCell.h; sourceTree = "<group>"; };
+		04686B6B247BC18600CE9535 /* LWHGuanKanJiLuTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHGuanKanJiLuTableViewCell.m; sourceTree = "<group>"; };
+		04686B6D247BD04900CE9535 /* LWHPublicCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHPublicCollectionViewController.h; sourceTree = "<group>"; };
+		04686B6E247BD04900CE9535 /* LWHPublicCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHPublicCollectionViewController.m; sourceTree = "<group>"; };
+		04686B71247BD1BD00CE9535 /* LWHNewCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHNewCollectionViewController.h; sourceTree = "<group>"; };
+		04686B72247BD1BD00CE9535 /* LWHNewCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHNewCollectionViewController.m; sourceTree = "<group>"; };
+		04686B74247BD1D500CE9535 /* LWHNewCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHNewCollectionViewCell.h; sourceTree = "<group>"; };
+		04686B75247BD1D500CE9535 /* LWHNewCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHNewCollectionViewCell.m; sourceTree = "<group>"; };
 		0470B49D2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHZhiBoWeiKaiShiView.h; sourceTree = "<group>"; };
 		0470B49E2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHZhiBoWeiKaiShiView.m; sourceTree = "<group>"; };
 		0476861C24737EB7004017EC /* LWHComplexScrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHComplexScrollerViewController.h; sourceTree = "<group>"; };
@@ -1122,16 +1137,18 @@
 		00B7BA24247B3C64004F54A5 /* LWHPublicViewController */ = {
 			isa = PBXGroup;
 			children = (
-				00007E2E247AD0C9002B02D5 /* LWHPublicTableView.h */,
-				00007E2F247AD0C9002B02D5 /* LWHPublicViewController.h */,
-				00007E30247AD0C9002B02D5 /* LWHPublicTableViewCell.m */,
+				00007E37247AD0C9002B02D5 /* LWHPublicCollectionView.h */,
 				00007E31247AD0C9002B02D5 /* LWHPublicCollectionView.m */,
+				00007E36247AD0C9002B02D5 /* LWHPublicCollectionViewCell.h */,
 				00007E32247AD0C9002B02D5 /* LWHPublicCollectionViewCell.m */,
-				00007E33247AD0C9002B02D5 /* LWHPublicViewController.m */,
+				00007E2E247AD0C9002B02D5 /* LWHPublicTableView.h */,
 				00007E34247AD0C9002B02D5 /* LWHPublicTableView.m */,
 				00007E35247AD0C9002B02D5 /* LWHPublicTableViewCell.h */,
-				00007E36247AD0C9002B02D5 /* LWHPublicCollectionViewCell.h */,
-				00007E37247AD0C9002B02D5 /* LWHPublicCollectionView.h */,
+				00007E30247AD0C9002B02D5 /* LWHPublicTableViewCell.m */,
+				00007E2F247AD0C9002B02D5 /* LWHPublicViewController.h */,
+				00007E33247AD0C9002B02D5 /* LWHPublicViewController.m */,
+				04686B6D247BD04900CE9535 /* LWHPublicCollectionViewController.h */,
+				04686B6E247BD04900CE9535 /* LWHPublicCollectionViewController.m */,
 			);
 			path = LWHPublicViewController;
 			sourceTree = "<group>";
@@ -1230,6 +1247,28 @@
 			path = courseContent;
 			sourceTree = "<group>";
 		};
+		04686B66247BC10300CE9535 /* guanKanJiLu */ = {
+			isa = PBXGroup;
+			children = (
+				04686B67247BC16100CE9535 /* LWHGuanKanJiLuViewController.h */,
+				04686B68247BC16100CE9535 /* LWHGuanKanJiLuViewController.m */,
+				04686B6A247BC18600CE9535 /* LWHGuanKanJiLuTableViewCell.h */,
+				04686B6B247BC18600CE9535 /* LWHGuanKanJiLuTableViewCell.m */,
+			);
+			path = guanKanJiLu;
+			sourceTree = "<group>";
+		};
+		04686B70247BD18A00CE9535 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				04686B71247BD1BD00CE9535 /* LWHNewCollectionViewController.h */,
+				04686B72247BD1BD00CE9535 /* LWHNewCollectionViewController.m */,
+				04686B74247BD1D500CE9535 /* LWHNewCollectionViewCell.h */,
+				04686B75247BD1D500CE9535 /* LWHNewCollectionViewCell.m */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		0470B49C2478B52900FC597F /* zhiBoWeiKaiShi */ = {
 			isa = PBXGroup;
 			children = (
@@ -1270,8 +1309,10 @@
 		049FF48F245672E9004A2E49 /* 首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				04686B70247BD18A00CE9535 /* New Group */,
 				047D0DC52477BE53000B8808 /* coreCode */,
 				04686B5F247B791300CE9535 /* courseContent */,
+				04686B66247BC10300CE9535 /* guanKanJiLu */,
 				0470B49C2478B52900FC597F /* zhiBoWeiKaiShi */,
 			);
 			path = "首页控制器";
@@ -1478,6 +1519,7 @@
 				00738ABE246D8ABF00842B16 /* YBImage.m in Sources */,
 				00738A90246D8ABF00842B16 /* TZTestCell.m in Sources */,
 				00738AB2246D8ABF00842B16 /* TAPageControl.m in Sources */,
+				04686B73247BD1BD00CE9535 /* LWHNewCollectionViewController.m in Sources */,
 				00738A98246D8ABF00842B16 /* TZPhotoPreviewController.m in Sources */,
 				00738A9C246D8ABF00842B16 /* TZPhotoPickerController.m in Sources */,
 				00738A92246D8ABF00842B16 /* TZImageCropManager.m in Sources */,
@@ -1487,6 +1529,7 @@
 				00738AC5246D8ABF00842B16 /* YBIBLayoutDirectionManager.m in Sources */,
 				0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */,
 				00738A93246D8ABF00842B16 /* TZAssetCell.m in Sources */,
+				04686B6F247BD04A00CE9535 /* LWHPublicCollectionViewController.m in Sources */,
 				0476861E24737EB7004017EC /* LWHComplexScrollerViewController.m in Sources */,
 				00738A86246D8ABF00842B16 /* UIView+SGPagingView.m in Sources */,
 				00007E40247AD0CA002B02D5 /* LWHPublicCollectionView.m in Sources */,
@@ -1508,6 +1551,7 @@
 				00738A8F246D8ABF00842B16 /* IssueDynamicToolBar.m in Sources */,
 				0476862424737F53004017EC /* LWHComplexSubViewController.m in Sources */,
 				00738A9B246D8ABF00842B16 /* TZImageManager.m in Sources */,
+				04686B69247BC16100CE9535 /* LWHGuanKanJiLuViewController.m in Sources */,
 				00738A9A246D8ABF00842B16 /* TZProgressView.m in Sources */,
 				00738AA3246D8ABF00842B16 /* OrderListModel.m in Sources */,
 				00738AE0246D8ABF00842B16 /* BaseTextView.m in Sources */,
@@ -1526,6 +1570,7 @@
 				00738AA4246D8ABF00842B16 /* LxGridViewFlowLayout.m in Sources */,
 				00738AAB246D8ABF00842B16 /* StartOrStopTimeSelecteView.m in Sources */,
 				00738AD1246D8ABF00842B16 /* UIView+XMGExtension.m in Sources */,
+				04686B76247BD1D500CE9535 /* LWHNewCollectionViewCell.m in Sources */,
 				00738A9F246D8ABF00842B16 /* TZLocationManager.m in Sources */,
 				00738A9E246D8ABF00842B16 /* TZImagePickerController.m in Sources */,
 				00738A97246D8ABF00842B16 /* UIView+Layout.m in Sources */,
@@ -1535,6 +1580,7 @@
 				00738AAE246D8ABF00842B16 /* SDCycleScrollView.m in Sources */,
 				00738A74246D8ABF00842B16 /* LLSearchSuggestionVC.m in Sources */,
 				00738ACA246D8ABF00842B16 /* YBImageBrowserViewLayout.m in Sources */,
+				04686B6C247BC18600CE9535 /* LWHGuanKanJiLuTableViewCell.m in Sources */,
 				00738AB0246D8ABF00842B16 /* SDCollectionViewCell.m in Sources */,
 				00738AC2246D8ABF00842B16 /* YBIBFileManager.m in Sources */,
 				00738A82246D8ABF00842B16 /* LoginViewController.m in Sources */,

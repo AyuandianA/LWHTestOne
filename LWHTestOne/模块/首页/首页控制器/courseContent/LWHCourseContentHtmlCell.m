@@ -141,7 +141,7 @@
         "}"
         "</script>%@"
         "</body>"
-        "</html>",TextFont * 2.1, model];
+        "</html>",TextFont * 3.1, model];
         [self.contentLable loadHTMLString:htmlString1 baseURL:nil];
         self.contentLable.hidden = NO;
         self.titleLable.hidden = YES;
@@ -152,7 +152,7 @@
             make.left.equalTo(self.contentView).offset(self.margin);
             make.right.equalTo(self.contentView).offset(-self.margin);
             make.bottom.equalTo(self.contentView).offset(-self.margin);
-            make.height.mas_equalTo(100);
+            make.height.mas_equalTo(50);
         }];
         [self.titleLable mas_remakeConstraints:^(MASConstraintMaker *make) {
         }];

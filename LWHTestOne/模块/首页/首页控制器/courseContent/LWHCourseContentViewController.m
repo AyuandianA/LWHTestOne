@@ -30,8 +30,8 @@
 }
 -(void)creatHeaderView
 {
-    UIImageView *userImageView = [[UIImageView alloc]initWithFrame:CGRectMake(15, 40, 60, 60)];
-    [userImageView setImage:[UIImage imageNamed:@"teacherList"]];
+    UIImageView *userImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, KScreenWidth, KScreenWidth * 0.6)];
+    [userImageView setImage:[UIImage imageNamed:@"teacherListTwo"]];
     userImageView.layer.masksToBounds = YES;
     userImageView.layer.cornerRadius = 30;
     self.userImageView = userImageView;
@@ -81,33 +81,34 @@
 
     [headerView addSubview:self.userImageView];
     [self.userImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(headerView).offset(15);
-        make.top.equalTo(headerView).offset(40);
-        make.width.height.mas_equalTo(60);
+        make.left.equalTo(headerView).offset(0);
+        make.top.equalTo(headerView).offset(0);
+        make.width.mas_equalTo(KScreenWidth);
+        make.height.mas_equalTo(KScreenWidth * 0.6);
     }];
     [headerView addSubview:self.userNameLable];
     [self.userNameLable mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.userImageView.mas_right).offset(20);
-        make.top.equalTo(self.userImageView.mas_top);
+        make.left.equalTo(headerView).offset(10);
+        make.top.equalTo(self.userImageView.mas_bottom).offset(10);
     }];
     [headerView addSubview:self.courseNum];
     [self.courseNum mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.userImageView.mas_right).offset(20);
-        make.top.equalTo(self.userNameLable.mas_bottom).offset(20);
+        make.left.equalTo(headerView).offset(10);
+        make.top.equalTo(self.userNameLable.mas_bottom).offset(10);
     }];
     [headerView addSubview:self.learnNum];
     [self.learnNum mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.courseNum.mas_right).offset(40);
-        make.top.equalTo(self.userNameLable.mas_bottom).offset(20);
+        make.left.equalTo(self.courseNum.mas_right).offset(10);
+        make.top.equalTo(self.courseNum.mas_top);
     }];
     [headerView addSubview:self.havend];
     [self.havend mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.learnNum.mas_right).offset(40);
-        make.centerY.equalTo(self.courseNum.mas_centerY);
+        make.right.equalTo(headerView).offset(-10);
+        make.top.equalTo(self.courseNum.mas_bottom).offset(10);
         make.width.mas_equalTo(70);
     }];
     [headerView layoutIfNeeded];
-    headerView.height = self.havend.bottom + 100;
+    headerView.height = self.havend.bottom + 10;
     self.tableView.tableHeaderView =  headerView;
 }
 -(void)creatTitleClassViewAndSgscrollView
@@ -140,6 +141,56 @@
     subCtr.tableView.cellRows = ^NSInteger(NSInteger section) {
       return [weakSubCtr.tableView.PublicSourceArray[section] count];
     };
+    subCtr.tableView.headerHeight = ^CGFloat(NSInteger section) {
+        if (section == 0) {
+            return 0;
+        }else if (section == 1) {
+            return 40;
+        }else {
+            return 100;
+        }
+    };
+    subCtr.tableView.headerView = ^UIView *(NSInteger section) {
+        if (section == 0) {
+            return [UIView new];
+        }else if (section == 1) {
+            UIView *view = [[UIView alloc]init];
+            UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
+            [button setTitle:@"课程介绍" forState:(UIControlStateNormal)];
+            [button setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+            [button setImage:[UIImage imageNamed:@""] forState:(UIControlStateNormal)];
+            [button addTarget:self action:@selector(buttonAction) forControlEvents:(UIControlEventTouchUpInside)];
+            button.titleLabel.font = [UIFont systemFontOfSize:TextFont];
+            [view addSubview:button];
+            [button mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(view).offset(10);
+                make.left.equalTo(view).offset(10);
+            }];
+            return view;
+        }else {
+            UIView *view = [[UIView alloc]init];
+            UIButton *button = [UIButton buttonWithType:(UIButtonTypeCustom)];
+            [button setTitle:@"讲师介绍" forState:(UIControlStateNormal)];
+            [button setTitleColor:[UIColor blackColor] forState:(UIControlStateNormal)];
+            [button setImage:[UIImage imageNamed:@""] forState:(UIControlStateNormal)];
+            [button addTarget:self action:@selector(buttonAction) forControlEvents:(UIControlEventTouchUpInside)];
+            button.titleLabel.font = [UIFont systemFontOfSize:TextFont];
+            [view addSubview:button];
+            [button mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.top.equalTo(view).offset(10);
+                make.left.equalTo(view).offset(10);
+            }];
+            return view;
+        }
+    };
+    subCtr.tableView.footerView = ^UIView *(NSInteger section) {
+        UIView *view = [[UIView alloc]init];
+        view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:0.6];
+      return view;
+    };
+    subCtr.tableView.footerHeight = ^CGFloat(NSInteger section) {
+        return 10;
+    };
     [subCtr.tableView.PublicSourceArray addObject:@[@"3135324"]];
     [subCtr.tableView.PublicSourceArray addObject:@[@"2345235234523523452352345235234523523452352345235234523523452352345235234523523452352345235234523523452352345235234523523452352345235"]];
     [subCtr.tableView.PublicSourceArray addObject:@[@"3452345"]];
@@ -158,6 +209,10 @@
     self.sgscrollView = [[SGPageContentScrollView  alloc]initWithFrame:CGRectMake(0, 50, KScreenWidth  , self.tableView.height - 50) parentVC:self childVCs:self.contArray];
     self.sgscrollView.isAnimated = YES;
     [self.sgscrollView setPageContentScrollViewCurrentIndex:0];
+}
+-(void)buttonAction
+{
+    
 }
 -(void)havendButtonAction
 {

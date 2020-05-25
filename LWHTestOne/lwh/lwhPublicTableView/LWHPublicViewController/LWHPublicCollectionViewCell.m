@@ -84,5 +84,9 @@
     
 }
 
+-(void)changeDataWithModel:(id)model andSection:(NSIndexPath *)section
+{
+    
+}
 @end
 

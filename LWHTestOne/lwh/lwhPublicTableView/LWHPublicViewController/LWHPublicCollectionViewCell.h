@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LWHPublicCollectionViewCell : UICollectionViewCell
 
 -(void)changeDataWithModel:(NSDictionary *)dic;
+-(void)changeDataWithModel:(id)model andSection:(NSIndexPath *)section;
 @end
 
 NS_ASSUME_NONNULL_END
