@@ -168,6 +168,7 @@
 		043AD4CB230CF6DD007BD6CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */; };
 		043AD4CD230CF6F2007BD6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CC230CF6F2007BD6CA /* UIKit.framework */; };
 		043AD4CF230CF79D007BD6CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CE230CF79D007BD6CA /* libc++.tbd */; };
+		0462AC76247CB91700A018FD /* LWHShuRuYaoQingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0462AC75247CB91700A018FD /* LWHShuRuYaoQingViewController.m */; };
 		04686B62247B7AAD00CE9535 /* LWHCourseContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B61247B7AAD00CE9535 /* LWHCourseContentViewController.m */; };
 		04686B65247BAD0300CE9535 /* LWHCourseContentTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04686B64247BAD0300CE9535 /* LWHCourseContentTwoCell.m */; };
 		0470B49F2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0470B49E2478BF6200FC597F /* LWHZhiBoWeiKaiShiView.m */; };
@@ -488,6 +489,8 @@
 		043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		043AD4CC230CF6F2007BD6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		043AD4CE230CF79D007BD6CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0462AC74247CB91700A018FD /* LWHShuRuYaoQingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHShuRuYaoQingViewController.h; sourceTree = "<group>"; };
+		0462AC75247CB91700A018FD /* LWHShuRuYaoQingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHShuRuYaoQingViewController.m; sourceTree = "<group>"; };
 		04686B60247B7AAD00CE9535 /* LWHCourseContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHCourseContentViewController.h; sourceTree = "<group>"; };
 		04686B61247B7AAD00CE9535 /* LWHCourseContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHCourseContentViewController.m; sourceTree = "<group>"; };
 		04686B63247BAD0300CE9535 /* LWHCourseContentTwoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHCourseContentTwoCell.h; sourceTree = "<group>"; };
@@ -1091,8 +1094,8 @@
 		0078E5E5247C8EAE004E4AE6 /* dangqianshangpin */ = {
 			isa = PBXGroup;
 			children = (
-				0078E5E6247C8EAE004E4AE6 /* LWHDangQianShangPinView.m */,
 				0078E5E7247C8EAE004E4AE6 /* LWHDangQianShangPinView.h */,
+				0078E5E6247C8EAE004E4AE6 /* LWHDangQianShangPinView.m */,
 			);
 			path = dangqianshangpin;
 			sourceTree = "<group>";
@@ -1211,6 +1214,15 @@
 			path = cocopods;
 			sourceTree = "<group>";
 		};
+		0462AC73247CB7C600A018FD /* shuRuYaoQingMa */ = {
+			isa = PBXGroup;
+			children = (
+				0462AC74247CB91700A018FD /* LWHShuRuYaoQingViewController.h */,
+				0462AC75247CB91700A018FD /* LWHShuRuYaoQingViewController.m */,
+			);
+			path = shuRuYaoQingMa;
+			sourceTree = "<group>";
+		};
 		04686B5F247B791300CE9535 /* courseContent */ = {
 			isa = PBXGroup;
 			children = (
@@ -1264,6 +1276,7 @@
 		049FF48F245672E9004A2E49 /* 首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
+				0462AC73247CB7C600A018FD /* shuRuYaoQingMa */,
 				047D0DC52477BE53000B8808 /* coreCode */,
 				04686B5F247B791300CE9535 /* courseContent */,
 				0078E5E5247C8EAE004E4AE6 /* dangqianshangpin */,
@@ -1478,6 +1491,7 @@
 				00738AED246D8ABF00842B16 /* CustomerTextView.m in Sources */,
 				00738AD0246D8ABF00842B16 /* UIView+Controller.m in Sources */,
 				00738AA9246D8ABF00842B16 /* BaseViewController.m in Sources */,
+				0462AC76247CB91700A018FD /* LWHShuRuYaoQingViewController.m in Sources */,
 				00738AC5246D8ABF00842B16 /* YBIBLayoutDirectionManager.m in Sources */,
 				0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */,
 				00738A93246D8ABF00842B16 /* TZAssetCell.m in Sources */,

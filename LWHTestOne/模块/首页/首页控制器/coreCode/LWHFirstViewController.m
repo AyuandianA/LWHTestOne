@@ -9,7 +9,8 @@
 #import "LWHFirstViewController.h"
 #import "BaseNaviController.h"
 #import "UIImage+Category.h"
-//#import "LWHNewCollectionViewController.h"
+#import "LWHDangQianShangPinView.h"
+#import "LWHShuRuYaoQingViewController.h"
 @interface LWHFirstViewController ()
 //展示列表
 @end
@@ -20,8 +21,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationBar.hidden = YES;
     
-//    LWHNewCollectionViewController *baseCtro = [[LWHNewCollectionViewController alloc]init];
-//    [self.navigationController pushViewController:baseCtro animated:YES];
+    
+    LWHShuRuYaoQingViewController *baseCtro = [[LWHShuRuYaoQingViewController alloc]init];
+    [self.navigationController pushViewController:baseCtro animated:YES];
 }
 
 
