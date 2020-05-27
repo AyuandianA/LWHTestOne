@@ -166,7 +166,6 @@
 		043AD4CB230CF6DD007BD6CA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */; };
 		043AD4CD230CF6F2007BD6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CC230CF6F2007BD6CA /* UIKit.framework */; };
 		043AD4CF230CF79D007BD6CA /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 043AD4CE230CF79D007BD6CA /* libc++.tbd */; };
-		0462AC76247CB91700A018FD /* LWHShuRuYaoQingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0462AC75247CB91700A018FD /* LWHShuRuYaoQingViewController.m */; };
 		0476861E24737EB7004017EC /* LWHComplexScrollerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */; };
 		0476862124737F00004017EC /* LWHBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476862024737F00004017EC /* LWHBaseTableView.m */; };
 		0476862424737F53004017EC /* LWHComplexSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0476862324737F53004017EC /* LWHComplexSubViewController.m */; };
@@ -480,8 +479,6 @@
 		043AD4CA230CF6DD007BD6CA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		043AD4CC230CF6F2007BD6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		043AD4CE230CF79D007BD6CA /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		0462AC74247CB91700A018FD /* LWHShuRuYaoQingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHShuRuYaoQingViewController.h; sourceTree = "<group>"; };
-		0462AC75247CB91700A018FD /* LWHShuRuYaoQingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHShuRuYaoQingViewController.m; sourceTree = "<group>"; };
 		0476861C24737EB7004017EC /* LWHComplexScrollerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHComplexScrollerViewController.h; sourceTree = "<group>"; };
 		0476861D24737EB7004017EC /* LWHComplexScrollerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWHComplexScrollerViewController.m; sourceTree = "<group>"; };
 		0476861F24737F00004017EC /* LWHBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWHBaseTableView.h; sourceTree = "<group>"; };
@@ -1190,15 +1187,6 @@
 			path = cocopods;
 			sourceTree = "<group>";
 		};
-		0462AC73247CB7C600A018FD /* shuRuYaoQingMa */ = {
-			isa = PBXGroup;
-			children = (
-				0462AC74247CB91700A018FD /* LWHShuRuYaoQingViewController.h */,
-				0462AC75247CB91700A018FD /* LWHShuRuYaoQingViewController.m */,
-			);
-			path = shuRuYaoQingMa;
-			sourceTree = "<group>";
-		};
 		0476861B24737E20004017EC /* 复杂子控制器滚动交互 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1230,7 +1218,6 @@
 		049FF48F245672E9004A2E49 /* 首页控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				0462AC73247CB7C600A018FD /* shuRuYaoQingMa */,
 				047D0DC52477BE53000B8808 /* coreCode */,
 			);
 			path = "首页控制器";
@@ -1440,7 +1427,6 @@
 				00738AED246D8ABF00842B16 /* CustomerTextView.m in Sources */,
 				00738AD0246D8ABF00842B16 /* UIView+Controller.m in Sources */,
 				00738AA9246D8ABF00842B16 /* BaseViewController.m in Sources */,
-				0462AC76247CB91700A018FD /* LWHShuRuYaoQingViewController.m in Sources */,
 				00738AC5246D8ABF00842B16 /* YBIBLayoutDirectionManager.m in Sources */,
 				0435D0502314C5A200802E3A /* LWHFirstViewController.m in Sources */,
 				00738A93246D8ABF00842B16 /* TZAssetCell.m in Sources */,
